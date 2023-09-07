@@ -4,20 +4,20 @@ import useSWR from "swr";
 
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { getPriorityIcon, getStateGroupIcon } from "components/icons";
+import { getPriorityIcon, getStateGroupIcon } from "../../../components/icons";
 // ui
-import { Avatar } from "components/ui";
+import { Avatar } from "../../../components/ui";
 // helpers
-import { getStatesList } from "helpers/state.helper";
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
+import { getStatesList } from "../../../helpers/state.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../../helpers/string.helper";
 // services
-import issuesService from "services/issues.service";
-import projectService from "services/project.service";
-import stateService from "services/state.service";
+import issuesService from "../../../services/issues.service";
+import projectService from "../../../services/project.service";
+import stateService from "../../../services/state.service";
 // types
-import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS, STATES_LIST } from "constants/fetch-keys";
-import { IIssueFilterOptions } from "types";
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS, STATES_LIST } from "../../../constants/fetch-keys";
+import { IIssueFilterOptions } from "../../../types";
+import { renderShortDateWithYearFormat } from "../../../helpers/date-time.helper";
 
 export const FilterList: React.FC<any> = ({ filters, setFilters }) => {
   const router = useRouter();

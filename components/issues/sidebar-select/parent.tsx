@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 // icons
 import { UserIcon } from "@heroicons/react/24/outline";
 // components
-import { ParentIssuesListModal } from "components/issues";
+import { ParentIssuesListModal } from "../../../components/issues";
 // types
-import { IIssue, ISearchIssueResponse, UserAuth } from "types";
+import { IIssue, ISearchIssueResponse, UserAuth } from "../../../types";
 
 type Props = {
   onChange: (value: string) => void;

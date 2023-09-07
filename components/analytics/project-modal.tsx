@@ -9,13 +9,13 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Tab } from "@headlessui/react";
 // services
-import analyticsService from "services/analytics.service";
-import projectService from "services/project.service";
-import cyclesService from "services/cycles.service";
-import modulesService from "services/modules.service";
-import trackEventServices from "services/track-event.service";
+import analyticsService from "../../services/analytics.service";
+import projectService from "../../services/project.service";
+import cyclesService from "../../services/cycles.service";
+import modulesService from "../../services/modules.service";
+import trackEventServices from "../../services/track-event.service";
 // components
-import { CustomAnalytics, ScopeAndDemand } from "components/analytics";
+import { CustomAnalytics, ScopeAndDemand } from "../analytics";
 // icons
 import {
   ArrowsPointingInIcon,
@@ -23,10 +23,10 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 // types
-import { IAnalyticsParams, IWorkspace } from "types";
+import { IAnalyticsParams, IWorkspace } from "../../types";
 // fetch-keys
-import { ANALYTICS, CYCLE_DETAILS, MODULE_DETAILS, PROJECT_DETAILS } from "constants/fetch-keys";
-import useUserAuth from "hooks/use-user-auth";
+import { ANALYTICS, CYCLE_DETAILS, MODULE_DETAILS, PROJECT_DETAILS } from "../../constants/fetch-keys";
+import useUserAuth from "../../hooks/use-user-auth";
 
 type Props = {
   isOpen: boolean;

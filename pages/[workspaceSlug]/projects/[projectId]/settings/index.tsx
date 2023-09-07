@@ -7,16 +7,16 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // components
-import { DeleteProjectModal, SettingsHeader } from "components/project";
-import { ImagePickerPopover } from "components/core";
-import EmojiIconPicker from "components/emoji-icon-picker";
+import { DeleteProjectModal, SettingsHeader } from "../../../../../components/project";
+import { ImagePickerPopover } from "../../../../../components/core";
+import EmojiIconPicker from "../../../../../components/emoji-icon-picker";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // ui
 import {
   Input,
@@ -25,17 +25,17 @@ import {
   CustomSelect,
   SecondaryButton,
   DangerButton,
-} from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+} from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // helpers
-import { renderEmoji } from "helpers/emoji.helper";
+import { renderEmoji } from "../../../../../helpers/emoji.helper";
 // types
-import { IProject, IWorkspace } from "types";
+import { IProject, IWorkspace } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECTS_LIST, PROJECT_DETAILS } from "constants/fetch-keys";
+import { PROJECTS_LIST, PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 // constants
-import { NETWORK_CHOICES } from "constants/project";
+import { NETWORK_CHOICES } from "../../../../../constants/project";
 
 const defaultValues: Partial<IProject> = {
   name: "",

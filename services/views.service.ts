@@ -1,10 +1,10 @@
 // services
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
-import { ICurrentUserResponse } from "types";
+import APIService from "../services/api.service";
+import trackEventServices from "../services/track-event.service";
+import { ICurrentUserResponse } from "../types";
 
 // types
-import { IView } from "types/views";
+import { IView } from "../types/views";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 

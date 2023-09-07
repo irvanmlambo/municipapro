@@ -1,9 +1,9 @@
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../ui";
 // types
-import { TYAxisValues } from "types";
+import { TYAxisValues } from "../../../types";
 // constants
-import { ANALYTICS_Y_AXIS_VALUES } from "constants/analytics";
+import { ANALYTICS_Y_AXIS_VALUES } from "../../../constants/analytics";
 
 type Props = {
   value: TYAxisValues;

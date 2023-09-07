@@ -7,31 +7,31 @@ import { mutate } from "swr";
 // react-beautiful-dnd
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // hooks
-import useCalendarIssuesView from "hooks/use-calendar-issues-view";
+import useCalendarIssuesView from "../../../hooks/use-calendar-issues-view";
 // components
-import { SingleCalendarDate, CalendarHeader } from "components/core";
+import { SingleCalendarDate, CalendarHeader } from "../../../components/core";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../../../components/ui";
 // helpers
-import { renderDateFormat } from "helpers/date-time.helper";
+import { renderDateFormat } from "../../../helpers/date-time.helper";
 import {
   startOfWeek,
   lastDayOfWeek,
   eachDayOfInterval,
   weekDayInterval,
   formatDate,
-} from "helpers/calendar.helper";
+} from "../../../helpers/calendar.helper";
 // types
-import { ICalendarRange, ICurrentUserResponse, IIssue, UserAuth } from "types";
+import { ICalendarRange, ICurrentUserResponse, IIssue, UserAuth } from "../../../types";
 // fetch-keys
 import {
   CYCLE_ISSUES_WITH_PARAMS,
   MODULE_ISSUES_WITH_PARAMS,
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type Props = {
   handleEditIssue: (issue: IIssue) => void;

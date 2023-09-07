@@ -4,16 +4,16 @@ import { useRouter } from "next/router";
 
 import useSWR, { mutate } from "swr";
 // services
-import appinstallationsService from "services/app-installations.service";
+import appinstallationsService from "../../../services/app-installations.service";
 // ui
-import { Loader } from "components/ui";
+import { Loader } from "../../../components/ui";
 // hooks
-import useToast from "hooks/use-toast";
-import useIntegrationPopup from "hooks/use-integration-popup";
+import useToast from "../../../hooks/use-toast";
+import useIntegrationPopup from "../../../hooks/use-integration-popup";
 // types
-import { IWorkspaceIntegration, ISlackIntegration } from "types";
+import { IWorkspaceIntegration, ISlackIntegration } from "../../../types";
 // fetch-keys
-import { SLACK_CHANNEL_INFO } from "constants/fetch-keys";
+import { SLACK_CHANNEL_INFO } from "../../../constants/fetch-keys";
 
 type Props = {
   integration: IWorkspaceIntegration;

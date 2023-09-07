@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 // components
-import { SingleSpreadsheetIssue } from "components/core";
+import { SingleSpreadsheetIssue } from "../../../components/core";
 // hooks
-import useSubIssue from "hooks/use-sub-issue";
+import useSubIssue from "../../../hooks/use-sub-issue";
 // types
-import { ICurrentUserResponse, IIssue, Properties, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, Properties, UserAuth } from "../../../types";
 
 type Props = {
   key: string;

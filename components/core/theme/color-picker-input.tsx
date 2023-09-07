@@ -13,11 +13,11 @@ import {
 import { ColorResult, SketchPicker } from "react-color";
 // component
 import { Popover, Transition } from "@headlessui/react";
-import { Input } from "components/ui";
+import { Input } from "../../../components/ui";
 // icons
-import { ColorPickerIcon } from "components/icons";
+import { ColorPickerIcon } from "../../../components/icons";
 // types
-import { ICustomTheme } from "types";
+import { ICustomTheme } from "../../../types";
 
 type Props = {
   name: keyof ICustomTheme;

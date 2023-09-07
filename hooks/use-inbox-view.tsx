@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // contexts
-import { inboxViewContext } from "contexts/inbox-view-context";
+import { inboxViewContext } from "../contexts/inbox-view-context";
 // services
-import inboxServices from "services/inbox.service";
+import inboxServices from "../services/inbox.service";
 // types
-import { IInboxQueryParams } from "types";
+import { IInboxQueryParams } from "../types";
 // fetch-keys
-import { INBOX_ISSUES } from "constants/fetch-keys";
+import { INBOX_ISSUES } from "../constants/fetch-keys";
 
 const useInboxView = () => {
   const { filters, setFilters, clearAllFilters } = useContext(inboxViewContext);

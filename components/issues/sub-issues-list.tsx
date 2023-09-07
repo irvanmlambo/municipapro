@@ -8,22 +8,22 @@ import useSWR, { mutate } from "swr";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // components
-import { ExistingIssuesListModal } from "components/core";
-import { CreateUpdateIssueModal } from "components/issues";
+import { ExistingIssuesListModal } from "../../components/core";
+import { CreateUpdateIssueModal } from "../../components/issues";
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../components/ui";
 // icons
 import { ChevronRightIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // helpers
-import { orderArrayBy } from "helpers/array.helper";
+import { orderArrayBy } from "../../helpers/array.helper";
 // types
-import { ICurrentUserResponse, IIssue, ISearchIssueResponse, ISubIssueResponse } from "types";
+import { ICurrentUserResponse, IIssue, ISearchIssueResponse, ISubIssueResponse } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUES_LIST, SUB_ISSUES } from "constants/fetch-keys";
+import { PROJECT_ISSUES_LIST, SUB_ISSUES } from "../../constants/fetch-keys";
 
 type Props = {
   parentIssue: IIssue;

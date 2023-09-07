@@ -3,18 +3,18 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import analyticsService from "services/analytics.service";
+import analyticsService from "../../../services/analytics.service";
 // components
 import {
   AnalyticsDemand,
   AnalyticsLeaderboard,
   AnalyticsScope,
   AnalyticsYearWiseIssues,
-} from "components/analytics";
+} from "../../../components/analytics";
 // ui
-import { Loader, PrimaryButton } from "components/ui";
+import { Loader, PrimaryButton } from "../../../components/ui";
 // fetch-keys
-import { DEFAULT_ANALYTICS } from "constants/fetch-keys";
+import { DEFAULT_ANALYTICS } from "../../../constants/fetch-keys";
 
 type Props = {
   fullScreen?: boolean;

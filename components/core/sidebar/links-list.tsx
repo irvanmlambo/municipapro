@@ -3,9 +3,9 @@ import Link from "next/link";
 // icons
 import { ArrowTopRightOnSquareIcon, LinkIcon, TrashIcon } from "@heroicons/react/24/outline";
 // helpers
-import { timeAgo } from "helpers/date-time.helper";
+import { timeAgo } from "../../../helpers/date-time.helper";
 // types
-import { IUserLite, UserAuth } from "types";
+import { IUserLite, UserAuth } from "../../../types";
 
 type Props = {
   links: {

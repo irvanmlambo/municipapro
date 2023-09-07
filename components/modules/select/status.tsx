@@ -3,13 +3,13 @@ import React from "react";
 // react hook form
 import { Controller, FieldError, Control } from "react-hook-form";
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
 import { Squares2X2Icon } from "@heroicons/react/24/outline";
 // types
-import type { IModule } from "types";
+import type { IModule } from "../../../types";
 // constants
-import { MODULE_STATUS } from "constants/module";
+import { MODULE_STATUS } from "../../../constants/module";
 
 type Props = {
   control: Control<IModule, any>;

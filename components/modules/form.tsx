@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { ModuleLeadSelect, ModuleMembersSelect, ModuleStatusSelect } from "components/modules";
+import { ModuleLeadSelect, ModuleMembersSelect, ModuleStatusSelect } from "../../components/modules";
 // ui
-import { DateSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { DateSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // helper
-import { isDateRangeValid } from "helpers/date-time.helper";
+import { isDateRangeValid } from "../../helpers/date-time.helper";
 // types
-import { IModule } from "types";
+import { IModule } from "../../types";
 
 type Props = {
   handleFormSubmit: (values: Partial<IModule>) => Promise<void>;

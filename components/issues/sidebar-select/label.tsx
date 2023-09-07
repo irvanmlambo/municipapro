@@ -11,11 +11,11 @@ import { TwitterPicker } from "react-color";
 // headless ui
 import { Listbox, Popover, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../../../hooks/use-user";
 // ui
-import { Input, Spinner } from "components/ui";
+import { Input, Spinner } from "../../../components/ui";
 // icons
 import {
   ChevronDownIcon,
@@ -25,9 +25,9 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 // types
-import { IIssue, IIssueLabels } from "types";
+import { IIssue, IIssueLabels } from "../../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../../constants/fetch-keys";
 
 type Props = {
   issueDetails: IIssue | undefined;

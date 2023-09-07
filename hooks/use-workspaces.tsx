@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // fetch-keys
-import { USER_WORKSPACES } from "constants/fetch-keys";
+import { USER_WORKSPACES } from "../constants/fetch-keys";
 
 const useWorkspaces = () => {
   // router

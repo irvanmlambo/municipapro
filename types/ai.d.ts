@@ -1,4 +1,4 @@
-import { IProjectLite, IWorkspaceLite } from "types";
+import { IProjectLite, IWorkspaceLite } from "../types";
 
 export interface IGptResponse {
   response: string;

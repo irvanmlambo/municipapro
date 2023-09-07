@@ -5,23 +5,23 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // hooks
-import useEstimateOption from "hooks/use-estimate-option";
+import useEstimateOption from "../../hooks/use-estimate-option";
 // components
-import { CommentCard } from "components/issues/comment";
+import { CommentCard } from "../../components/issues/comment";
 // ui
-import { Icon, Loader } from "components/ui";
+import { Icon, Loader } from "../../components/ui";
 // icons
 import { Squares2X2Icon } from "@heroicons/react/24/outline";
-import { BlockedIcon, BlockerIcon } from "components/icons";
+import { BlockedIcon, BlockerIcon } from "../../components/icons";
 // helpers
-import { renderShortDateWithYearFormat, timeAgo } from "helpers/date-time.helper";
-import { addSpaceIfCamelCase } from "helpers/string.helper";
+import { renderShortDateWithYearFormat, timeAgo } from "../../helpers/date-time.helper";
+import { addSpaceIfCamelCase } from "../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IIssueComment, IIssueLabels } from "types";
+import { ICurrentUserResponse, IIssueComment, IIssueLabels } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUES_ACTIVITY, PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUES_ACTIVITY, PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 const activityDetails: {
   [key: string]: {
@@ -38,11 +38,11 @@ const activityDetails: {
     icon: <Icon iconName="group" className="!text-sm" aria-hidden="true" />,
   },
   blocks: {
-    message: "marked this issue being blocked by",
+    message: "marked this resolution being blocked by",
     icon: <BlockedIcon height="12" width="12" color="#6b7280" />,
   },
   blocking: {
-    message: "marked this issue is blocking",
+    message: "marked this resolution is blocking",
     icon: <BlockerIcon height="12" width="12" color="#6b7280" />,
   },
   cycles: {

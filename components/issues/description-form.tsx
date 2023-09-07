@@ -5,10 +5,10 @@ import dynamic from "next/dynamic";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // hooks
-import useReloadConfirmations from "hooks/use-reload-confirmation";
+import useReloadConfirmations from "../../hooks/use-reload-confirmation";
 // components
-import { Loader, TextArea } from "components/ui";
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+import { Loader, TextArea } from "../../components/ui";
+const RemirrorRichTextEditor = dynamic(() => import("../../components/rich-text-editor"), {
   ssr: false,
   loading: () => (
     <Loader>
@@ -17,7 +17,7 @@ const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor
   ),
 });
 // types
-import { IIssue } from "types";
+import { IIssue } from "../../types";
 
 export interface IssueDescriptionFormValues {
   name: string;

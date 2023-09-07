@@ -1,9 +1,9 @@
 import useSWR from "swr";
 
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../services/cycles.service";
 // fetch-keys
-import { CYCLE_ISSUES_WITH_PARAMS } from "constants/fetch-keys";
+import { CYCLE_ISSUES_WITH_PARAMS } from "../../constants/fetch-keys";
 
 const useGanttChartCycleIssues = (
   workspaceSlug: string | undefined,

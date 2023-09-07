@@ -7,25 +7,25 @@ import { mutate } from "swr";
 // headless ui
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useIssuesView from "hooks/use-issues-view";
-import useDebounce from "hooks/use-debounce";
+import useToast from "../../../hooks/use-toast";
+import useIssuesView from "../../../hooks/use-issues-view";
+import useDebounce from "../../../hooks/use-debounce";
 // ui
-import { Loader, PrimaryButton, SecondaryButton } from "components/ui";
+import { Loader, PrimaryButton, SecondaryButton } from "../../../components/ui";
 // icons
 import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../../components/icons";
 // types
-import { ISearchIssueResponse, TProjectIssuesSearchParams } from "types";
+import { ISearchIssueResponse, TProjectIssuesSearchParams } from "../../../types";
 // fetch-keys
 import {
   CYCLE_DETAILS,
   CYCLE_ISSUES_WITH_PARAMS,
   MODULE_DETAILS,
   MODULE_ISSUES_WITH_PARAMS,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

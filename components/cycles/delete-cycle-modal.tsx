@@ -6,15 +6,15 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import cycleService from "services/cycles.service";
+import cycleService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { DangerButton, SecondaryButton } from "components/ui";
+import { DangerButton, SecondaryButton } from "../../components/ui";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // types
-import type { ICurrentUserResponse, ICycle } from "types";
+import type { ICurrentUserResponse, ICycle } from "../../types";
 type TConfirmCycleDeletionProps = {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -28,8 +28,8 @@ import {
   CYCLES_LIST,
   DRAFT_CYCLES_LIST,
   UPCOMING_CYCLES_LIST,
-} from "constants/fetch-keys";
-import { getDateRangeStatus } from "helpers/date-time.helper";
+} from "../../constants/fetch-keys";
+import { getDateRangeStatus } from "../../helpers/date-time.helper";
 
 export const DeleteCycleModal: React.FC<TConfirmCycleDeletionProps> = ({
   isOpen,

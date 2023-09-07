@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import useSWR from "swr";
 // services
-import issueServices from "services/issues.service";
+import issueServices from "../services/issues.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../hooks/use-user";
 // types
-import { IssuePriorities, Properties } from "types";
+import { IssuePriorities, Properties } from "../types";
 
 const initialValues: Properties = {
   assignee: true,

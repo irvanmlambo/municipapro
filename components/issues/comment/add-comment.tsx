@@ -8,17 +8,17 @@ import { mutate } from "swr";
 // react-hook-form
 import { useForm, Controller } from "react-hook-form";
 // services
-import issuesServices from "services/issues.service";
+import issuesServices from "../../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 // ui
-import { Loader, SecondaryButton } from "components/ui";
+import { Loader, SecondaryButton } from "../../../components/ui";
 // types
-import type { ICurrentUserResponse, IIssueComment } from "types";
+import type { ICurrentUserResponse, IIssueComment } from "../../../types";
 // fetch-keys
-import { PROJECT_ISSUES_ACTIVITY } from "constants/fetch-keys";
+import { PROJECT_ISSUES_ACTIVITY } from "../../../constants/fetch-keys";
 
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+const RemirrorRichTextEditor = dynamic(() => import("../../../components/rich-text-editor"), {
   ssr: false,
   loading: () => (
     <Loader className="mb-5">
@@ -26,7 +26,7 @@ const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor
     </Loader>
   ),
 });
-import { IRemirrorRichTextEditor } from "components/rich-text-editor";
+import { IRemirrorRichTextEditor } from "../../../components/rich-text-editor";
 
 const WrappedRemirrorRichTextEditor = React.forwardRef<
   IRemirrorRichTextEditor,

@@ -13,10 +13,10 @@ import {
   ViewLabelSelect,
   ViewPrioritySelect,
   ViewStateSelect,
-} from "components/issues";
+} from "../../../components/issues";
 import { Popover2 } from "@blueprintjs/popover2";
 // icons
-import { Icon } from "components/ui";
+import { Icon } from "../../../components/ui";
 import {
   EllipsisHorizontalIcon,
   LinkIcon,
@@ -24,10 +24,10 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 // hooks
-import useSpreadsheetIssuesView from "hooks/use-spreadsheet-issues-view";
-import useToast from "hooks/use-toast";
+import useSpreadsheetIssuesView from "../../../hooks/use-spreadsheet-issues-view";
+import useToast from "../../../hooks/use-toast";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // constant
 import {
   CYCLE_DETAILS,
@@ -37,12 +37,12 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   SUB_ISSUES,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 // types
-import { ICurrentUserResponse, IIssue, ISubIssueResponse, Properties, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, ISubIssueResponse, Properties, UserAuth } from "../../../types";
 // helper
-import { copyTextToClipboard } from "helpers/string.helper";
-import { renderLongDetailDateFormat } from "helpers/date-time.helper";
+import { copyTextToClipboard } from "../../../helpers/string.helper";
+import { renderLongDetailDateFormat } from "../../../helpers/date-time.helper";
 
 type Props = {
   issue: IIssue;

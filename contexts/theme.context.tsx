@@ -3,15 +3,15 @@ import { useRouter } from "next/router";
 // swr
 import useSWR from "swr";
 // components
-import ToastAlert from "components/toast-alert";
+import ToastAlert from "../components/toast-alert";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../hooks/use-user-auth";
 // services
-import projectService from "services/project.service";
+import projectService from "../services/project.service";
 // fetch-keys
-import { USER_PROJECT_VIEW } from "constants/fetch-keys";
+import { USER_PROJECT_VIEW } from "../constants/fetch-keys";
 // helper
-import { applyTheme } from "helpers/theme.helper";
+import { applyTheme } from "../helpers/theme.helper";
 // constants
 
 export const themeContext = createContext<ContextType>({} as ContextType);

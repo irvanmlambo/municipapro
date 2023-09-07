@@ -1,11 +1,11 @@
 // components
-import { ActivityGraph } from "components/workspace";
+import { ActivityGraph } from "../../components/workspace";
 // ui
-import { Loader, Tooltip } from "components/ui";
+import { Loader, Tooltip } from "../../components/ui";
 // icons
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
 // types
-import { IUserWorkspaceDashboard } from "types";
+import { IUserWorkspaceDashboard } from "../../types";
 
 type Props = {
   data: IUserWorkspaceDashboard | undefined;

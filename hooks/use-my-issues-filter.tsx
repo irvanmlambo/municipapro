@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import useSWR, { mutate } from "swr";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../hooks/use-user";
 // types
-import { IWorkspaceMember, Properties } from "types";
-import { WORKSPACE_MEMBERS_ME } from "constants/fetch-keys";
+import { IWorkspaceMember, Properties } from "../types";
+import { WORKSPACE_MEMBERS_ME } from "../constants/fetch-keys";
 
 const initialValues: Properties = {
   assignee: true,

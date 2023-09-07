@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import userService from "services/user.service";
+import userService from "../../services/user.service";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../../components/ui";
 // fetch-keys
-import { CURRENT_USER } from "constants/fetch-keys";
+import { CURRENT_USER } from "../../constants/fetch-keys";
 
 type Props = {
   children: React.ReactNode;

@@ -7,16 +7,16 @@ import { mutate } from "swr";
 // react-hook-form
 import { Controller, UseFormWatch } from "react-hook-form";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
-import useUserIssueNotificationSubscription from "hooks/use-issue-notification-subscription";
+import useToast from "../../hooks/use-toast";
+import useUserAuth from "../../hooks/use-user-auth";
+import useUserIssueNotificationSubscription from "../../hooks/use-issue-notification-subscription";
 // services
-import issuesService from "services/issues.service";
-import modulesService from "services/modules.service";
+import issuesService from "../../services/issues.service";
+import modulesService from "../../services/modules.service";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // components
-import { LinkModal, LinksList } from "components/core";
+import { LinkModal, LinksList } from "../../components/core";
 import {
   DeleteIssueModal,
   SidebarAssigneeSelect,
@@ -29,17 +29,17 @@ import {
   SidebarStateSelect,
   SidebarEstimateSelect,
   SidebarLabelSelect,
-} from "components/issues";
+} from "../../components/issues";
 // ui
-import { CustomDatePicker, Icon } from "components/ui";
+import { CustomDatePicker, Icon } from "../../components/ui";
 // icons
 import { LinkIcon, CalendarDaysIcon, TrashIcon, PlusIcon } from "@heroicons/react/24/outline";
 // helpers
-import { copyTextToClipboard } from "helpers/string.helper";
+import { copyTextToClipboard } from "../../helpers/string.helper";
 // types
-import type { ICycle, IIssue, IIssueLink, IModule } from "types";
+import type { ICycle, IIssue, IIssueLink, IModule } from "../../types";
 // fetch-keys
-import { ISSUE_DETAILS } from "constants/fetch-keys";
+import { ISSUE_DETAILS } from "../../constants/fetch-keys";
 
 type Props = {
   control: any;

@@ -9,10 +9,10 @@ import { useForm, Controller } from "react-hook-form";
 import { Transition, Dialog, Listbox } from "@headlessui/react";
 
 // date helper
-import { getAllTimeIn30MinutesInterval } from "helpers/date-time.helper";
+import { getAllTimeIn30MinutesInterval } from "../../helpers/date-time.helper";
 
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 
 // components
 import {
@@ -21,10 +21,10 @@ import {
   Icon,
   CustomDatePicker,
   CustomSelect,
-} from "components/ui";
+} from "../../components/ui";
 
 // types
-import type { IUserNotification } from "types";
+import type { IUserNotification } from "../../types";
 
 type SnoozeModalProps = {
   isOpen: boolean;

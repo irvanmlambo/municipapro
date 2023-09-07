@@ -1,13 +1,13 @@
 // hooks
-import useProjectIssuesView from "hooks/use-issues-view";
+import useProjectIssuesView from "../../../hooks/use-issues-view";
 // components
-import { SingleBoard } from "components/core/board-view/single-board";
+import { SingleBoard } from "../../../components/core/board-view/single-board";
 // icons
-import { getStateGroupIcon } from "components/icons";
+import { getStateGroupIcon } from "../../../components/icons";
 // helpers
-import { addSpaceIfCamelCase } from "helpers/string.helper";
+import { addSpaceIfCamelCase } from "../../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IIssue, IState, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, IState, UserAuth } from "../../../types";
 
 type Props = {
   type: "issue" | "cycle" | "module";

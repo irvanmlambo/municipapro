@@ -5,16 +5,16 @@ import { useTheme } from "next-themes";
 import { useForm } from "react-hook-form";
 
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../../../hooks/use-user";
 // ui
-import { PrimaryButton } from "components/ui";
-import { ColorPickerInput } from "components/core";
+import { PrimaryButton } from "../../../components/ui";
+import { ColorPickerInput } from "../../../components/core";
 // services
-import userService from "services/user.service";
+import userService from "../../../services/user.service";
 // helper
-import { applyTheme } from "helpers/theme.helper";
+import { applyTheme } from "../../../helpers/theme.helper";
 // types
-import { ICustomTheme } from "types";
+import { ICustomTheme } from "../../../types";
 
 type Props = {
   preLoadedData?: Partial<ICustomTheme> | null;

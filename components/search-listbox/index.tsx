@@ -7,11 +7,11 @@ import useSWR from "swr";
 // headless ui
 import { Transition, Combobox } from "@headlessui/react";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // types
 import type { Props } from "./types";
 // fetch-keys
-import { WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS } from "../../constants/fetch-keys";
 
 const SearchListbox: React.FC<Props> = ({
   title,

@@ -7,9 +7,9 @@ import { mutate } from "swr";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../components/ui";
 // icons
 import {
   ChevronDownIcon,
@@ -20,9 +20,9 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 // types
-import { ICurrentUserResponse, IIssueLabels } from "types";
+import { ICurrentUserResponse, IIssueLabels } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 type Props = {
   label: IIssueLabels;

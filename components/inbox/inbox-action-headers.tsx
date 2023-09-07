@@ -9,13 +9,13 @@ import DatePicker from "react-datepicker";
 // headless ui
 import { Popover } from "@headlessui/react";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // services
-import inboxServices from "services/inbox.service";
+import inboxServices from "../../services/inbox.service";
 // hooks
-import useInboxView from "hooks/use-inbox-view";
-import useUserAuth from "hooks/use-user-auth";
-import useToast from "hooks/use-toast";
+import useInboxView from "../../hooks/use-inbox-view";
+import useUserAuth from "../../hooks/use-user-auth";
+import useToast from "../../hooks/use-toast";
 // components
 import {
   AcceptIssueModal,
@@ -23,11 +23,11 @@ import {
   DeleteIssueModal,
   FiltersDropdown,
   SelectDuplicateInboxIssueModal,
-} from "components/inbox";
+} from "../../components/inbox";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
-import { InboxIcon, StackedLayersHorizontalIcon } from "components/icons";
+import { InboxIcon, StackedLayersHorizontalIcon } from "../../components/icons";
 import {
   ChevronDownIcon,
   ChevronUpIcon,
@@ -37,9 +37,9 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 // types
-import type { IInboxIssueDetail, TInboxStatus } from "types";
+import type { IInboxIssueDetail, TInboxStatus } from "../../types";
 // fetch-keys
-import { INBOX_ISSUE_DETAILS } from "constants/fetch-keys";
+import { INBOX_ISSUE_DETAILS } from "../../constants/fetch-keys";
 
 export const InboxActionHeader = () => {
   const [date, setDate] = useState(new Date());

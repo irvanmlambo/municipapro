@@ -7,19 +7,19 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { SecondaryButton, DangerButton } from "components/ui";
+import { SecondaryButton, DangerButton } from "../../components/ui";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // helper
-import { getFileName } from "helpers/attachment.helper";
+import { getFileName } from "../../helpers/attachment.helper";
 // types
-import type { IIssueAttachment } from "types";
+import type { IIssueAttachment } from "../../types";
 // fetch-keys
-import { ISSUE_ATTACHMENTS } from "constants/fetch-keys";
+import { ISSUE_ATTACHMENTS } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

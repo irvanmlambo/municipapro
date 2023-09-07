@@ -5,7 +5,7 @@ import Link from "next/link";
 // headless ui
 import { Menu, Transition } from "@headlessui/react";
 // ui
-import { DropdownProps } from "components/ui";
+import { DropdownProps } from "../../../components/ui";
 // icons
 import { ExpandMoreOutlined, MoreHorizOutlined } from "@mui/icons-material";
 

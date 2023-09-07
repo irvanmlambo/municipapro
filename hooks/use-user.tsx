@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 // services
-import userService from "services/user.service";
+import userService from "../services/user.service";
 // constants
-import { CURRENT_USER } from "constants/fetch-keys";
+import { CURRENT_USER } from "../constants/fetch-keys";
 // types
-import type { ICurrentUserResponse, IUser } from "types";
+import type { ICurrentUserResponse, IUser } from "../types";
 
 export default function useUser({ redirectTo = "", redirectIfFound = false, options = {} } = {}) {
   const router = useRouter();

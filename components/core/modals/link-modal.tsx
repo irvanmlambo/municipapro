@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../../../components/ui";
 // types
-import type { IIssueLink, ModuleLink } from "types";
+import type { IIssueLink, ModuleLink } from "../../../types";
 
 type Props = {
   isOpen: boolean;

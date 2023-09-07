@@ -5,17 +5,17 @@ import { mutate } from "swr";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomSelect, Input, PrimaryButton } from "components/ui";
+import { CustomSelect, Input, PrimaryButton } from "../../components/ui";
 // types
-import { ICurrentUserResponse, IWorkspace } from "types";
+import { ICurrentUserResponse, IWorkspace } from "../../types";
 // fetch-keys
-import { USER_WORKSPACES } from "constants/fetch-keys";
+import { USER_WORKSPACES } from "../../constants/fetch-keys";
 // constants
-import { ORGANIZATION_SIZE } from "constants/workspace";
+import { ORGANIZATION_SIZE } from "../../constants/workspace";
 
 type Props = {
   onSubmit?: (res: IWorkspace) => Promise<void>;

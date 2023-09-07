@@ -3,20 +3,20 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../services/project.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useProjectDetails from "hooks/use-project-details";
+import useToast from "../../hooks/use-toast";
+import useProjectDetails from "../../hooks/use-project-details";
 // components
-import { DeleteEstimateModal } from "components/estimates";
+import { DeleteEstimateModal } from "../../components/estimates";
 // ui
-import { CustomMenu, SecondaryButton } from "components/ui";
+import { CustomMenu, SecondaryButton } from "../../components/ui";
 //icons
 import { PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
 // helpers
-import { orderArrayBy } from "helpers/array.helper";
+import { orderArrayBy } from "../../helpers/array.helper";
 // types
-import { ICurrentUserResponse, IEstimate } from "types";
+import { ICurrentUserResponse, IEstimate } from "../../types";
 
 type Props = {
   user: ICurrentUserResponse | undefined;

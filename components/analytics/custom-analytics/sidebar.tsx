@@ -3,16 +3,16 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import analyticsService from "services/analytics.service";
-import projectService from "services/project.service";
-import cyclesService from "services/cycles.service";
-import modulesService from "services/modules.service";
-import trackEventServices from "services/track-event.service";
+import analyticsService from "../../../services/analytics.service";
+import projectService from "../../../services/project.service";
+import cyclesService from "../../../services/cycles.service";
+import modulesService from "../../../services/modules.service";
+import trackEventServices from "../../../services/track-event.service";
 // hooks
-import useProjects from "hooks/use-projects";
-import useToast from "hooks/use-toast";
+import useProjects from "../../../hooks/use-projects";
+import useToast from "../../../hooks/use-toast";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../..//ui";
 // icons
 import {
   ArrowDownTrayIcon,
@@ -20,11 +20,11 @@ import {
   CalendarDaysIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import { ContrastIcon, LayerDiagonalIcon } from "components/icons";
+import { ContrastIcon, LayerDiagonalIcon } from "../../icons";
 // helpers
-import { renderShortDate } from "helpers/date-time.helper";
-import { renderEmoji } from "helpers/emoji.helper";
-import { truncateText } from "helpers/string.helper";
+import { renderShortDate } from "../../../helpers/date-time.helper";
+import { renderEmoji } from "../../../helpers/emoji.helper";
+import { truncateText } from "../../../helpers/string.helper";
 // types
 import {
   IAnalyticsParams,
@@ -32,11 +32,11 @@ import {
   ICurrentUserResponse,
   IExportAnalyticsFormData,
   IWorkspace,
-} from "types";
+} from "../../../types";
 // fetch-keys
-import { ANALYTICS, CYCLE_DETAILS, MODULE_DETAILS, PROJECT_DETAILS } from "constants/fetch-keys";
+import { ANALYTICS, CYCLE_DETAILS, MODULE_DETAILS, PROJECT_DETAILS } from "../../../constants/fetch-keys";
 // constants
-import { NETWORK_CHOICES } from "constants/project";
+import { NETWORK_CHOICES } from "../../../constants/project";
 
 type Props = {
   analytics: IAnalyticsResponse | undefined;

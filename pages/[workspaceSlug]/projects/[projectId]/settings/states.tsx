@@ -5,31 +5,31 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import stateService from "services/state.service";
+import stateService from "../../../../../services/state.service";
 // hooks
-import useProjectDetails from "hooks/use-project-details";
-import useUserAuth from "hooks/use-user-auth";
+import useProjectDetails from "../../../../../hooks/use-project-details";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
 import {
   CreateUpdateStateInline,
   DeleteStateModal,
   SingleState,
   StateGroup,
-} from "components/states";
-import { SettingsHeader } from "components/project";
+} from "../../../../../components/states";
+import { SettingsHeader } from "../../../../../components/project";
 // ui
-import { Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { Loader } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // helpers
-import { getStatesList, orderStateGroups } from "helpers/state.helper";
+import { getStatesList, orderStateGroups } from "../../../../../helpers/state.helper";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../../../../constants/fetch-keys";
 
 const StatesSettings: NextPage = () => {
   const [activeGroup, setActiveGroup] = useState<StateGroup>(null);

@@ -3,9 +3,9 @@ import { useCallback } from "react";
 import useSWR from "swr";
 
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../hooks/use-user-auth";
 // services
-import userNotificationServices from "services/notifications.service";
+import userNotificationServices from "../services/notifications.service";
 
 const useUserIssueNotificationSubscription = (
   workspaceSlug?: string | string[] | null,

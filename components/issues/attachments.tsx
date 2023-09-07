@@ -6,22 +6,22 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 import { DeleteAttachmentModal } from "./delete-attachment-modal";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { ExclamationIcon, getFileIcon } from "components/icons";
+import { ExclamationIcon, getFileIcon } from "../../components/icons";
 // services
-import issuesService from "services/issues.service";
-import projectService from "services/project.service";
+import issuesService from "../../services/issues.service";
+import projectService from "../../services/project.service";
 // fetch-key
-import { ISSUE_ATTACHMENTS, PROJECT_MEMBERS } from "constants/fetch-keys";
+import { ISSUE_ATTACHMENTS, PROJECT_MEMBERS } from "../../constants/fetch-keys";
 // helper
-import { truncateText } from "helpers/string.helper";
-import { renderLongDateFormat } from "helpers/date-time.helper";
-import { convertBytesToSize, getFileExtension, getFileName } from "helpers/attachment.helper";
+import { truncateText } from "../../helpers/string.helper";
+import { renderLongDateFormat } from "../../helpers/date-time.helper";
+import { convertBytesToSize, getFileExtension, getFileName } from "../../helpers/attachment.helper";
 // type
-import { IIssueAttachment } from "types";
+import { IIssueAttachment } from "../../types";
 
 export const IssueAttachments = () => {
   const [deleteAttachment, setDeleteAttachment] = useState<IIssueAttachment | null>(null);

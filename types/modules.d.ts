@@ -7,7 +7,7 @@ import type {
   IWorkspaceLite,
   IProjectLite,
   IIssueFilterOptions,
-} from "types";
+} from "../types";
 
 export interface IModule {
   backlog_issues: number;

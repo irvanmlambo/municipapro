@@ -8,23 +8,23 @@ import { mutate } from "swr";
 // next-themes
 import { useTheme } from "next-themes";
 // services
-import userService from "services/user.service";
+import userService from "../services/user.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../hooks/use-user";
 // layouts
-import DefaultLayout from "layouts/default-layout";
-import { UserAuthorizationLayout } from "layouts/auth-layout/user-authorization-wrapper";
+import DefaultLayout from "../layouts/default-layout";
+import { UserAuthorizationLayout } from "../layouts/auth-layout/user-authorization-wrapper";
 // components
-import { CreateWorkspaceForm } from "components/workspace";
+import { CreateWorkspaceForm } from "../components/workspace";
 // images
 import BlackHorizontalLogo from "public/plane-logos/black-horizontal-with-blue-logo.svg";
 import WhiteHorizontalLogo from "public/plane-logos/white-horizontal-with-blue-logo.svg";
 import BlueLogoWithoutText from "public/plane-logos/blue-without-text.png";
 // types
-import { ICurrentUserResponse, IWorkspace } from "types";
+import { ICurrentUserResponse, IWorkspace } from "../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { CURRENT_USER } from "constants/fetch-keys";
+import { CURRENT_USER } from "../constants/fetch-keys";
 
 const CreateWorkspace: NextPage = () => {
   const [defaultValues, setDefaultValues] = useState({

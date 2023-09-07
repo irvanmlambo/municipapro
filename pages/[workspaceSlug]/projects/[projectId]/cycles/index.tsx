@@ -7,12 +7,12 @@ import useSWR from "swr";
 // headless ui
 import { Tab } from "@headlessui/react";
 // hooks
-import useLocalStorage from "hooks/use-local-storage";
-import useUserAuth from "hooks/use-user-auth";
+import useLocalStorage from "../../../../../hooks/use-local-storage";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
 import {
   ActiveCycleDetails,
@@ -21,17 +21,17 @@ import {
   CreateUpdateCycleModal,
   DraftCyclesList,
   UpcomingCyclesList,
-} from "components/cycles";
+} from "../../../../../components/cycles";
 // ui
-import { PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { ListBulletIcon, PlusIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 // types
-import { SelectCycleType } from "types";
+import { SelectCycleType } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_DETAILS } from "constants/fetch-keys";
+import { PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 
 const tabsList = ["All", "Active", "Upcoming", "Completed", "Drafts"];
 

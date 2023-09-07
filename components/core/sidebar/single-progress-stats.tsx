@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProgressBar } from "components/ui";
+import { ProgressBar } from "../../../components/ui";
 
 type TSingleProgressStatsProps = {
   title: any;

@@ -1,9 +1,9 @@
 // components
-import { GithubAuth, TIntegrationSteps } from "components/integration";
+import { GithubAuth, TIntegrationSteps } from "../../../components/integration";
 // ui
-import { PrimaryButton } from "components/ui";
+import { PrimaryButton } from "../../../components/ui";
 // types
-import { IAppIntegration, IWorkspaceIntegration } from "types";
+import { IAppIntegration, IWorkspaceIntegration } from "../../../types";
 
 type Props = {
   provider: string | undefined;

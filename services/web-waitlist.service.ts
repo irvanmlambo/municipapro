@@ -1,8 +1,8 @@
 // services
-import APIService from "services/api.service";
+import APIService from "../services/api.service";
 
 // types
-import { IWebWaitListResponse } from "types";
+import { IWebWaitListResponse } from "../types";
 
 class WebWailtListServices extends APIService {
   constructor() {

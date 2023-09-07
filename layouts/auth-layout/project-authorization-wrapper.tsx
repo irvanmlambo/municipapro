@@ -4,17 +4,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 // contexts
-import { useProjectMyMembership, ProjectMemberProvider } from "contexts/project-member.context";
+import { useProjectMyMembership, ProjectMemberProvider } from "../../contexts/project-member.context";
 // layouts
-import AppHeader from "layouts/app-layout/app-header";
-import AppSidebar from "layouts/app-layout/app-sidebar";
+import AppHeader from "../../layouts/app-layout/app-header";
+import AppSidebar from "../../layouts/app-layout/app-sidebar";
 // components
-import { NotAuthorizedView, JoinProject } from "components/auth-screens";
-import { CommandPalette } from "components/command-palette";
+import { NotAuthorizedView, JoinProject } from "../../components/auth-screens";
+import { CommandPalette } from "../../components/command-palette";
 // ui
-import { EmptyState, PrimaryButton, Spinner } from "components/ui";
+import { EmptyState, PrimaryButton, Spinner } from "../../components/ui";
 // icons
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../components/icons";
 // images
 import emptyProject from "public/empty-state/project.svg";
 

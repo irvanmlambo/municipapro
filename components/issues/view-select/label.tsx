@@ -5,17 +5,17 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // component
-import { CreateLabelModal } from "components/labels";
+import { CreateLabelModal } from "../../../components/labels";
 // ui
-import { CustomSearchSelect, Tooltip } from "components/ui";
+import { CustomSearchSelect, Tooltip } from "../../../components/ui";
 // icons
 import { PlusIcon, TagIcon } from "@heroicons/react/24/outline";
 // types
-import { ICurrentUserResponse, IIssue, IIssueLabels } from "types";
+import { ICurrentUserResponse, IIssue, IIssueLabels } from "../../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../../constants/fetch-keys";
 
 type Props = {
   issue: IIssue;

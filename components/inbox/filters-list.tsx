@@ -1,12 +1,12 @@
 // hooks
-import useInboxView from "hooks/use-inbox-view";
+import useInboxView from "../../hooks/use-inbox-view";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { getPriorityIcon } from "components/icons";
+import { getPriorityIcon } from "../../components/icons";
 // helpers
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../helpers/string.helper";
 // constants
-import { INBOX_STATUS } from "constants/inbox";
+import { INBOX_STATUS } from "../../constants/inbox";
 
 export const InboxFiltersList = () => {
   const { filters, setFilters, clearAllFilters, filtersLength } = useInboxView();

@@ -9,17 +9,17 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import estimatesService from "services/estimates.service";
+import estimatesService from "../../services/estimates.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // helpers
-import { checkDuplicates } from "helpers/array.helper";
+import { checkDuplicates } from "../../helpers/array.helper";
 // types
-import { ICurrentUserResponse, IEstimate, IEstimateFormData } from "types";
+import { ICurrentUserResponse, IEstimate, IEstimateFormData } from "../../types";
 // fetch-keys
-import { ESTIMATES_LIST, ESTIMATE_DETAILS } from "constants/fetch-keys";
+import { ESTIMATES_LIST, ESTIMATE_DETAILS } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

@@ -7,27 +7,27 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../hooks/use-user-auth";
 // services
-import IntegrationService from "services/integration";
+import IntegrationService from "../../services/integration";
 // components
 import {
   DeleteImportModal,
   GithubImporterRoot,
   JiraImporterRoot,
   SingleImport,
-} from "components/integration";
+} from "../../components/integration";
 // ui
-import { Loader, PrimaryButton } from "components/ui";
+import { Loader, PrimaryButton } from "../../components/ui";
 // icons
 import { ArrowPathIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from "components/icons";
+import { ArrowRightIcon } from "../../components/icons";
 // types
-import { IImporterService } from "types";
+import { IImporterService } from "../../types";
 // fetch-keys
-import { IMPORTER_SERVICES_LIST } from "constants/fetch-keys";
+import { IMPORTER_SERVICES_LIST } from "../../constants/fetch-keys";
 // constants
-import { IMPORTERS_EXPORTERS_LIST } from "constants/workspace";
+import { IMPORTERS_EXPORTERS_LIST } from "../../constants/workspace";
 
 const IntegrationGuide = () => {
   const [refreshing, setRefreshing] = useState(false);

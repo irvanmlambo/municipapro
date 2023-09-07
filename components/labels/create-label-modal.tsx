@@ -11,15 +11,15 @@ import { TwitterPicker } from "react-color";
 // headless ui
 import { Dialog, Popover, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 // types
-import type { ICurrentUserResponse, IIssueLabels, IState } from "types";
+import type { ICurrentUserResponse, IIssueLabels, IState } from "../../types";
 // constants
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 // types
 type Props = {

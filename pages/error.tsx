@@ -1,7 +1,7 @@
 import React from "react";
 
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // types
 import type { NextPage } from "next";
 

@@ -4,26 +4,26 @@ import useSWR, { mutate } from "swr";
 import { useRouter } from "next/router";
 
 // services
-import pagesService from "services/pages.service";
-import projectService from "services/project.service";
+import pagesService from "../../services/pages.service";
+import projectService from "../../services/project.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../hooks/use-toast";
+import useUserAuth from "../../hooks/use-user-auth";
 // components
 import {
   CreateUpdatePageModal,
   DeletePageModal,
   SinglePageDetailedItem,
   SinglePageListItem,
-} from "components/pages";
+} from "../../components/pages";
 // ui
-import { EmptyState, Loader } from "components/ui";
+import { EmptyState, Loader } from "../../components/ui";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyPage from "public/empty-state/page.svg";
 // types
-import { IPage, TPageViewProps } from "types";
+import { IPage, TPageViewProps } from "../../types";
 import {
   ALL_PAGES_LIST,
   FAVORITE_PAGES_LIST,

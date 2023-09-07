@@ -3,22 +3,22 @@ import React, { useState } from "react";
 import useSWR, { mutate } from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
-import userService from "services/user.service";
+import workspaceService from "../../services/workspace.service";
+import userService from "../../services/user.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../../hooks/use-user";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IUser, IWorkspaceMemberInvitation, OnboardingSteps } from "types";
+import { ICurrentUserResponse, IUser, IWorkspaceMemberInvitation, OnboardingSteps } from "../../types";
 // fetch-keys
-import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "constants/fetch-keys";
+import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../constants/workspace";
 
 type Props = {
   stepChange: (steps: Partial<OnboardingSteps>) => Promise<void>;

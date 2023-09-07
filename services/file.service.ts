@@ -1,5 +1,5 @@
 // services
-import APIService from "services/api.service";
+import APIService from "../services/api.service";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 

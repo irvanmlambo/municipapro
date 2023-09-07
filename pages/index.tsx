@@ -5,21 +5,21 @@ import Image from "next/image";
 import type { NextPage } from "next";
 
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // services
-import authenticationService from "services/authentication.service";
+import authenticationService from "../services/authentication.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useToast from "hooks/use-toast";
+import useUserAuth from "../hooks/use-user-auth";
+import useToast from "../hooks/use-toast";
 // components
 import {
   GoogleLoginButton,
   GithubLoginButton,
   EmailCodeForm,
   EmailPasswordForm,
-} from "components/account";
+} from "../components/account";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../components/ui";
 // images
 import BluePlaneLogoWithoutText from "public/plane-logos/blue-without-text.png";
 // types

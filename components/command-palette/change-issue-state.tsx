@@ -5,18 +5,18 @@ import useSWR, { mutate } from "swr";
 // cmdk
 import { Command } from "cmdk";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../../components/ui";
 // helpers
-import { getStatesList } from "helpers/state.helper";
+import { getStatesList } from "../../helpers/state.helper";
 // services
-import issuesService from "services/issues.service";
-import stateService from "services/state.service";
+import issuesService from "../../services/issues.service";
+import stateService from "../../services/state.service";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../types";
 // fetch keys
-import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY, STATES_LIST } from "constants/fetch-keys";
+import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY, STATES_LIST } from "../../constants/fetch-keys";
 // icons
-import { CheckIcon, getStateGroupIcon } from "components/icons";
+import { CheckIcon, getStateGroupIcon } from "../../components/icons";
 
 type Props = {
   setIsPaletteOpen: Dispatch<SetStateAction<boolean>>;

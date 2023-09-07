@@ -1,9 +1,9 @@
 // icons
 import { PlayIcon } from "@heroicons/react/24/outline";
 // types
-import { IDefaultAnalyticsResponse } from "types";
+import { IDefaultAnalyticsResponse } from "../../../types";
 // constants
-import { STATE_GROUP_COLORS } from "constants/state";
+import { STATE_GROUP_COLORS } from "../../../constants/state";
 
 type Props = {
   defaultAnalytics: IDefaultAnalyticsResponse;

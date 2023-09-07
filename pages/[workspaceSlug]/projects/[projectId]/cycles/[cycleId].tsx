@@ -5,32 +5,32 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 // icons
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { CyclesIcon } from "components/icons";
+import { CyclesIcon } from "../../../../../components/icons";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // contexts
-import { IssueViewContextProvider } from "contexts/issue-view.context";
+import { IssueViewContextProvider } from "../../../../../contexts/issue-view.context";
 // components
-import { ExistingIssuesListModal, IssuesFilterView, IssuesView } from "components/core";
-import { CycleDetailsSidebar } from "components/cycles";
+import { ExistingIssuesListModal, IssuesFilterView, IssuesView } from "../../../../../components/core";
+import { CycleDetailsSidebar } from "../../../../../components/cycles";
 // services
-import issuesService from "services/issues.service";
-import cycleServices from "services/cycles.service";
+import issuesService from "../../../../../services/issues.service";
+import cycleServices from "../../../../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // components
-import { AnalyticsProjectModal } from "components/analytics";
+import { AnalyticsProjectModal } from "../../../../../components/analytics";
 // ui
-import { CustomMenu, SecondaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomMenu, SecondaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // helpers
-import { truncateText } from "helpers/string.helper";
-import { getDateRangeStatus } from "helpers/date-time.helper";
+import { truncateText } from "../../../../../helpers/string.helper";
+import { getDateRangeStatus } from "../../../../../helpers/date-time.helper";
 // types
-import { ISearchIssueResponse } from "types";
+import { ISearchIssueResponse } from "../../../../../types";
 // fetch-keys
-import { CYCLES_LIST, CYCLE_DETAILS } from "constants/fetch-keys";
+import { CYCLES_LIST, CYCLE_DETAILS } from "../../../../../constants/fetch-keys";
 
 const SingleCycle: React.FC = () => {
   const [cycleIssuesListModal, setCycleIssuesListModal] = useState(false);

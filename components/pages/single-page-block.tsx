@@ -10,19 +10,19 @@ import { useForm } from "react-hook-form";
 // react-beautiful-dnd
 import { Draggable } from "react-beautiful-dnd";
 // services
-import pagesService from "services/pages.service";
-import issuesService from "services/issues.service";
-import aiService from "services/ai.service";
+import pagesService from "../../services/pages.service";
+import issuesService from "../../services/issues.service";
+import aiService from "../../services/ai.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useOutsideClickDetector from "hooks/use-outside-click-detector";
+import useToast from "../../hooks/use-toast";
+import useOutsideClickDetector from "../../hooks/use-outside-click-detector";
 // components
-import { GptAssistantModal } from "components/core";
-import { CreateUpdateBlockInline } from "components/pages";
+import { GptAssistantModal } from "../../components/core";
+import { CreateUpdateBlockInline } from "../../components/pages";
 // ui
-import { CustomMenu, TextArea } from "components/ui";
+import { CustomMenu, TextArea } from "../../components/ui";
 // icons
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../components/icons";
 import { ArrowPathIcon, LinkIcon } from "@heroicons/react/20/solid";
 import {
   BoltIcon,
@@ -33,11 +33,11 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 // helpers
-import { copyTextToClipboard } from "helpers/string.helper";
+import { copyTextToClipboard } from "../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IIssue, IPageBlock, IProject } from "types";
+import { ICurrentUserResponse, IIssue, IPageBlock, IProject } from "../../types";
 // fetch-keys
-import { PAGE_BLOCKS_LIST } from "constants/fetch-keys";
+import { PAGE_BLOCKS_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   block: IPageBlock;

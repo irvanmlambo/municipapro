@@ -1,5 +1,5 @@
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
+import APIService from "../services/api.service";
+import trackEventServices from "../services/track-event.service";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 
@@ -15,7 +15,7 @@ import type {
   ICurrentUserResponse,
   IInboxFilterOptions,
   IInboxQueryParams,
-} from "types";
+} from "../types";
 
 class InboxServices extends APIService {
   constructor() {

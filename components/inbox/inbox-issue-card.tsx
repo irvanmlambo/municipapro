@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // icons
-import { getPriorityIcon } from "components/icons";
+import { getPriorityIcon } from "../../components/icons";
 import {
   CalendarDaysIcon,
   CheckCircleIcon,
@@ -14,11 +14,11 @@ import {
   XCircleIcon,
 } from "@heroicons/react/24/outline";
 // helpers
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
 // types
-import type { IInboxIssue } from "types";
+import type { IInboxIssue } from "../../types";
 // constants
-import { INBOX_STATUS } from "constants/inbox";
+import { INBOX_STATUS } from "../../constants/inbox";
 
 type Props = {
   issue: IInboxIssue;

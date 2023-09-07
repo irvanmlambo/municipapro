@@ -2,9 +2,9 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 // cmdk
 import { Command } from "cmdk";
-import { THEMES_OBJ } from "constants/themes";
+import { THEMES_OBJ } from "../../constants/themes";
 import { useTheme } from "next-themes";
-import { SettingIcon } from "components/icons";
+import { SettingIcon } from "../../components/icons";
 
 type Props = {
   setIsPaletteOpen: Dispatch<SetStateAction<boolean>>;

@@ -7,12 +7,12 @@ import useSWR from "swr";
 import { Tab, Transition, Popover } from "@headlessui/react";
 
 // services
-import fileService from "services/file.service";
+import fileService from "../../services/file.service";
 
 // components
-import { Input, Spinner, PrimaryButton } from "components/ui";
+import { Input, Spinner, PrimaryButton } from "../../components/ui";
 // hooks
-import useOutsideClickDetector from "hooks/use-outside-click-detector";
+import useOutsideClickDetector from "../../hooks/use-outside-click-detector";
 
 const unsplashEnabled =
   process.env.NEXT_PUBLIC_UNSPLASH_ENABLED === "true" ||

@@ -3,18 +3,18 @@ import React, { useState, FC } from "react";
 import { useRouter } from "next/router";
 
 // hooks
-import useToast from "hooks/use-toast";
-import useTheme from "hooks/use-theme";
-import useUserAuth from "hooks/use-user-auth";
-import useProjects from "hooks/use-projects";
+import useToast from "../../hooks/use-toast";
+import useTheme from "../../hooks/use-theme";
+import useUserAuth from "../../hooks/use-user-auth";
+import useProjects from "../../hooks/use-projects";
 // components
-import { DeleteProjectModal, SingleSidebarProject } from "components/project";
+import { DeleteProjectModal, SingleSidebarProject } from "../../components/project";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // helpers
-import { copyTextToClipboard } from "helpers/string.helper";
+import { copyTextToClipboard } from "../../helpers/string.helper";
 // types
-import { IProject } from "types";
+import { IProject } from "../../types";
 
 export const ProjectSidebarList: FC = () => {
   const [deleteProjectModal, setDeleteProjectModal] = useState(false);

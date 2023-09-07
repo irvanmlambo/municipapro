@@ -9,23 +9,23 @@ import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyMyIssues from "public/empty-state/my-issues.svg";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
 // hooks
-import useIssues from "hooks/use-issues";
+import useIssues from "../../../hooks/use-issues";
 // ui
-import { Spinner, PrimaryButton, EmptyState } from "components/ui";
-import { Breadcrumbs, BreadcrumbItem } from "components/breadcrumbs";
+import { Spinner, PrimaryButton, EmptyState } from "../../../components/ui";
+import { Breadcrumbs, BreadcrumbItem } from "../../../components/breadcrumbs";
 // hooks
-import useMyIssuesProperties from "hooks/use-my-issues-filter";
+import useMyIssuesProperties from "../../../hooks/use-my-issues-filter";
 // types
-import { IIssue, Properties } from "types";
+import { IIssue, Properties } from "../../../types";
 // components
-import { MyIssuesListItem } from "components/issues";
+import { MyIssuesListItem } from "../../../components/issues";
 // helpers
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../../helpers/string.helper";
 // types
 import type { NextPage } from "next";
-import useProjects from "hooks/use-projects";
+import useProjects from "../../../hooks/use-projects";
 
 const MyIssuesPage: NextPage = () => {
   const router = useRouter();

@@ -5,12 +5,12 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // components
-import ToastAlert from "components/toast-alert";
+import ToastAlert from "../components/toast-alert";
 // services
-import projectService from "services/project.service";
-import cyclesService from "services/cycles.service";
-import modulesService from "services/modules.service";
-import viewsService from "services/views.service";
+import projectService from "../services/project.service";
+import cyclesService from "../services/cycles.service";
+import modulesService from "../services/modules.service";
+import viewsService from "../services/views.service";
 // types
 import {
   IIssueFilterOptions,
@@ -19,15 +19,15 @@ import {
   TIssueGroupByOptions,
   TIssueOrderByOptions,
   ICurrentUserResponse,
-} from "types";
+} from "../types";
 // fetch-keys
 import {
   CYCLE_DETAILS,
   MODULE_DETAILS,
   USER_PROJECT_VIEW,
   VIEW_DETAILS,
-} from "constants/fetch-keys";
-import useUserAuth from "hooks/use-user-auth";
+} from "../constants/fetch-keys";
+import useUserAuth from "../hooks/use-user-auth";
 
 export const issueViewContext = createContext<ContextType>({} as ContextType);
 

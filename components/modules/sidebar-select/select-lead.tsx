@@ -6,14 +6,14 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // ui
-import { Avatar, CustomSearchSelect } from "components/ui";
+import { Avatar, CustomSearchSelect } from "../../../components/ui";
 // icons
 import { UserCircleIcon } from "@heroicons/react/24/outline";
 import User from "public/user.png";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   value: string | null | undefined;

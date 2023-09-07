@@ -6,21 +6,21 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceServices from "services/workspace.service";
+import workspaceServices from "../../services/workspace.service";
 // contexts
-import { WorkspaceMemberProvider } from "contexts/workspace-member.context";
+import { WorkspaceMemberProvider } from "../../contexts/workspace-member.context";
 // layouts
-import AppSidebar from "layouts/app-layout/app-sidebar";
-import AppHeader from "layouts/app-layout/app-header";
+import AppSidebar from "../../layouts/app-layout/app-sidebar";
+import AppHeader from "../../layouts/app-layout/app-header";
 import { UserAuthorizationLayout } from "./user-authorization-wrapper";
 // components
-import { NotAuthorizedView, NotAWorkspaceMember } from "components/auth-screens";
-import { CommandPalette } from "components/command-palette";
+import { NotAuthorizedView, NotAWorkspaceMember } from "../../components/auth-screens";
+import { CommandPalette } from "../../components/command-palette";
 // icons
-import { PrimaryButton, Spinner } from "components/ui";
-import { LayerDiagonalIcon } from "components/icons";
+import { PrimaryButton, Spinner } from "../../components/ui";
+import { LayerDiagonalIcon } from "../../components/icons";
 // fetch-keys
-import { WORKSPACE_MEMBERS_ME } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS_ME } from "../../constants/fetch-keys";
 
 type Props = {
   children: React.ReactNode;

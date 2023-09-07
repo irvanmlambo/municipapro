@@ -6,19 +6,19 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import IntegrationService from "services/integration";
+import IntegrationService from "../../services/integration";
 // hooks
-import useToast from "hooks/use-toast";
-import useIntegrationPopup from "hooks/use-integration-popup";
+import useToast from "../../hooks/use-toast";
+import useIntegrationPopup from "../../hooks/use-integration-popup";
 // ui
-import { DangerButton, Loader, PrimaryButton } from "components/ui";
+import { DangerButton, Loader, PrimaryButton } from "../../components/ui";
 // icons
 import GithubLogo from "public/services/github.png";
 import SlackLogo from "public/services/slack.png";
 // types
-import { IAppIntegration, IWorkspaceIntegration } from "types";
+import { IAppIntegration, IWorkspaceIntegration } from "../../types";
 // fetch-keys
-import { WORKSPACE_INTEGRATIONS } from "constants/fetch-keys";
+import { WORKSPACE_INTEGRATIONS } from "../../constants/fetch-keys";
 
 type Props = {
   integration: IAppIntegration;

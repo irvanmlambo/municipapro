@@ -5,17 +5,17 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../../services/modules.service";
 // ui
-import { Spinner, CustomSelect, Tooltip } from "components/ui";
+import { Spinner, CustomSelect, Tooltip } from "../../../components/ui";
 // helper
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../helpers/string.helper";
 // icons
 import { RectangleGroupIcon } from "@heroicons/react/24/outline";
 // types
-import { IIssue, IModule, UserAuth } from "types";
+import { IIssue, IModule, UserAuth } from "../../../types";
 // fetch-keys
-import { ISSUE_DETAILS, MODULE_ISSUES, MODULE_LIST } from "constants/fetch-keys";
+import { ISSUE_DETAILS, MODULE_ISSUES, MODULE_LIST } from "../../../constants/fetch-keys";
 
 type Props = {
   issueDetail: IIssue | undefined;

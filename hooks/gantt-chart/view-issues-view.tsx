@@ -1,11 +1,11 @@
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
+import useIssuesView from "../../hooks/use-issues-view";
 // fetch-keys
-import { VIEW_ISSUES } from "constants/fetch-keys";
+import { VIEW_ISSUES } from "../../constants/fetch-keys";
 
 const useGanttChartViewIssues = (
   workspaceSlug: string | undefined,

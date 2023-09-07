@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 // icons
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { Icon } from "components/ui";
+import { Icon } from "../../components/ui";
 
 type BreadcrumbsProps = {
   children: any;

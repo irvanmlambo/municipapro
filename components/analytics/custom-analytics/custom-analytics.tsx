@@ -5,22 +5,22 @@ import { mutate } from "swr";
 // react-hook-form
 import { Control, UseFormSetValue } from "react-hook-form";
 // hooks
-import useProjects from "hooks/use-projects";
+import useProjects from "../../../hooks/use-projects";
 // components
 import {
   AnalyticsGraph,
   AnalyticsSelectBar,
   AnalyticsSidebar,
   AnalyticsTable,
-} from "components/analytics";
+} from "../../analytics";
 // ui
-import { Loader, PrimaryButton } from "components/ui";
+import { Loader, PrimaryButton } from "../../ui";
 // helpers
-import { convertResponseToBarGraphData } from "helpers/analytics.helper";
+import { convertResponseToBarGraphData } from "../../../helpers/analytics.helper";
 // types
-import { IAnalyticsParams, IAnalyticsResponse, ICurrentUserResponse } from "types";
+import { IAnalyticsParams, IAnalyticsResponse, ICurrentUserResponse } from "../../../types";
 // fetch-keys
-import { ANALYTICS } from "constants/fetch-keys";
+import { ANALYTICS } from "../../../constants/fetch-keys";
 
 type Props = {
   analytics: IAnalyticsResponse | undefined;

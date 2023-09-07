@@ -5,15 +5,15 @@ import useSWR, { mutate } from "swr";
 // cmdk
 import { Command } from "cmdk";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../types";
 // constants
-import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY, PROJECT_MEMBERS } from "constants/fetch-keys";
+import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY, PROJECT_MEMBERS } from "../../constants/fetch-keys";
 // icons
-import { CheckIcon } from "components/icons";
-import projectService from "services/project.service";
-import { Avatar } from "components/ui";
+import { CheckIcon } from "../../components/icons";
+import projectService from "../../services/project.service";
+import { Avatar } from "../../components/ui";
 
 type Props = {
   setIsPaletteOpen: Dispatch<SetStateAction<boolean>>;

@@ -1,5 +1,5 @@
 // types
-import { IIssue, IIssueLabels, IWorkspaceLite, IProjectLite } from "types";
+import { IIssue, IIssueLabels, IWorkspaceLite, IProjectLite } from "../types";
 
 export interface IPage {
   access: number;

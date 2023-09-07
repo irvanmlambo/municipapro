@@ -7,19 +7,19 @@ import useSWR, { mutate } from "swr";
 // component
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useIssuesView from "hooks/use-issues-view";
+import useToast from "../../hooks/use-toast";
+import useIssuesView from "../../hooks/use-issues-view";
 //icons
 import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ContrastIcon, ExclamationIcon, TransferIcon } from "components/icons";
+import { ContrastIcon, ExclamationIcon, TransferIcon } from "../../components/icons";
 // fetch-key
-import { CYCLE_ISSUES_WITH_PARAMS, INCOMPLETE_CYCLES_LIST } from "constants/fetch-keys";
+import { CYCLE_ISSUES_WITH_PARAMS, INCOMPLETE_CYCLES_LIST } from "../../constants/fetch-keys";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 //helper
-import { getDateRangeStatus } from "helpers/date-time.helper";
+import { getDateRangeStatus } from "../../helpers/date-time.helper";
 
 type Props = {
   isOpen: boolean;

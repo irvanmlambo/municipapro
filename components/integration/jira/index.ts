@@ -4,7 +4,7 @@ export * from "./jira-project-detail";
 export * from "./import-users";
 export * from "./confirm-import";
 
-import { IJiraImporterForm } from "types";
+import { IJiraImporterForm } from "../../../types";
 
 export type TJiraIntegrationSteps =
   | "import-configure"

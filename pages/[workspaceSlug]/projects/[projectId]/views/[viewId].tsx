@@ -3,24 +3,24 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
-import viewsService from "services/views.service";
+import projectService from "../../../../../services/project.service";
+import viewsService from "../../../../../services/views.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // contexts
-import { IssueViewContextProvider } from "contexts/issue-view.context";
+import { IssueViewContextProvider } from "../../../../../contexts/issue-view.context";
 // components
-import { IssuesFilterView, IssuesView } from "components/core";
+import { IssuesFilterView, IssuesView } from "../../../../../components/core";
 // ui
-import { CustomMenu, PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomMenu, PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
-import { StackedLayersIcon } from "components/icons";
+import { StackedLayersIcon } from "../../../../../components/icons";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../../../helpers/string.helper";
 // fetch-keys
-import { PROJECT_DETAILS, VIEWS_LIST, VIEW_DETAILS } from "constants/fetch-keys";
+import { PROJECT_DETAILS, VIEWS_LIST, VIEW_DETAILS } from "../../../../../constants/fetch-keys";
 
 const SingleView: React.FC = () => {
   const router = useRouter();

@@ -3,13 +3,13 @@ import { FC } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // components
-import { GanttChartRoot } from "components/gantt-chart";
+import { GanttChartRoot } from "../../components/gantt-chart";
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // types
-import { IModule } from "types";
+import { IModule } from "../../types";
 // constants
-import { MODULE_STATUS } from "constants/module";
+import { MODULE_STATUS } from "../../constants/module";
 
 type Props = {
   modules: IModule[];

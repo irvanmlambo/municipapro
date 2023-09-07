@@ -3,13 +3,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../services/project.service";
 // helpers
-import { orderArrayBy } from "helpers/array.helper";
+import { orderArrayBy } from "../helpers/array.helper";
 // types
-import { IProject } from "types";
+import { IProject } from "../types";
 // fetch-keys
-import { PROJECTS_LIST } from "constants/fetch-keys";
+import { PROJECTS_LIST } from "../constants/fetch-keys";
 
 const useProjects = (type?: "all" | boolean) => {
   const router = useRouter();

@@ -1,4 +1,4 @@
-import { TPageViewProps } from "types";
+import { TPageViewProps } from "../../../types";
 
 export type TPagesListProps = {
   viewType: TPageViewProps;

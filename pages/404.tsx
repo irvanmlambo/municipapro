@@ -4,9 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // ui
-import { SecondaryButton } from "components/ui";
+import { SecondaryButton } from "../components/ui";
 // images
 import Image404 from "public/404.svg";
 // types

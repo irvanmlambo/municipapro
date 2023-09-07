@@ -3,13 +3,13 @@ import * as Sentry from "@sentry/nextjs";
 import { useRouter } from "next/router";
 
 // services
-import authenticationService from "services/authentication.service";
+import authenticationService from "../services/authentication.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../hooks/use-toast";
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../components/ui";
 
 const CustomErrorComponent = () => {
   const router = useRouter();

@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { IEstimate } from "types";
+import { IEstimate } from "../../types";
 
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // ui
-import { SecondaryButton, DangerButton } from "components/ui";
+import { SecondaryButton, DangerButton } from "../../components/ui";
 
 type Props = {
   isOpen: boolean;

@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // types
-import { IWorkspace } from "types";
+import { IWorkspace } from "../types";
 // constants
-import { USER_WORKSPACES } from "constants/fetch-keys";
+import { USER_WORKSPACES } from "../constants/fetch-keys";
 
 export interface WorkspaceProviderProps {
   children: ReactElement;

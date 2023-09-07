@@ -6,12 +6,12 @@ import Link from "next/link";
 import { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../services/project.service";
 // hooks
-import useProjectMembers from "hooks/use-project-members";
-import useToast from "hooks/use-toast";
+import useProjectMembers from "../../hooks/use-project-members";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomMenu, Loader, Tooltip } from "components/ui";
+import { CustomMenu, Loader, Tooltip } from "../../components/ui";
 // icons
 import {
   CalendarDaysIcon,
@@ -22,13 +22,13 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 // helpers
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
-import { renderEmoji } from "helpers/emoji.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
+import { renderEmoji } from "../../helpers/emoji.helper";
 // types
-import type { IProject } from "types";
+import type { IProject } from "../../types";
 // fetch-keys
-import { PROJECTS_LIST } from "constants/fetch-keys";
+import { PROJECTS_LIST } from "../../constants/fetch-keys";
 
 export type ProjectCardProps = {
   project: IProject;

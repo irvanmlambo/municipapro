@@ -1,13 +1,13 @@
 import React from "react";
 // hooks
-import useSpreadsheetIssuesView from "hooks/use-spreadsheet-issues-view";
-import useLocalStorage from "hooks/use-local-storage";
+import useSpreadsheetIssuesView from "../../../hooks/use-spreadsheet-issues-view";
+import useLocalStorage from "../../../hooks/use-local-storage";
 // component
-import { CustomMenu, Icon } from "components/ui";
+import { CustomMenu, Icon } from "../../../components/ui";
 // icon
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 // types
-import { TIssueOrderByOptions } from "types";
+import { TIssueOrderByOptions } from "../../../types";
 
 type Props = {
   columnData: any;

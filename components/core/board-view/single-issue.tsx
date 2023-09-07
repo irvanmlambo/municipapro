@@ -13,11 +13,11 @@ import {
   NotDraggingStyle,
 } from "react-beautiful-dnd";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
-import useToast from "hooks/use-toast";
-import useOutsideClickDetector from "hooks/use-outside-click-detector";
+import useIssuesView from "../../../hooks/use-issues-view";
+import useToast from "../../../hooks/use-toast";
+import useOutsideClickDetector from "../../../hooks/use-outside-click-detector";
 // components
 import {
   ViewAssigneeSelect,
@@ -26,9 +26,9 @@ import {
   ViewLabelSelect,
   ViewPrioritySelect,
   ViewStateSelect,
-} from "components/issues";
+} from "../../../components/issues";
 // ui
-import { ContextMenu, CustomMenu, Tooltip } from "components/ui";
+import { ContextMenu, CustomMenu, Tooltip } from "../../../components/ui";
 // icons
 import {
   ClipboardDocumentCheckIcon,
@@ -40,10 +40,10 @@ import {
   PaperClipIcon,
   EllipsisHorizontalIcon,
 } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../../components/icons";
 // helpers
-import { handleIssuesMutation } from "constants/issue";
-import { copyTextToClipboard } from "helpers/string.helper";
+import { handleIssuesMutation } from "../../../constants/issue";
+import { copyTextToClipboard } from "../../../helpers/string.helper";
 // types
 import {
   ICurrentUserResponse,
@@ -52,7 +52,7 @@ import {
   Properties,
   TIssueGroupByOptions,
   UserAuth,
-} from "types";
+} from "../../../types";
 // fetch-keys
 import {
   CYCLE_DETAILS,
@@ -62,7 +62,7 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   SUB_ISSUES,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type Props = {
   type?: string;

@@ -9,22 +9,22 @@ import useSWR, { mutate } from "swr";
 // next-themes
 import { useTheme } from "next-themes";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
+import { WorkspaceAuthorizationLayout } from "../../layouts/auth-layout";
 // services
-import userService from "services/user.service";
+import userService from "../../services/user.service";
 // hooks
-import useUser from "hooks/use-user";
-import useProjects from "hooks/use-projects";
+import useUser from "../../hooks/use-user";
+import useProjects from "../../hooks/use-projects";
 // components
 import {
   CompletedIssuesGraph,
   IssuesList,
   IssuesPieChart,
   IssuesStats,
-} from "components/workspace";
-import { TourRoot } from "components/onboarding";
+} from "../../components/workspace";
+import { TourRoot } from "../../components/onboarding";
 // ui
-import { PrimaryButton, ProductUpdatesModal } from "components/ui";
+import { PrimaryButton, ProductUpdatesModal } from "../../components/ui";
 // icons
 import { BoltOutlined, GridViewOutlined } from "@mui/icons-material";
 // images
@@ -32,14 +32,14 @@ import emptyDashboard from "public/empty-state/dashboard.svg";
 import githubBlackImage from "/public/logos/github-black.png";
 import githubWhiteImage from "/public/logos/github-white.png";
 // helpers
-import { render12HourFormatTime, renderShortDate } from "helpers/date-time.helper";
+import { render12HourFormatTime, renderShortDate } from "../../helpers/date-time.helper";
 // types
-import { ICurrentUserResponse } from "types";
+import { ICurrentUserResponse } from "../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { CURRENT_USER, USER_WORKSPACE_DASHBOARD } from "constants/fetch-keys";
+import { CURRENT_USER, USER_WORKSPACE_DASHBOARD } from "../../constants/fetch-keys";
 // constants
-import { DAYS } from "constants/project";
+import { DAYS } from "../../constants/project";
 
 const WorkspacePage: NextPage = () => {
   const [month, setMonth] = useState(new Date().getMonth() + 1);

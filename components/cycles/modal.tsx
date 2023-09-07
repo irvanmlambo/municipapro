@@ -7,15 +7,15 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import cycleService from "services/cycles.service";
+import cycleService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { CycleForm } from "components/cycles";
+import { CycleForm } from "../../components/cycles";
 // helper
-import { getDateRangeStatus, isDateGreaterThanToday } from "helpers/date-time.helper";
+import { getDateRangeStatus, isDateGreaterThanToday } from "../../helpers/date-time.helper";
 // types
-import type { ICurrentUserResponse, ICycle } from "types";
+import type { ICurrentUserResponse, ICycle } from "../../types";
 // fetch keys
 import {
   COMPLETED_CYCLES_LIST,

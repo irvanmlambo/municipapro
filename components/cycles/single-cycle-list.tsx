@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomMenu, LinearProgressIndicator, Tooltip } from "components/ui";
+import { CustomMenu, LinearProgressIndicator, Tooltip } from "../../components/ui";
 // icons
 import { CalendarDaysIcon } from "@heroicons/react/20/solid";
 import {
@@ -16,17 +16,17 @@ import {
   ArrowRightIcon,
   TriangleExclamationIcon,
   AlarmClockIcon,
-} from "components/icons";
+} from "../../components/icons";
 import { LinkIcon, PencilIcon, StarIcon, TrashIcon } from "@heroicons/react/24/outline";
 // helpers
 import {
   getDateRangeStatus,
   renderShortDateWithYearFormat,
   findHowManyDaysLeft,
-} from "helpers/date-time.helper";
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
+} from "../../helpers/date-time.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 
 type TSingleStatProps = {
   cycle: ICycle;

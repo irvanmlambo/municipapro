@@ -5,23 +5,23 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useProjectDetails from "hooks/use-project-details";
-import useToast from "hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
+import useProjectDetails from "../../../../../hooks/use-project-details";
+import useToast from "../../../../../hooks/use-toast";
 // components
-import { SettingsHeader } from "components/project";
-import { AutoArchiveAutomation, AutoCloseAutomation } from "components/automation";
+import { SettingsHeader } from "../../../../../components/project";
+import { AutoArchiveAutomation, AutoCloseAutomation } from "../../../../../components/automation";
 // ui
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // types
 import type { NextPage } from "next";
-import { IProject } from "types";
+import { IProject } from "../../../../../types";
 // constant
-import { PROJECTS_LIST, PROJECT_DETAILS } from "constants/fetch-keys";
+import { PROJECTS_LIST, PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 
 const AutomationsSettings: NextPage = () => {
   const router = useRouter();

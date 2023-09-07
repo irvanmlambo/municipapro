@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../../services/cycles.service";
 // components
-import { CyclesView } from "components/cycles";
+import { CyclesView } from "../../../components/cycles";
 // fetch-keys
-import { UPCOMING_CYCLES_LIST } from "constants/fetch-keys";
+import { UPCOMING_CYCLES_LIST } from "../../../constants/fetch-keys";
 
 type Props = {
   viewType: string | null;

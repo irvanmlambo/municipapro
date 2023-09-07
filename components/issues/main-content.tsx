@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../hooks/use-user-auth";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // components
 import {
   AddComment,
@@ -17,13 +17,13 @@ import {
   IssueAttachments,
   IssueDescriptionForm,
   SubIssuesList,
-} from "components/issues";
+} from "../../components/issues";
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../components/ui";
 // types
-import { IIssue } from "types";
+import { IIssue } from "../../types";
 // fetch-keys
-import { SUB_ISSUES } from "constants/fetch-keys";
+import { SUB_ISSUES } from "../../constants/fetch-keys";
 
 type Props = {
   issueDetails: IIssue;

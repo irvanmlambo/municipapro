@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import pagesService from "services/pages.service";
+import pagesService from "../../../services/pages.service";
 // components
-import { PagesView } from "components/pages";
+import { PagesView } from "../../../components/pages";
 // types
 import { TPagesListProps } from "./types";
 // fetch-keys

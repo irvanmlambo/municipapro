@@ -1,6 +1,6 @@
 // services
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
+import APIService from "../services/api.service";
+import trackEventServices from "../services/track-event.service";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 
@@ -14,7 +14,7 @@ import {
   IProductUpdateResponse,
   ICurrentUserResponse,
   IWorkspaceBulkInviteFormData,
-} from "types";
+} from "../types";
 
 const trackEvent =
   process.env.NEXT_PUBLIC_TRACK_EVENTS === "true" || process.env.NEXT_PUBLIC_TRACK_EVENTS === "1";

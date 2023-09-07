@@ -9,15 +9,15 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Disclosure, Popover, Transition } from "@headlessui/react";
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { SidebarProgressStats } from "components/core";
-import ProgressChart from "components/core/sidebar/progress-chart";
-import { DeleteCycleModal } from "components/cycles";
+import { SidebarProgressStats } from "../../components/core";
+import ProgressChart from "../../components/core/sidebar/progress-chart";
+import { DeleteCycleModal } from "../../components/cycles";
 // ui
-import { CustomMenu, CustomRangeDatePicker, Loader, ProgressBar } from "components/ui";
+import { CustomMenu, CustomRangeDatePicker, Loader, ProgressBar } from "../../components/ui";
 // icons
 import {
   CalendarDaysIcon,
@@ -29,18 +29,18 @@ import {
   DocumentIcon,
   LinkIcon,
 } from "@heroicons/react/24/outline";
-import { ExclamationIcon } from "components/icons";
+import { ExclamationIcon } from "../../components/icons";
 // helpers
-import { capitalizeFirstLetter, copyTextToClipboard } from "helpers/string.helper";
+import { capitalizeFirstLetter, copyTextToClipboard } from "../../helpers/string.helper";
 import {
   isDateGreaterThanToday,
   renderDateFormat,
   renderShortDateWithYearFormat,
-} from "helpers/date-time.helper";
+} from "../../helpers/date-time.helper";
 // types
-import { ICurrentUserResponse, ICycle } from "types";
+import { ICurrentUserResponse, ICycle } from "../../types";
 // fetch-keys
-import { CYCLE_DETAILS } from "constants/fetch-keys";
+import { CYCLE_DETAILS } from "../../constants/fetch-keys";
 
 type Props = {
   cycle: ICycle | undefined;

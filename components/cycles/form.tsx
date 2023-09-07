@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
 
 // ui
-import { DateSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { DateSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 
 type Props = {
   handleFormSubmit: (values: Partial<ICycle>) => Promise<void>;

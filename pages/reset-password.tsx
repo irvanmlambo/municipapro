@@ -6,13 +6,13 @@ import Image from "next/image";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../hooks/use-toast";
 // services
-import userService from "services/user.service";
+import userService from "../services/user.service";
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // ui
-import { Input, PrimaryButton, Spinner } from "components/ui";
+import { Input, PrimaryButton, Spinner } from "../components/ui";
 // images
 import BluePlaneLogoWithoutText from "public/plane-logos/blue-without-text.png";
 // types

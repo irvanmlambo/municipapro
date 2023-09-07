@@ -5,21 +5,21 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
-import projectService from "services/project.service";
+import issuesService from "../../../services/issues.service";
+import projectService from "../../../services/project.service";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
+import useIssuesView from "../../../hooks/use-issues-view";
 // component
-import { Avatar } from "components/ui";
+import { Avatar } from "../../../components/ui";
 // icons
 import { ArrowsPointingInIcon, ArrowsPointingOutIcon, PlusIcon } from "@heroicons/react/24/outline";
-import { getPriorityIcon, getStateGroupIcon } from "components/icons";
+import { getPriorityIcon, getStateGroupIcon } from "../../../components/icons";
 // helpers
-import { addSpaceIfCamelCase } from "helpers/string.helper";
+import { addSpaceIfCamelCase } from "../../../helpers/string.helper";
 // types
-import { IIssueLabels, IState } from "types";
+import { IIssueLabels, IState } from "../../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   currentState?: IState | null;

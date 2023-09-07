@@ -1,9 +1,9 @@
 export * from "./github-importer";
 export * from "./jira-importer";
 
-import { IProjectLite } from "types/projects";
+import { IProjectLite } from "../../types/projects";
 // types
-import { IUserLite } from "types/users";
+import { IUserLite } from "../../types/users";
 
 export interface IImporterService {
   created_at: string;

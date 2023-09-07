@@ -12,23 +12,23 @@ import { Popover, Transition } from "@headlessui/react";
 import { TwitterPicker } from "react-color";
 // react-beautiful-dnd
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
-import StrictModeDroppable from "components/dnd/StrictModeDroppable";
+import StrictModeDroppable from "../../../../../components/dnd/StrictModeDroppable";
 // services
-import projectService from "services/project.service";
-import pagesService from "services/pages.service";
-import issuesService from "services/issues.service";
+import projectService from "../../../../../services/project.service";
+import pagesService from "../../../../../services/pages.service";
+import issuesService from "../../../../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUser from "hooks/use-user";
+import useToast from "../../../../../hooks/use-toast";
+import useUser from "../../../../../hooks/use-user";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
-import { CreateUpdateBlockInline, SinglePageBlock } from "components/pages";
-import { CreateLabelModal } from "components/labels";
-import { CreateBlock } from "components/pages/create-block";
+import { CreateUpdateBlockInline, SinglePageBlock } from "../../../../../components/pages";
+import { CreateLabelModal } from "../../../../../components/labels";
+import { CreateBlock } from "../../../../../components/pages/create-block";
 // ui
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
-import { CustomSearchSelect, Loader, PrimaryButton, TextArea, Tooltip } from "components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
+import { CustomSearchSelect, Loader, PrimaryButton, TextArea, Tooltip } from "../../../../../components/ui";
 // icons
 import {
   ArrowLeftIcon,
@@ -39,21 +39,21 @@ import {
   LinkIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { ColorPalletteIcon, ClipboardIcon } from "components/icons";
+import { ColorPalletteIcon, ClipboardIcon } from "../../../../../components/icons";
 // helpers
-import { render24HourFormatTime, renderShortDate } from "helpers/date-time.helper";
-import { copyTextToClipboard } from "helpers/string.helper";
-import { orderArrayBy } from "helpers/array.helper";
+import { render24HourFormatTime, renderShortDate } from "../../../../../helpers/date-time.helper";
+import { copyTextToClipboard } from "../../../../../helpers/string.helper";
+import { orderArrayBy } from "../../../../../helpers/array.helper";
 // types
 import type { NextPage } from "next";
-import { IIssueLabels, IPage, IPageBlock } from "types";
+import { IIssueLabels, IPage, IPageBlock } from "../../../../../types";
 // fetch-keys
 import {
   PAGE_BLOCKS_LIST,
   PAGE_DETAILS,
   PROJECT_DETAILS,
   PROJECT_ISSUE_LABELS,
-} from "constants/fetch-keys";
+} from "../../../../../constants/fetch-keys";
 
 const SinglePage: NextPage = () => {
   const [createBlockForm, setCreateBlockForm] = useState(false);

@@ -9,15 +9,15 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // components
-import { ModuleForm } from "components/modules";
+import { ModuleForm } from "../../components/modules";
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../services/modules.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // types
-import type { ICurrentUserResponse, IModule } from "types";
+import type { ICurrentUserResponse, IModule } from "../../types";
 // fetch-keys
-import { MODULE_LIST } from "constants/fetch-keys";
+import { MODULE_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

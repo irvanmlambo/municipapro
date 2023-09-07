@@ -3,11 +3,11 @@ import React from "react";
 // react hook form
 import { useForm } from "react-hook-form";
 // services
-import userService from "services/user.service";
+import userService from "../../services/user.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../ui";
 // types
 type Props = {
   setIsResettingPassword: React.Dispatch<React.SetStateAction<boolean>>;

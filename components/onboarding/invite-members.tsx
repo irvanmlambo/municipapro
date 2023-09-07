@@ -5,20 +5,20 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 // services
-import workspaceService from "services/workspace.service";
-import userService from "services/user.service";
+import workspaceService from "../../services/workspace.service";
+import userService from "../../services/user.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomSelect, Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { CustomSelect, Input, PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // types
-import { ICurrentUserResponse, IWorkspace, OnboardingSteps } from "types";
+import { ICurrentUserResponse, IWorkspace, OnboardingSteps } from "../../types";
 // fetch-keys
-import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "constants/fetch-keys";
+import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../constants/workspace";
 
 type Props = {
   workspace: IWorkspace | undefined;

@@ -1,15 +1,15 @@
 // nivo
 import { BarDatum } from "@nivo/bar";
 // icons
-import { getPriorityIcon } from "components/icons";
+import { getPriorityIcon } from "../../icons";
 // helpers
-import { addSpaceIfCamelCase } from "helpers/string.helper";
+import { addSpaceIfCamelCase } from "../../../helpers/string.helper";
 // helpers
-import { generateBarColor, renderMonthAndYear } from "helpers/analytics.helper";
+import { generateBarColor, renderMonthAndYear } from "../../../helpers/analytics.helper";
 // types
-import { IAnalyticsParams, IAnalyticsResponse } from "types";
+import { IAnalyticsParams, IAnalyticsResponse } from "../../../types";
 // constants
-import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES, DATE_KEYS } from "constants/analytics";
+import { ANALYTICS_X_AXIS_VALUES, ANALYTICS_Y_AXIS_VALUES, DATE_KEYS } from "../../../constants/analytics";
 
 type Props = {
   analytics: IAnalyticsResponse;

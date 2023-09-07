@@ -1,11 +1,11 @@
 import React from "react";
 
 // ui
-import { LineGraph } from "components/ui";
+import { LineGraph } from "../../../components/ui";
 // helpers
-import { getDatesInRange, renderShortNumericDateFormat } from "helpers/date-time.helper";
+import { getDatesInRange, renderShortNumericDateFormat } from "../../../helpers/date-time.helper";
 //types
-import { TCompletionChartDistribution } from "types";
+import { TCompletionChartDistribution } from "../../../types";
 
 type Props = {
   distribution: TCompletionChartDistribution;

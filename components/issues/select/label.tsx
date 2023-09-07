@@ -7,9 +7,9 @@ import useSWR from "swr";
 // headless ui
 import { Combobox, Transition } from "@headlessui/react";
 // services
-import issuesServices from "services/issues.service";
+import issuesServices from "../../../services/issues.service";
 // ui
-import { IssueLabelsList } from "components/ui";
+import { IssueLabelsList } from "../../../components/ui";
 // icons
 import {
   CheckIcon,
@@ -19,9 +19,9 @@ import {
   TagIcon,
 } from "@heroicons/react/24/outline";
 // types
-import type { IIssueLabels } from "types";
+import type { IIssueLabels } from "../../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../../constants/fetch-keys";
 
 type Props = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;

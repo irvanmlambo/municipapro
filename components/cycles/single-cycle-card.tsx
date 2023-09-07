@@ -6,12 +6,12 @@ import { useRouter } from "next/router";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { SingleProgressStats } from "components/core";
+import { SingleProgressStats } from "../../components/core";
 // ui
-import { CustomMenu, LinearProgressIndicator, Tooltip } from "components/ui";
-import { AssigneesList } from "components/ui/avatar";
+import { CustomMenu, LinearProgressIndicator, Tooltip } from "../../components/ui";
+import { AssigneesList } from "../../components/ui/avatar";
 // icons
 import { CalendarDaysIcon } from "@heroicons/react/20/solid";
 import {
@@ -21,7 +21,7 @@ import {
   ArrowRightIcon,
   TriangleExclamationIcon,
   AlarmClockIcon,
-} from "components/icons";
+} from "../../components/icons";
 import {
   ChevronDownIcon,
   LinkIcon,
@@ -34,10 +34,10 @@ import {
   getDateRangeStatus,
   renderShortDateWithYearFormat,
   findHowManyDaysLeft,
-} from "helpers/date-time.helper";
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
+} from "../../helpers/date-time.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 
 type TSingleStatProps = {
   cycle: ICycle;

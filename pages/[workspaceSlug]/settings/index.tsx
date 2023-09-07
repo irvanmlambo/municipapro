@@ -7,31 +7,31 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // services
-import workspaceService from "services/workspace.service";
-import fileService from "services/file.service";
+import workspaceService from "../../../services/workspace.service";
+import fileService from "../../../services/file.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../hooks/use-toast";
+import useUserAuth from "../../../hooks/use-user-auth";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import SettingsNavbar from "layouts/settings-navbar";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
+import SettingsNavbar from "../../../layouts/settings-navbar";
 // components
-import { ImageUploadModal } from "components/core";
-import { DeleteWorkspaceModal, SettingsHeader } from "components/workspace";
+import { ImageUploadModal } from "../../../components/core";
+import { DeleteWorkspaceModal, SettingsHeader } from "../../../components/workspace";
 // ui
-import { Spinner, Input, CustomSelect, SecondaryButton, DangerButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { Spinner, Input, CustomSelect, SecondaryButton, DangerButton } from "../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../components/breadcrumbs";
 // icons
 import { LinkIcon } from "@heroicons/react/24/outline";
 // helpers
-import { copyTextToClipboard } from "helpers/string.helper";
+import { copyTextToClipboard } from "../../../helpers/string.helper";
 // types
-import type { IWorkspace } from "types";
+import type { IWorkspace } from "../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { WORKSPACE_DETAILS, USER_WORKSPACES } from "constants/fetch-keys";
+import { WORKSPACE_DETAILS, USER_WORKSPACES } from "../../../constants/fetch-keys";
 // constants
-import { ORGANIZATION_SIZE } from "constants/workspace";
+import { ORGANIZATION_SIZE } from "../../../constants/workspace";
 
 const defaultValues: Partial<IWorkspace> = {
   name: "",

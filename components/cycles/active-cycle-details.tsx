@@ -6,20 +6,20 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { LinearProgressIndicator, Loader, Tooltip } from "components/ui";
-import { AssigneesList } from "components/ui/avatar";
-import { SingleProgressStats } from "components/core";
+import { LinearProgressIndicator, Loader, Tooltip } from "../../components/ui";
+import { AssigneesList } from "../../components/ui/avatar";
+import { SingleProgressStats } from "../../components/core";
 // components
-import ProgressChart from "components/core/sidebar/progress-chart";
-import { ActiveCycleProgressStats } from "components/cycles";
+import ProgressChart from "../../components/core/sidebar/progress-chart";
+import { ActiveCycleProgressStats } from "../../components/cycles";
 
 // icons
 import { CalendarDaysIcon } from "@heroicons/react/20/solid";
-import { getPriorityIcon } from "components/icons/priority-icon";
+import { getPriorityIcon } from "../../components/icons/priority-icon";
 import {
   TargetIcon,
   ContrastIcon,
@@ -29,19 +29,19 @@ import {
   AlarmClockIcon,
   LayerDiagonalIcon,
   CompletedStateIcon,
-} from "components/icons";
+} from "../../components/icons";
 import { StarIcon } from "@heroicons/react/24/outline";
 // helpers
 import {
   getDateRangeStatus,
   renderShortDateWithYearFormat,
   findHowManyDaysLeft,
-} from "helpers/date-time.helper";
-import { truncateText } from "helpers/string.helper";
+} from "../../helpers/date-time.helper";
+import { truncateText } from "../../helpers/string.helper";
 // types
-import { ICycle, IIssue } from "types";
+import { ICycle, IIssue } from "../../types";
 // fetch-keys
-import { CURRENT_CYCLE_LIST, CYCLES_LIST, CYCLE_ISSUES_WITH_PARAMS } from "constants/fetch-keys";
+import { CURRENT_CYCLE_LIST, CYCLES_LIST, CYCLE_ISSUES_WITH_PARAMS } from "../../constants/fetch-keys";
 
 const stateGroups = [
   {

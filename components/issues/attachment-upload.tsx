@@ -7,13 +7,13 @@ import { mutate } from "swr";
 // react-dropzone
 import { useDropzone } from "react-dropzone";
 // toast
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // fetch key
-import { ISSUE_ATTACHMENTS } from "constants/fetch-keys";
+import { ISSUE_ATTACHMENTS } from "../../constants/fetch-keys";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // type
-import { IIssueAttachment } from "types";
+import { IIssueAttachment } from "../../types";
 
 const maxFileSize = 5 * 1024 * 1024; // 5 MB
 

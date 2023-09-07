@@ -1,7 +1,7 @@
 // ui
-import { CustomSearchSelect } from "components/ui";
+import { CustomSearchSelect } from "../../ui";
 // types
-import { IProject } from "types";
+import { IProject } from "../../../types";
 
 type Props = {
   value: string[] | null | undefined;

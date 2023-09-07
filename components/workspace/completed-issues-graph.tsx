@@ -1,7 +1,7 @@
 // ui
-import { CustomMenu, LineGraph } from "components/ui";
+import { CustomMenu, LineGraph } from "../../components/ui";
 // constants
-import { MONTHS } from "constants/project";
+import { MONTHS } from "../../constants/project";
 
 type Props = {
   issues:

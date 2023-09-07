@@ -3,7 +3,7 @@ import React from "react";
 // headless ui
 import { Popover, Transition } from "@headlessui/react";
 // ui
-import { CustomMenu, ToggleSwitch } from "components/ui";
+import { CustomMenu, ToggleSwitch } from "../../../components/ui";
 // icons
 import {
   CheckIcon,
@@ -26,9 +26,9 @@ import {
   subtractMonths,
   updateDateWithMonth,
   updateDateWithYear,
-} from "helpers/calendar.helper";
+} from "../../../helpers/calendar.helper";
 // constants
-import { MONTHS_LIST, YEARS_LIST } from "constants/calendar";
+import { MONTHS_LIST, YEARS_LIST } from "../../../constants/calendar";
 
 type Props = {
   isMonthlyView: boolean;

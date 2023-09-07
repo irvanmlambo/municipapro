@@ -1,12 +1,12 @@
 // hooks
-import useTheme from "hooks/use-theme";
+import useTheme from "../../hooks/use-theme";
 // components
 import {
   WorkspaceHelpSection,
   WorkspaceSidebarDropdown,
   WorkspaceSidebarMenu,
-} from "components/workspace";
-import { ProjectSidebarList } from "components/project";
+} from "../../components/workspace";
+import { ProjectSidebarList } from "../../components/project";
 
 export interface SidebarProps {
   toggleSidebar: boolean;

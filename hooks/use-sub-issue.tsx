@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../services/issues.service";
 // types
-import { ISubIssueResponse } from "types";
+import { ISubIssueResponse } from "../types";
 // fetch-keys
-import { SUB_ISSUES } from "constants/fetch-keys";
+import { SUB_ISSUES } from "../constants/fetch-keys";
 
 const useSubIssue = (issueId: string, isExpanded: boolean) => {
   const router = useRouter();

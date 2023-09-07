@@ -4,16 +4,16 @@ import { useRouter } from "next/router";
 
 import useSWR from "swr";
 
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../hooks/use-user-auth";
 // headless ui
 import { Listbox, Transition } from "@headlessui/react";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
-import { CyclesIcon } from "components/icons";
+import { CyclesIcon } from "../../components/icons";
 // services
-import cycleServices from "services/cycles.service";
+import cycleServices from "../../services/cycles.service";
 // components
-import { CreateUpdateCycleModal } from "components/cycles";
+import { CreateUpdateCycleModal } from "../../components/cycles";
 // fetch-keys
 import { CYCLES_LIST } from "constants/fetch-keys";
 

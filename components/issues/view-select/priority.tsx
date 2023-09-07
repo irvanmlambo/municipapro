@@ -3,17 +3,17 @@ import React from "react";
 import { useRouter } from "next/router";
 
 // ui
-import { CustomSelect, Tooltip } from "components/ui";
+import { CustomSelect, Tooltip } from "../../../components/ui";
 // icons
-import { getPriorityIcon } from "components/icons/priority-icon";
+import { getPriorityIcon } from "../../../components/icons/priority-icon";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 // constants
-import { PRIORITIES } from "constants/project";
+import { PRIORITIES } from "../../../constants/project";
 // services
-import trackEventServices from "services/track-event.service";
+import trackEventServices from "../../../services/track-event.service";
 // helper
-import { capitalizeFirstLetter } from "helpers/string.helper";
+import { capitalizeFirstLetter } from "../../../helpers/string.helper";
 
 type Props = {
   issue: IIssue;

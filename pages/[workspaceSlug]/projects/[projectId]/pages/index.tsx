@@ -8,50 +8,50 @@ import useSWR from "swr";
 // headless ui
 import { Tab } from "@headlessui/react";
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // hooks
-import useLocalStorage from "hooks/use-local-storage";
+import useLocalStorage from "../../../../../hooks/use-local-storage";
 // icons
-import { PlusIcon } from "components/icons";
+import { PlusIcon } from "../../../../../components/icons";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
-import { RecentPagesList, CreateUpdatePageModal, TPagesListProps } from "components/pages";
+import { RecentPagesList, CreateUpdatePageModal, TPagesListProps } from "../../../../../components/pages";
 // ui
-import { PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { ListBulletIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 // types
-import { TPageViewProps } from "types";
+import { TPageViewProps } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_DETAILS } from "constants/fetch-keys";
-import useUserAuth from "hooks/use-user-auth";
+import { PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 
 const AllPagesList = dynamic<TPagesListProps>(
-  () => import("components/pages").then((a) => a.AllPagesList),
+  () => import("../../../../../components/pages").then((a) => a.AllPagesList),
   {
     ssr: false,
   }
 );
 
 const FavoritePagesList = dynamic<TPagesListProps>(
-  () => import("components/pages").then((a) => a.FavoritePagesList),
+  () => import("../../../../../components/pages").then((a) => a.FavoritePagesList),
   {
     ssr: false,
   }
 );
 
 const MyPagesList = dynamic<TPagesListProps>(
-  () => import("components/pages").then((a) => a.MyPagesList),
+  () => import("../../../../../components/pages").then((a) => a.MyPagesList),
   {
     ssr: false,
   }
 );
 
 const OtherPagesList = dynamic<TPagesListProps>(
-  () => import("components/pages").then((a) => a.OtherPagesList),
+  () => import("../../../../../components/pages").then((a) => a.OtherPagesList),
   {
     ssr: false,
   }

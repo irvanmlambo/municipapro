@@ -1,8 +1,8 @@
 import React from "react";
 
 // layouts
-import DefaultLayout from "layouts/default-layout";
-import { UserAuthorizationLayout } from "layouts/auth-layout/user-authorization-wrapper";
+import DefaultLayout from "../layouts/default-layout";
+import { UserAuthorizationLayout } from "../layouts/auth-layout/user-authorization-wrapper";
 // types
 import type { NextPage } from "next";
 

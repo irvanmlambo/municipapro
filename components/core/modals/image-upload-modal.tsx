@@ -8,13 +8,13 @@ import { useDropzone } from "react-dropzone";
 // headless ui
 import { Transition, Dialog } from "@headlessui/react";
 // services
-import fileServices from "services/file.service";
+import fileServices from "../../../services/file.service";
 // hooks
-import useWorkspaceDetails from "hooks/use-workspace-details";
+import useWorkspaceDetails from "../../../hooks/use-workspace-details";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 // icons
-import { UserCircleIcon } from "components/icons";
+import { UserCircleIcon } from "../../../components/icons";
 
 type Props = {
   value?: string | null;

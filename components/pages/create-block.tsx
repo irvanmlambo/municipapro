@@ -9,16 +9,16 @@ import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // services
-import pagesService from "services/pages.service";
+import pagesService from "../../services/pages.service";
 
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { TextArea } from "components/ui";
+import { TextArea } from "../../components/ui";
 // types
-import { ICurrentUserResponse, IPageBlock } from "types";
+import { ICurrentUserResponse, IPageBlock } from "../../types";
 // fetch-keys
-import { PAGE_BLOCKS_LIST } from "constants/fetch-keys";
+import { PAGE_BLOCKS_LIST } from "../../constants/fetch-keys";
 
 const defaultValues = {
   name: "",

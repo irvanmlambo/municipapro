@@ -7,19 +7,19 @@ import { Controller, useForm } from "react-hook-form";
 // headless
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // contexts
-import { useWorkspaceMyMembership } from "contexts/workspace-member.context";
+import { useWorkspaceMyMembership } from "../../contexts/workspace-member.context";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomSelect, Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { CustomSelect, Input, PrimaryButton, SecondaryButton } from "../../components/ui";
 // types
-import { ICurrentUserResponse, IWorkspaceMemberInvitation } from "types";
+import { ICurrentUserResponse, IWorkspaceMemberInvitation } from "../../types";
 // fetch-keys
-import { WORKSPACE_INVITATIONS } from "constants/fetch-keys";
+import { WORKSPACE_INVITATIONS } from "../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../constants/workspace";
 
 type Props = {
   isOpen: boolean;

@@ -1,9 +1,9 @@
 import React from "react";
 
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
-import { CalendarBeforeIcon, CalendarAfterIcon, CalendarMonthIcon } from "components/icons";
+import { CalendarBeforeIcon, CalendarAfterIcon, CalendarMonthIcon } from "../../../components/icons";
 // fetch-keys
 
 type Props = {

@@ -7,13 +7,13 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import analyticsService from "services/analytics.service";
+import analyticsService from "../../../services/analytics.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 // ui
-import { Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton, TextArea } from "../../ui";
 // types
-import { IAnalyticsParams, ISaveAnalyticsFormData } from "types";
+import { IAnalyticsParams, ISaveAnalyticsFormData } from "../../../types";
 
 // types
 type Props = {

@@ -1,5 +1,5 @@
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
+import APIService from "../../services/api.service";
+import trackEventServices from "../../services/track-event.service";
 
 // types
 import {
@@ -7,7 +7,7 @@ import {
   ICurrentUserResponse,
   IImporterService,
   IWorkspaceIntegration,
-} from "types";
+} from "../../types";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 

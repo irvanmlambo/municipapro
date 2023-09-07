@@ -5,17 +5,17 @@ import { useRouter } from "next/router";
 // headless ui
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // services
-import projectService from "services/project.service";
+import projectService from "../../services/project.service";
 // hooks
-import useDebounce from "hooks/use-debounce";
+import useDebounce from "../../hooks/use-debounce";
 // components
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../components/icons";
 // ui
-import { Loader } from "components/ui";
+import { Loader } from "../../components/ui";
 // icons
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 // types
-import { ISearchIssueResponse } from "types";
+import { ISearchIssueResponse } from "../../types";
 
 type Props = {
   isOpen: boolean;

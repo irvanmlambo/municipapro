@@ -3,14 +3,14 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../../services/workspace.service";
 // ui
-import { Avatar, CustomSearchSelect, CustomSelect, Input } from "components/ui";
+import { Avatar, CustomSearchSelect, CustomSelect, Input } from "../../../components/ui";
 // types
-import { IGithubRepoCollaborator } from "types";
+import { IGithubRepoCollaborator } from "../../../types";
 import { IUserDetails } from "./root";
 // fetch-keys
-import { WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   collaborator: IGithubRepoCollaborator;

@@ -9,25 +9,25 @@ import { useForm, Controller } from "react-hook-form";
 import { Dialog, Transition } from "@headlessui/react";
 
 // services
-import projectServices from "services/project.service";
-import workspaceService from "services/workspace.service";
+import projectServices from "../../services/project.service";
+import workspaceService from "../../services/workspace.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { Input, TextArea, CustomSelect, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, TextArea, CustomSelect, PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
 // components
-import { ImagePickerPopover } from "components/core";
-import EmojiIconPicker from "components/emoji-icon-picker";
+import { ImagePickerPopover } from "../../components/core";
+import EmojiIconPicker from "../../components/emoji-icon-picker";
 // helpers
-import { getRandomEmoji, renderEmoji } from "helpers/emoji.helper";
+import { getRandomEmoji, renderEmoji } from "../../helpers/emoji.helper";
 // types
-import { ICurrentUserResponse, IProject } from "types";
+import { ICurrentUserResponse, IProject } from "../../types";
 // fetch-keys
-import { PROJECTS_LIST, WORKSPACE_MEMBERS_ME } from "constants/fetch-keys";
+import { PROJECTS_LIST, WORKSPACE_MEMBERS_ME } from "../../constants/fetch-keys";
 // constants
-import { NETWORK_CHOICES } from "constants/project";
+import { NETWORK_CHOICES } from "../../constants/project";
 
 type Props = {
   isOpen: boolean;

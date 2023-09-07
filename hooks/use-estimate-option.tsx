@@ -3,13 +3,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import estimatesService from "services/estimates.service";
+import estimatesService from "../services/estimates.service";
 // hooks
-import useProjectDetails from "hooks/use-project-details";
+import useProjectDetails from "../hooks/use-project-details";
 // helpers
-import { orderArrayBy } from "helpers/array.helper";
+import { orderArrayBy } from "../helpers/array.helper";
 // fetch-keys
-import { ESTIMATE_DETAILS } from "constants/fetch-keys";
+import { ESTIMATE_DETAILS } from "../constants/fetch-keys";
 
 const useEstimateOption = (estimateKey?: number | null) => {
   const router = useRouter();

@@ -4,7 +4,7 @@ import React from "react";
 import { useFormContext } from "react-hook-form";
 
 // types
-import { IJiraImporterForm } from "types";
+import { IJiraImporterForm } from "../../../types";
 
 export const JiraConfirmImport: React.FC = () => {
   const { watch } = useFormContext<IJiraImporterForm>();

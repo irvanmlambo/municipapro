@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // ui
-import { Input, Loader, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, Loader, PrimaryButton, SecondaryButton } from "../../components/ui";
 // types
-import { IPage } from "types";
+import { IPage } from "../../types";
 
 type Props = {
   handleFormSubmit: (values: IPage) => Promise<void>;

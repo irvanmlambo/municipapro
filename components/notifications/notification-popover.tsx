@@ -8,21 +8,21 @@ import useTheme from "hooks/use-theme";
 import { Popover, Transition } from "@headlessui/react";
 
 // hooks
-import useWorkspaceMembers from "hooks/use-workspace-members";
-import useUserNotification from "hooks/use-user-notifications";
+import useWorkspaceMembers from "../../hooks/use-workspace-members";
+import useUserNotification from "../../hooks/use-user-notifications";
 
 // components
-import { Icon, Loader, EmptyState, Tooltip } from "components/ui";
-import { SnoozeNotificationModal, NotificationCard } from "components/notifications";
+import { Icon, Loader, EmptyState, Tooltip } from "../../components/ui";
+import { SnoozeNotificationModal, NotificationCard } from "../../components/notifications";
 // icons
 import { NotificationsOutlined } from "@mui/icons-material";
 // images
 import emptyNotification from "public/empty-state/notification.svg";
 // helpers
-import { getNumberCount } from "helpers/string.helper";
+import { getNumberCount } from "../../helpers/string.helper";
 
 // type
-import type { NotificationType } from "types";
+import type { NotificationType } from "../../types";
 
 export const NotificationPopover = () => {
   const {

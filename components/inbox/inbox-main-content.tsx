@@ -7,21 +7,21 @@ import useSWR, { mutate } from "swr";
 // react hook form
 import { useForm } from "react-hook-form";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // services
-import inboxServices from "services/inbox.service";
+import inboxServices from "../../services/inbox.service";
 // hooks
-import useInboxView from "hooks/use-inbox-view";
-import useUserAuth from "hooks/use-user-auth";
+import useInboxView from "../../hooks/use-inbox-view";
+import useUserAuth from "../../hooks/use-user-auth";
 // components
 import {
   AddComment,
   IssueActivitySection,
   IssueDescriptionForm,
   IssueDetailsSidebar,
-} from "components/issues";
+} from "../../components/issues";
 // ui
-import { Loader } from "components/ui";
+import { Loader } from "../../components/ui";
 // icons
 import {
   ArrowTopRightOnSquareIcon,
@@ -33,11 +33,11 @@ import {
   XCircleIcon,
 } from "@heroicons/react/24/outline";
 // helpers
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
 // types
-import type { IInboxIssue, IIssue } from "types";
+import type { IInboxIssue, IIssue } from "../../types";
 // fetch-keys
-import { INBOX_ISSUES, INBOX_ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "constants/fetch-keys";
+import { INBOX_ISSUES, INBOX_ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "../../constants/fetch-keys";
 
 const defaultValues = {
   name: "",

@@ -1,5 +1,5 @@
 // services
-import APIService from "services/api.service";
+import APIService from "../services/api.service";
 // types
 import {
   IAnalyticsParams,
@@ -7,7 +7,7 @@ import {
   IDefaultAnalyticsResponse,
   IExportAnalyticsFormData,
   ISaveAnalyticsFormData,
-} from "types";
+} from "../types";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 

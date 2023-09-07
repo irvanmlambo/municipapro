@@ -6,18 +6,18 @@ import useSWR, { mutate } from "swr";
 
 // react-beautiful-dnd
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
-import StrictModeDroppable from "components/dnd/StrictModeDroppable";
+import StrictModeDroppable from "../../components/dnd/StrictModeDroppable";
 // services
-import issuesService from "services/issues.service";
-import stateService from "services/state.service";
-import modulesService from "services/modules.service";
-import trackEventServices from "services/track-event.service";
+import issuesService from "../../services/issues.service";
+import stateService from "../../services/state.service";
+import modulesService from "../../services/modules.service";
+import trackEventServices from "../../services/track-event.service";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // hooks
-import useToast from "hooks/use-toast";
-import useIssuesView from "hooks/use-issues-view";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../hooks/use-toast";
+import useIssuesView from "../../hooks/use-issues-view";
+import useUserAuth from "../../hooks/use-user-auth";
 // components
 import {
   AllLists,
@@ -26,22 +26,22 @@ import {
   CalendarView,
   GanttChartView,
   SpreadsheetView,
-} from "components/core";
-import { CreateUpdateIssueModal, DeleteIssueModal } from "components/issues";
-import { CreateUpdateViewModal } from "components/views";
-import { TransferIssues, TransferIssuesModal } from "components/cycles";
+} from "../../components/core";
+import { CreateUpdateIssueModal, DeleteIssueModal } from "../../components/issues";
+import { CreateUpdateViewModal } from "../../components/views";
+import { TransferIssues, TransferIssuesModal } from "../../components/cycles";
 // ui
-import { EmptyState, PrimaryButton, Spinner, Icon } from "components/ui";
+import { EmptyState, PrimaryButton, Spinner, Icon } from "../../components/ui";
 // icons
 import { PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 // images
 import emptyIssue from "public/empty-state/issue.svg";
 import emptyIssueArchive from "public/empty-state/issue-archive.svg";
 // helpers
-import { getStatesList } from "helpers/state.helper";
-import { orderArrayBy } from "helpers/array.helper";
+import { getStatesList } from "../../helpers/state.helper";
+import { orderArrayBy } from "../../helpers/array.helper";
 // types
-import { IIssue, IIssueFilterOptions } from "types";
+import { IIssue, IIssueFilterOptions } from "../../types";
 // fetch-keys
 import {
   CYCLE_DETAILS,
@@ -50,7 +50,7 @@ import {
   MODULE_ISSUES_WITH_PARAMS,
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   STATES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type Props = {
   type?: "issue" | "cycle" | "module";

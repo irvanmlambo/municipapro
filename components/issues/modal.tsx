@@ -7,21 +7,21 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import modulesService from "services/modules.service";
-import issuesService from "services/issues.service";
-import inboxServices from "services/inbox.service";
+import modulesService from "../../services/modules.service";
+import issuesService from "../../services/issues.service";
+import inboxServices from "../../services/inbox.service";
 // hooks
-import useUser from "hooks/use-user";
-import useIssuesView from "hooks/use-issues-view";
-import useCalendarIssuesView from "hooks/use-calendar-issues-view";
-import useToast from "hooks/use-toast";
-import useInboxView from "hooks/use-inbox-view";
-import useSpreadsheetIssuesView from "hooks/use-spreadsheet-issues-view";
-import useProjects from "hooks/use-projects";
+import useUser from "../../hooks/use-user";
+import useIssuesView from "../../hooks/use-issues-view";
+import useCalendarIssuesView from "../../hooks/use-calendar-issues-view";
+import useToast from "../../hooks/use-toast";
+import useInboxView from "../../hooks/use-inbox-view";
+import useSpreadsheetIssuesView from "../../hooks/use-spreadsheet-issues-view";
+import useProjects from "../../hooks/use-projects";
 // components
-import { IssueForm } from "components/issues";
+import { IssueForm } from "../../components/issues";
 // types
-import type { IIssue } from "types";
+import type { IIssue } from "../../types";
 // fetch-keys
 import {
   PROJECT_ISSUES_DETAILS,
@@ -35,9 +35,9 @@ import {
   MODULE_DETAILS,
   VIEW_ISSUES,
   INBOX_ISSUES,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 // constants
-import { INBOX_ISSUE_SOURCE } from "constants/inbox";
+import { INBOX_ISSUE_SOURCE } from "../../constants/inbox";
 
 export interface IssuesModalProps {
   isOpen: boolean;

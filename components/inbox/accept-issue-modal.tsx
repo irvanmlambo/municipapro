@@ -5,9 +5,9 @@ import { Dialog, Transition } from "@headlessui/react";
 // icons
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 // ui
-import { SecondaryButton, PrimaryButton } from "components/ui";
+import { SecondaryButton, PrimaryButton } from "../../components/ui";
 // types
-import type { IInboxIssue } from "types";
+import type { IInboxIssue } from "../../types";
 
 type Props = {
   isOpen: boolean;

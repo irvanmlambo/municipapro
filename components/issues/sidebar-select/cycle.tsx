@@ -5,18 +5,18 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import issuesService from "services/issues.service";
-import cyclesService from "services/cycles.service";
+import issuesService from "../../../services/issues.service";
+import cyclesService from "../../../services/cycles.service";
 // ui
-import { Spinner, CustomSelect, Tooltip } from "components/ui";
+import { Spinner, CustomSelect, Tooltip } from "../../../components/ui";
 // helper
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../helpers/string.helper";
 // icons
-import { ContrastIcon } from "components/icons";
+import { ContrastIcon } from "../../../components/icons";
 // types
-import { ICycle, IIssue, UserAuth } from "types";
+import { ICycle, IIssue, UserAuth } from "../../../types";
 // fetch-keys
-import { CYCLE_ISSUES, INCOMPLETE_CYCLES_LIST, ISSUE_DETAILS } from "constants/fetch-keys";
+import { CYCLE_ISSUES, INCOMPLETE_CYCLES_LIST, ISSUE_DETAILS } from "../../../constants/fetch-keys";
 
 type Props = {
   issueDetail: IIssue | undefined;

@@ -37,8 +37,8 @@ export const FILTER_ISSUE_OPTIONS: Array<{
   },
 ];
 
-import { orderArrayBy } from "helpers/array.helper";
-import { IIssue, TIssueGroupByOptions, TIssueOrderByOptions } from "types";
+import { orderArrayBy } from "../helpers/array.helper";
+import { IIssue, TIssueGroupByOptions, TIssueOrderByOptions } from "../types";
 
 type THandleIssuesMutation = (
   formData: Partial<IIssue>,

@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // components
-import ToastAlert from "components/toast-alert";
+import ToastAlert from "../components/toast-alert";
 // services
-import inboxServices from "services/inbox.service";
+import inboxServices from "../services/inbox.service";
 // types
-import { IInboxFilterOptions } from "types";
+import { IInboxFilterOptions } from "../types";
 // fetch-keys
-import { INBOX_DETAILS } from "constants/fetch-keys";
+import { INBOX_DETAILS } from "../constants/fetch-keys";
 
 export const inboxViewContext = createContext<ContextType>({} as ContextType);
 

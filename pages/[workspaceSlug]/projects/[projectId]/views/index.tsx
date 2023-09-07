@@ -5,25 +5,25 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // services
-import viewsService from "services/views.service";
-import projectService from "services/project.service";
+import viewsService from "../../../../../services/views.service";
+import projectService from "../../../../../services/project.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // ui
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 //icons
-import { PlusIcon } from "components/icons";
+import { PlusIcon } from "../../../../../components/icons";
 // images
 import emptyView from "public/empty-state/view.svg";
 // fetching keys
-import { PROJECT_DETAILS, VIEWS_LIST } from "constants/fetch-keys";
+import { PROJECT_DETAILS, VIEWS_LIST } from "../../../../../constants/fetch-keys";
 // components
-import { PrimaryButton, Loader, EmptyState } from "components/ui";
-import { DeleteViewModal, CreateUpdateViewModal, SingleViewItem } from "components/views";
+import { PrimaryButton, Loader, EmptyState } from "../../../../../components/ui";
+import { DeleteViewModal, CreateUpdateViewModal, SingleViewItem } from "../../../../../components/views";
 // types
-import { IView } from "types";
+import { IView } from "../../../../../types";
 import type { NextPage } from "next";
 
 const ProjectViews: NextPage = () => {

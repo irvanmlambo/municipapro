@@ -7,9 +7,9 @@ import { useForm } from "react-hook-form";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../ui";
 // types
-import type { IProject } from "types";
+import type { IProject } from "../../types";
 
 // types
 type Props = {

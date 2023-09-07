@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 // components
 import {
   ViewAssigneeSelect,
@@ -17,11 +17,11 @@ import {
   ViewLabelSelect,
   ViewPrioritySelect,
   ViewStateSelect,
-} from "components/issues/view-select";
+} from "../../../components/issues/view-select";
 // hooks
-import useIssueView from "hooks/use-issues-view";
+import useIssueView from "../../../hooks/use-issues-view";
 // ui
-import { Tooltip, CustomMenu, ContextMenu } from "components/ui";
+import { Tooltip, CustomMenu, ContextMenu } from "../../../components/ui";
 // icons
 import {
   ClipboardDocumentCheckIcon,
@@ -32,12 +32,12 @@ import {
   ArrowTopRightOnSquareIcon,
   PaperClipIcon,
 } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../../components/icons";
 // helpers
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
-import { handleIssuesMutation } from "constants/issue";
+import { copyTextToClipboard, truncateText } from "../../../helpers/string.helper";
+import { handleIssuesMutation } from "../../../constants/issue";
 // types
-import { ICurrentUserResponse, IIssue, ISubIssueResponse, Properties, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, ISubIssueResponse, Properties, UserAuth } from "../../../types";
 // fetch-keys
 import {
   CYCLE_DETAILS,
@@ -47,7 +47,7 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   SUB_ISSUES,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type Props = {
   type?: string;

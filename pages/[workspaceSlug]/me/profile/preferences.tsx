@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../../../hooks/use-user-auth";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import SettingsNavbar from "layouts/settings-navbar";
+import { WorkspaceAuthorizationLayout } from "../../../../layouts/auth-layout";
+import SettingsNavbar from "../../../../layouts/settings-navbar";
 // components
-import { CustomThemeSelector, ThemeSwitch } from "components/core";
+import { CustomThemeSelector, ThemeSwitch } from "../../../../components/core";
 // ui
-import { Spinner } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { Spinner } from "../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../components/breadcrumbs";
 // types
-import { ICustomTheme } from "types";
+import { ICustomTheme } from "../../../../types";
 
 const ProfilePreferences = () => {
   const { user: myProfile } = useUserAuth();

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 // next imports
 import { useRouter } from "next/router";
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // services
-import authenticationService from "services/authentication.service";
+import authenticationService from "../services/authentication.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useToast from "hooks/use-toast";
+import useUserAuth from "../hooks/use-user-auth";
+import useToast from "../hooks/use-toast";
 // types
 import type { NextPage } from "next";
 

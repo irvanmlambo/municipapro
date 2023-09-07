@@ -3,11 +3,11 @@ import { useState, useEffect, Dispatch, SetStateAction } from "react";
 import { useTheme } from "next-themes";
 
 // constants
-import { THEMES_OBJ } from "constants/themes";
+import { THEMES_OBJ } from "../../../constants/themes";
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // types
-import { ICustomTheme, IUser } from "types";
+import { ICustomTheme, IUser } from "../../../types";
 
 type Props = {
   user: IUser | undefined;

@@ -3,21 +3,21 @@ import React from "react";
 // headless ui
 import { Tab } from "@headlessui/react";
 // hooks
-import useLocalStorage from "hooks/use-local-storage";
-import useIssuesView from "hooks/use-issues-view";
+import useLocalStorage from "../../../hooks/use-local-storage";
+import useIssuesView from "../../../hooks/use-issues-view";
 // components
-import { SingleProgressStats } from "components/core";
+import { SingleProgressStats } from "../../../components/core";
 // ui
-import { Avatar } from "components/ui";
+import { Avatar } from "../../../components/ui";
 // types
 import {
   IModule,
   TAssigneesDistribution,
   TCompletionChartDistribution,
   TLabelsDistribution,
-} from "types";
+} from "../../../types";
 // constants
-import { STATE_GROUP_COLORS } from "constants/state";
+import { STATE_GROUP_COLORS } from "../../../constants/state";
 // types
 type Props = {
   distribution: {

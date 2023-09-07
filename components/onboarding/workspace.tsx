@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 // ui
-import { SecondaryButton } from "components/ui";
+import { SecondaryButton } from "../../components/ui";
 // types
-import { ICurrentUserResponse, OnboardingSteps } from "types";
+import { ICurrentUserResponse, OnboardingSteps } from "../../types";
 // constants
-import { CreateWorkspaceForm } from "components/workspace";
+import { CreateWorkspaceForm } from "../../components/workspace";
 
 type Props = {
   user: ICurrentUserResponse | undefined;

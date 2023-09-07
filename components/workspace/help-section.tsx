@@ -5,12 +5,12 @@ import Link from "next/link";
 // headless ui
 import { Transition } from "@headlessui/react";
 // hooks
-import useTheme from "hooks/use-theme";
-import useOutsideClickDetector from "hooks/use-outside-click-detector";
+import useTheme from "../../hooks/use-theme";
+import useOutsideClickDetector from "../../hooks/use-outside-click-detector";
 // icons
 import { Bolt, HelpOutlineOutlined, Visibility, WestOutlined } from "@mui/icons-material";
 import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/outline";
-import { DocumentIcon, DiscordIcon, GithubIcon } from "components/icons";
+import { DocumentIcon, DiscordIcon, GithubIcon } from "../../components/icons";
 import { Hidden } from "@mui/material";
 
 const helpOptions = [

@@ -8,26 +8,26 @@ import useSWR, { mutate } from "swr";
 // next-themes
 import { useTheme } from "next-themes";
 // services
-import userService from "services/user.service";
-import workspaceService from "services/workspace.service";
+import userService from "../services/user.service";
+import workspaceService from "../services/workspace.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useWorkspaces from "hooks/use-workspaces";
+import useUserAuth from "../hooks/use-user-auth";
+import useWorkspaces from "../hooks/use-workspaces";
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // components
-import { InviteMembers, JoinWorkspaces, UserDetails, Workspace } from "components/onboarding";
+import { InviteMembers, JoinWorkspaces, UserDetails, Workspace } from "../components/onboarding";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../components/ui";
 // images
 import BluePlaneLogoWithoutText from "public/plane-logos/blue-without-text.png";
 import BlackHorizontalLogo from "public/plane-logos/black-horizontal-with-blue-logo.svg";
 import WhiteHorizontalLogo from "public/plane-logos/white-horizontal-with-blue-logo.svg";
 // types
-import { ICurrentUserResponse, IUser, OnboardingSteps } from "types";
+import { ICurrentUserResponse, IUser, OnboardingSteps } from "../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "constants/fetch-keys";
+import { CURRENT_USER, USER_WORKSPACE_INVITATIONS } from "../constants/fetch-keys";
 
 const Onboarding: NextPage = () => {
   const [step, setStep] = useState<number | null>(null);

@@ -1,4 +1,4 @@
-import useUser from "hooks/use-user";
+import useUser from "../hooks/use-user";
 import { useCallback, useEffect } from "react";
 
 declare global {

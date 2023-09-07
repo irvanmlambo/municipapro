@@ -5,14 +5,14 @@ import { mutate } from "swr";
 // cmdk
 import { Command } from "cmdk";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../types";
 // constants
-import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "constants/fetch-keys";
-import { PRIORITIES } from "constants/project";
+import { ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "../../constants/fetch-keys";
+import { PRIORITIES } from "../../constants/project";
 // icons
-import { CheckIcon, getPriorityIcon } from "components/icons";
+import { CheckIcon, getPriorityIcon } from "../../components/icons";
 
 type Props = {
   setIsPaletteOpen: Dispatch<SetStateAction<boolean>>;

@@ -1,4 +1,4 @@
-import SettingsNavbar from "layouts/settings-navbar";
+import SettingsNavbar from "../../layouts/settings-navbar";
 
 export const SettingsHeader = () => (
   <div className="mb-8 space-y-6">

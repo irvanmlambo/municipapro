@@ -10,9 +10,9 @@ import emojis from "./emojis.json";
 import icons from "./icons.json";
 // helpers
 import { getRecentEmojis, saveRecentEmoji } from "./helpers";
-import { getRandomEmoji, renderEmoji } from "helpers/emoji.helper";
+import { getRandomEmoji, renderEmoji } from "../../helpers/emoji.helper";
 // hooks
-import useOutsideClickDetector from "hooks/use-outside-click-detector";
+import useOutsideClickDetector from "../../hooks/use-outside-click-detector";
 
 const tabOptions = [
   {

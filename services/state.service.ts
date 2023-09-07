@@ -1,6 +1,6 @@
 // services
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
+import APIService from "../services/api.service";
+import trackEventServices from "../services/track-event.service";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 
@@ -8,7 +8,7 @@ const trackEvent =
   process.env.NEXT_PUBLIC_TRACK_EVENTS === "true" || process.env.NEXT_PUBLIC_TRACK_EVENTS === "1";
 
 // types
-import type { ICurrentUserResponse, IState, IStateResponse } from "types";
+import type { ICurrentUserResponse, IState, IStateResponse } from "../types";
 
 class ProjectStateServices extends APIService {
   constructor() {

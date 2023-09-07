@@ -3,14 +3,14 @@ import React, { useState } from "react";
 // react-beautiful-dnd
 import { Draggable } from "react-beautiful-dnd";
 // component
-import StrictModeDroppable from "components/dnd/StrictModeDroppable";
+import StrictModeDroppable from "../../../components/dnd/StrictModeDroppable";
 import { SingleCalendarIssue } from "./single-issue";
 // icons
 import { PlusSmallIcon } from "@heroicons/react/24/outline";
 // helper
-import { formatDate } from "helpers/calendar.helper";
+import { formatDate } from "../../../helpers/calendar.helper";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 
 type Props = {
   handleEditIssue: (issue: IIssue) => void;

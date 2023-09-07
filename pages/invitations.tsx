@@ -9,15 +9,15 @@ import useSWR, { mutate } from "swr";
 // next-themes
 import { useTheme } from "next-themes";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // hooks
-import useUser from "hooks/use-user";
-import useToast from "hooks/use-toast";
+import useUser from "../hooks/use-user";
+import useToast from "../hooks/use-toast";
 // layouts
-import DefaultLayout from "layouts/default-layout";
-import { UserAuthorizationLayout } from "layouts/auth-layout/user-authorization-wrapper";
+import DefaultLayout from "../layouts/default-layout";
+import { UserAuthorizationLayout } from "../layouts/auth-layout/user-authorization-wrapper";
 // ui
-import { SecondaryButton, PrimaryButton, EmptyState } from "components/ui";
+import { SecondaryButton, PrimaryButton, EmptyState } from "../components/ui";
 // icons
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 // images
@@ -26,14 +26,14 @@ import WhiteHorizontalLogo from "public/plane-logos/white-horizontal-with-blue-l
 import BlueWithoutText from "public/plane-logos/blue-without-text.png";
 import emptyInvitation from "public/empty-state/invitation.svg";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../helpers/string.helper";
 // types
 import type { NextPage } from "next";
-import type { IWorkspaceMemberInvitation } from "types";
+import type { IWorkspaceMemberInvitation } from "../types";
 // fetch-keys
-import { USER_WORKSPACE_INVITATIONS } from "constants/fetch-keys";
+import { USER_WORKSPACE_INVITATIONS } from "../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../constants/workspace";
 
 const OnBoard: NextPage = () => {
   const [invitationsRespond, setInvitationsRespond] = useState<string[]>([]);

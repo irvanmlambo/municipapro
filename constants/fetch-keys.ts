@@ -1,4 +1,4 @@
-import { IAnalyticsParams, IJiraMetadata, INotificationParams } from "types";
+import { IAnalyticsParams, IJiraMetadata, INotificationParams } from "../types";
 
 const paramsToKey = (params: any) => {
   const { state, priority, assignees, created_by, labels, target_date, sub_issue } = params;

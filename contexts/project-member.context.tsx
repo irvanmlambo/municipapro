@@ -7,13 +7,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../services/project.service";
 
 // keys
-import { USER_PROJECT_VIEW } from "constants/fetch-keys";
+import { USER_PROJECT_VIEW } from "../constants/fetch-keys";
 
 // types
-import { IProjectMember } from "types";
+import { IProjectMember } from "../types";
 
 type ContextType = {
   loading: boolean;

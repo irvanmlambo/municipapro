@@ -1,7 +1,7 @@
 // helpers
-import { getFirstCharacters, truncateText } from "helpers/string.helper";
+import { getFirstCharacters, truncateText } from "../../helpers/string.helper";
 // types
-import { IWorkspaceMemberInvitation } from "types";
+import { IWorkspaceMemberInvitation } from "../../types";
 
 type Props = {
   invitation: IWorkspaceMemberInvitation;

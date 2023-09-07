@@ -8,13 +8,13 @@ import { mutate } from "swr";
 // react-beautiful-dnd
 import { DraggableProvided, DraggableStateSnapshot } from "react-beautiful-dnd";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../services/issues.service";
 // hooks
-import useCalendarIssuesView from "hooks/use-calendar-issues-view";
-import useIssuesProperties from "hooks/use-issue-properties";
-import useToast from "hooks/use-toast";
+import useCalendarIssuesView from "../../../hooks/use-calendar-issues-view";
+import useIssuesProperties from "../../../hooks/use-issue-properties";
+import useToast from "../../../hooks/use-toast";
 // components
-import { CustomMenu, Tooltip } from "components/ui";
+import { CustomMenu, Tooltip } from "../../../components/ui";
 import {
   ViewAssigneeSelect,
   ViewDueDateSelect,
@@ -22,14 +22,14 @@ import {
   ViewLabelSelect,
   ViewPrioritySelect,
   ViewStateSelect,
-} from "components/issues";
+} from "../../../components/issues";
 // icons
 import { LinkIcon, PaperClipIcon, PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../../components/icons";
 // helper
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
+import { copyTextToClipboard, truncateText } from "../../../helpers/string.helper";
 // type
-import { ICurrentUserResponse, IIssue, ISubIssueResponse } from "types";
+import { ICurrentUserResponse, IIssue, ISubIssueResponse } from "../../../types";
 // fetch-keys
 import {
   CYCLE_ISSUES_WITH_PARAMS,
@@ -37,7 +37,7 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   SUB_ISSUES,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type Props = {
   handleEditIssue: (issue: IIssue) => void;

@@ -5,16 +5,16 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
-import trackEventServices from "services/track-event.service";
+import projectService from "../../../services/project.service";
+import trackEventServices from "../../../services/track-event.service";
 // ui
-import { AssigneesList, Avatar, CustomSearchSelect, Tooltip } from "components/ui";
+import { AssigneesList, Avatar, CustomSearchSelect, Tooltip } from "../../../components/ui";
 // icons
 import { UserGroupIcon } from "@heroicons/react/24/outline";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   issue: IIssue;

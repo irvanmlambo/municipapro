@@ -5,20 +5,20 @@ import { useRouter } from "next/router";
 
 // icons
 import { TrashIcon, StarIcon, PencilIcon } from "@heroicons/react/24/outline";
-import { StackedLayersIcon } from "components/icons";
+import { StackedLayersIcon } from "../../components/icons";
 //components
-import { CustomMenu, Tooltip } from "components/ui";
+import { CustomMenu, Tooltip } from "../../components/ui";
 // services
-import viewsService from "services/views.service";
+import viewsService from "../../services/views.service";
 // types
-import { IView } from "types";
+import { IView } from "../../types";
 // fetch keys
-import { VIEWS_LIST } from "constants/fetch-keys";
+import { VIEWS_LIST } from "../../constants/fetch-keys";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // helpers
-import { truncateText } from "helpers/string.helper";
-import { renderShortDateWithYearFormat, render24HourFormatTime } from "helpers/date-time.helper";
+import { truncateText } from "../../helpers/string.helper";
+import { renderShortDateWithYearFormat, render24HourFormatTime } from "../../helpers/date-time.helper";
 
 type Props = {
   view: IView;

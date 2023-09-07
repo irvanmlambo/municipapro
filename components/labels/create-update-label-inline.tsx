@@ -7,21 +7,21 @@ import { mutate } from "swr";
 // react-hook-form
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../hooks/use-user-auth";
 // react-color
 import { TwitterPicker } from "react-color";
 // headless ui
 import { Popover, Transition } from "@headlessui/react";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 // types
-import { IIssueLabels } from "types";
+import { IIssueLabels } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 type Props = {
   labelForm: boolean;

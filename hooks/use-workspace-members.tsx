@@ -1,8 +1,8 @@
 import useSWR from "swr";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // fetch-keys
-import { WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS } from "../constants/fetch-keys";
 // hooks
 import useUser from "./use-user";
 

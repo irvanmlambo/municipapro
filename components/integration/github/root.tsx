@@ -9,10 +9,10 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // services
-import IntegrationService from "services/integration";
-import GithubIntegrationService from "services/integration/github.service";
+import IntegrationService from "../../../services/integration";
+import GithubIntegrationService from "../../../services/integration/github.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 // components
 import {
   GithubImportConfigure,
@@ -20,20 +20,20 @@ import {
   GithubRepoDetails,
   GithubImportUsers,
   GithubImportConfirm,
-} from "components/integration";
+} from "../../../components/integration";
 // icons
-import { CogIcon, CloudUploadIcon, UsersIcon, CheckIcon } from "components/icons";
+import { CogIcon, CloudUploadIcon, UsersIcon, CheckIcon } from "../../../components/icons";
 import { ArrowLeftIcon, ListBulletIcon } from "@heroicons/react/24/outline";
 // images
 import GithubLogo from "public/services/github.png";
 // types
-import { ICurrentUserResponse, IGithubRepoCollaborator, IGithubServiceImportFormData } from "types";
+import { ICurrentUserResponse, IGithubRepoCollaborator, IGithubServiceImportFormData } from "../../../types";
 // fetch-keys
 import {
   APP_INTEGRATIONS,
   IMPORTER_SERVICES_LIST,
   WORKSPACE_INTEGRATIONS,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 export type TIntegrationSteps =
   | "import-configure"

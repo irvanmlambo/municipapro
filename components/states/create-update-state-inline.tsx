@@ -11,17 +11,17 @@ import { TwitterPicker } from "react-color";
 // headless ui
 import { Popover, Transition } from "@headlessui/react";
 // services
-import stateService from "services/state.service";
+import stateService from "../../services/state.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomSelect, Input, PrimaryButton, SecondaryButton, Tooltip } from "components/ui";
+import { CustomSelect, Input, PrimaryButton, SecondaryButton, Tooltip } from "../../components/ui";
 // types
-import type { ICurrentUserResponse, IState, IStateResponse } from "types";
+import type { ICurrentUserResponse, IState, IStateResponse } from "../../types";
 // fetch-keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../constants/fetch-keys";
 // constants
-import { GROUP_CHOICES } from "constants/project";
+import { GROUP_CHOICES } from "../../constants/project";
 
 type Props = {
   data: IState | null;

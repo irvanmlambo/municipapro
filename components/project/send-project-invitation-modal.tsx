@@ -14,19 +14,19 @@ import {
   CustomSelect,
   PrimaryButton,
   SecondaryButton,
-} from "components/ui";
+} from "../../components/ui";
 //icons
 import { PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 // services
-import projectService from "services/project.service";
-import workspaceService from "services/workspace.service";
+import projectService from "../../services/project.service";
+import workspaceService from "../../services/workspace.service";
 // contexts
 import { useProjectMyMembership } from "contexts/project-member.context";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // types
-import { ICurrentUserResponse } from "types";
+import { ICurrentUserResponse } from "../../types";
 // fetch-keys
 import { PROJECT_MEMBERS, WORKSPACE_MEMBERS } from "constants/fetch-keys";
 // constants

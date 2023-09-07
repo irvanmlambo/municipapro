@@ -7,7 +7,7 @@ import type {
   IUserLite,
   IProjectLite,
   IWorkspaceLite,
-} from "types";
+} from "../types";
 
 export interface IIssueCycle {
   id: string;

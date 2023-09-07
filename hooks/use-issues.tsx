@@ -1,10 +1,10 @@
 import useSWR from "swr";
 // services
-import userService from "services/user.service";
+import userService from "../services/user.service";
 // types
-import type { IIssue } from "types";
+import type { IIssue } from "../types";
 // fetch-keys
-import { USER_ISSUE } from "constants/fetch-keys";
+import { USER_ISSUE } from "../constants/fetch-keys";
 
 const useIssues = (workspaceSlug: string | undefined) => {
   // API Fetching

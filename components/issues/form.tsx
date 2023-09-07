@@ -6,12 +6,12 @@ import { useRouter } from "next/router";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // services
-import aiService from "services/ai.service";
+import aiService from "../../services/ai.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { GptAssistantModal } from "components/core";
-import { ParentIssuesListModal } from "components/issues";
+import { GptAssistantModal } from "../../components/core";
+import { ParentIssuesListModal } from "../../components/issues";
 import {
   IssueAssigneeSelect,
   IssueDateSelect,
@@ -20,9 +20,9 @@ import {
   IssuePrioritySelect,
   IssueProjectSelect,
   IssueStateSelect,
-} from "components/issues/select";
-import { CreateStateModal } from "components/states";
-import { CreateLabelModal } from "components/labels";
+} from "../../components/issues/select";
+import { CreateStateModal } from "../../components/states";
+import { CreateLabelModal } from "../../components/labels";
 // ui
 import {
   CustomMenu,
@@ -31,13 +31,13 @@ import {
   PrimaryButton,
   SecondaryButton,
   ToggleSwitch,
-} from "components/ui";
+} from "../../components/ui";
 // icons
 import { SparklesIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // types
-import type { ICurrentUserResponse, IIssue, ISearchIssueResponse } from "types";
+import type { ICurrentUserResponse, IIssue, ISearchIssueResponse } from "../../types";
 // rich-text-editor
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+const RemirrorRichTextEditor = dynamic(() => import("../../components/rich-text-editor"), {
   ssr: false,
   loading: () => (
     <Loader className="mt-4">
@@ -46,7 +46,7 @@ const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor
   ),
 });
 
-import { IRemirrorRichTextEditor } from "components/rich-text-editor";
+import { IRemirrorRichTextEditor } from "../../components/rich-text-editor";
 
 const WrappedRemirrorRichTextEditor = React.forwardRef<
   IRemirrorRichTextEditor,

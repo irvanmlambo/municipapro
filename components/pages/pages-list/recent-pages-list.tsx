@@ -5,22 +5,22 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import pagesService from "services/pages.service";
+import pagesService from "../../../services/pages.service";
 // components
-import { PagesView } from "components/pages";
+import { PagesView } from "../../../components/pages";
 // ui
-import { EmptyState, Loader } from "components/ui";
+import { EmptyState, Loader } from "../../../components/ui";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyPage from "public/empty-state/page.svg";
 // helpers
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../../helpers/string.helper";
 // types
 import { TPagesListProps } from "./types";
-import { RecentPagesResponse } from "types";
+import { RecentPagesResponse } from "../../../types";
 // fetch-keys
-import { RECENT_PAGES_LIST } from "constants/fetch-keys";
+import { RECENT_PAGES_LIST } from "../../../constants/fetch-keys";
 
 export const RecentPagesList: React.FC<TPagesListProps> = ({ viewType }) => {
   const router = useRouter();

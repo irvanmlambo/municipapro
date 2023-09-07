@@ -3,15 +3,15 @@ import { FC } from "react";
 // react-hook-form
 import { Control, Controller, UseFormWatch } from "react-hook-form";
 // hooks
-import useProjects from "hooks/use-projects";
+import useProjects from "../../../hooks/use-projects";
 // components
-import { SelectRepository, TFormValues, TIntegrationSteps } from "components/integration";
+import { SelectRepository, TFormValues, TIntegrationSteps } from "../../../components/integration";
 // ui
-import { CustomSearchSelect, PrimaryButton, SecondaryButton, ToggleSwitch } from "components/ui";
+import { CustomSearchSelect, PrimaryButton, SecondaryButton, ToggleSwitch } from "../../../components/ui";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../helpers/string.helper";
 // types
-import { IWorkspaceIntegration } from "types";
+import { IWorkspaceIntegration } from "../../../types";
 
 type Props = {
   handleStepChange: (value: TIntegrationSteps) => void;

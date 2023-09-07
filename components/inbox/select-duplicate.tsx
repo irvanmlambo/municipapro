@@ -9,16 +9,16 @@ import { SubmitHandler, useForm, UseFormWatch } from "react-hook-form";
 // headless ui
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // services
-import issuesServices from "services/issues.service";
+import issuesServices from "../../services/issues.service";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../components/ui";
 // icons
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../components/icons";
 // fetch-keys
-import { PROJECT_ISSUES_LIST } from "constants/fetch-keys";
+import { PROJECT_ISSUES_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

@@ -5,16 +5,16 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // ui
-import { CustomSearchSelect } from "components/ui";
-import { AssigneesList, Avatar } from "components/ui/avatar";
+import { CustomSearchSelect } from "../../../components/ui";
+import { AssigneesList, Avatar } from "../../../components/ui/avatar";
 // icons
 import { UserGroupIcon } from "@heroicons/react/24/outline";
 // types
-import { UserAuth } from "types";
+import { UserAuth } from "../../../types";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   value: string[];

@@ -1,8 +1,8 @@
 import useSWR from "swr";
 // services
-import projectService from "services/project.service";
+import projectService from "../services/project.service";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../constants/fetch-keys";
 // hooks
 import useUser from "./use-user";
 

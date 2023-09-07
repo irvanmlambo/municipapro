@@ -1,5 +1,5 @@
 // types
-import { TXAxisValues, TYAxisValues } from "types";
+import { TXAxisValues, TYAxisValues } from "../types";
 
 export const ANALYTICS_X_AXIS_VALUES: { value: TXAxisValues; label: string }[] = [
   {

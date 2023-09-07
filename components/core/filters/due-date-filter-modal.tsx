@@ -9,15 +9,15 @@ import DatePicker from "react-datepicker";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
+import useIssuesView from "../../../hooks/use-issues-view";
 // components
 import { DueDateFilterSelect } from "./due-date-filter-select";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 // icons
 import { XMarkIcon } from "@heroicons/react/20/solid";
 // helpers
-import { renderDateFormat, renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { renderDateFormat, renderShortDateWithYearFormat } from "../../../helpers/date-time.helper";
 
 type Props = {
   isOpen: boolean;

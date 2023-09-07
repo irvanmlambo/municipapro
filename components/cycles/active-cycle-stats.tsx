@@ -3,13 +3,13 @@ import React, { Fragment } from "react";
 // headless ui
 import { Tab } from "@headlessui/react";
 // hooks
-import useLocalStorage from "hooks/use-local-storage";
+import useLocalStorage from "../../hooks/use-local-storage";
 // components
-import { SingleProgressStats } from "components/core";
+import { SingleProgressStats } from "../../components/core";
 // ui
-import { Avatar } from "components/ui";
+import { Avatar } from "../../components/ui";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 // types
 type Props = {
   cycle: ICycle;

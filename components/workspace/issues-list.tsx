@@ -4,12 +4,12 @@ import Link from "next/link";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/20/solid";
 // helpers
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
-import { truncateText } from "helpers/string.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
+import { truncateText } from "../../helpers/string.helper";
 // types
-import { IIssueLite } from "types";
-import { Loader } from "components/ui";
-import { LayerDiagonalIcon } from "components/icons";
+import { IIssueLite } from "../../types";
+import { Loader } from "../../components/ui";
+import { LayerDiagonalIcon } from "../../components/icons";
 
 type Props = {
   issues: IIssueLite[] | undefined;

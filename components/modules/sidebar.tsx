@@ -20,28 +20,28 @@ import {
 import { Disclosure, Popover, Transition } from "@headlessui/react";
 import DatePicker from "react-datepicker";
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../services/modules.service";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { LinkModal, LinksList, SidebarProgressStats } from "components/core";
-import { DeleteModuleModal, SidebarLeadSelect, SidebarMembersSelect } from "components/modules";
-import ProgressChart from "components/core/sidebar/progress-chart";
-import { CustomMenu, CustomSelect, Loader, ProgressBar } from "components/ui";
+import { LinkModal, LinksList, SidebarProgressStats } from "../../components/core";
+import { DeleteModuleModal, SidebarLeadSelect, SidebarMembersSelect } from "../../components/modules";
+import ProgressChart from "../../components/core/sidebar/progress-chart";
+import { CustomMenu, CustomSelect, Loader, ProgressBar } from "../../components/ui";
 // icon
-import { ExclamationIcon } from "components/icons";
+import { ExclamationIcon } from "../../components/icons";
 import { LinkIcon } from "@heroicons/react/20/solid";
 // helpers
-import { renderDateFormat, renderShortDateWithYearFormat } from "helpers/date-time.helper";
-import { capitalizeFirstLetter, copyTextToClipboard } from "helpers/string.helper";
+import { renderDateFormat, renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
+import { capitalizeFirstLetter, copyTextToClipboard } from "../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IIssue, IModule, ModuleLink } from "types";
+import { ICurrentUserResponse, IIssue, IModule, ModuleLink } from "../../types";
 // fetch-keys
-import { MODULE_DETAILS } from "constants/fetch-keys";
+import { MODULE_DETAILS } from "../../constants/fetch-keys";
 // constant
-import { MODULE_STATUS } from "constants/module";
+import { MODULE_STATUS } from "../../constants/module";
 
 const defaultValues: Partial<IModule> = {
   lead: "",

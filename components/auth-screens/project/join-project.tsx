@@ -6,15 +6,15 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // ui
-import { PrimaryButton } from "components/ui";
+import { PrimaryButton } from "../../ui";
 // icons
-import { AssignmentClipboardIcon } from "components/icons";
+import { AssignmentClipboardIcon } from "../../icons";
 // images
 import JoinProjectImg from "public/auth/project-not-authorized.svg";
 // fetch-keys
-import { USER_PROJECT_VIEW } from "constants/fetch-keys";
+import { USER_PROJECT_VIEW } from "../../../constants/fetch-keys";
 
 export const JoinProject: React.FC = () => {
   const [isJoiningProject, setIsJoiningProject] = useState(false);

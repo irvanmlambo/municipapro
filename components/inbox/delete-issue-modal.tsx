@@ -7,19 +7,19 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import inboxServices from "services/inbox.service";
+import inboxServices from "../../services/inbox.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useInboxView from "hooks/use-inbox-view";
-import useUser from "hooks/use-user";
+import useToast from "../../hooks/use-toast";
+import useInboxView from "../../hooks/use-inbox-view";
+import useUser from "../../hooks/use-user";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // ui
-import { SecondaryButton, DangerButton } from "components/ui";
+import { SecondaryButton, DangerButton } from "../../components/ui";
 // types
-import type { IInboxIssue } from "types";
+import type { IInboxIssue } from "../../types";
 // fetch-keys
-import { INBOX_ISSUES } from "constants/fetch-keys";
+import { INBOX_ISSUES } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

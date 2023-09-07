@@ -16,13 +16,13 @@ import { ArrowLeftIcon, ListBulletIcon } from "@heroicons/react/24/outline";
 import { CogIcon, UsersIcon, CheckIcon } from "components/icons";
 
 // services
-import jiraImporterService from "services/integration/jira.service";
+import jiraImporterService from "../../../services/integration/jira.service";
 
 // fetch keys
-import { IMPORTER_SERVICES_LIST } from "constants/fetch-keys";
+import { IMPORTER_SERVICES_LIST } from "../../../constants/fetch-keys";
 
 // components
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 import {
   JiraGetImportDetail,
   JiraProjectDetail,
@@ -35,7 +35,7 @@ import {
 
 import JiraLogo from "public/services/jira.png";
 
-import { ICurrentUserResponse, IJiraImporterForm } from "types";
+import { ICurrentUserResponse, IJiraImporterForm } from "../../../types";
 
 const integrationWorkflowData: Array<{
   title: string;

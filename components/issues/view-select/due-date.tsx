@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
 
 // ui
-import { CustomDatePicker, Tooltip } from "components/ui";
+import { CustomDatePicker, Tooltip } from "../../../components/ui";
 // helpers
-import { findHowManyDaysLeft, renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { findHowManyDaysLeft, renderShortDateWithYearFormat } from "../../../helpers/date-time.helper";
 // services
-import trackEventServices from "services/track-event.service";
+import trackEventServices from "../../../services/track-event.service";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
-import useIssuesView from "hooks/use-issues-view";
+import { ICurrentUserResponse, IIssue } from "../../../types";
+import useIssuesView from "../../../hooks/use-issues-view";
 
 type Props = {
   issue: IIssue;

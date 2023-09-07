@@ -7,22 +7,22 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // components
-import { SettingsHeader } from "components/project";
+import { SettingsHeader } from "../../../../../components/project";
 // ui
-import { CustomSelect, Loader, SecondaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomSelect, Loader, SecondaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // types
-import { IProject, IWorkspace } from "types";
+import { IProject, IWorkspace } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECTS_LIST, PROJECT_DETAILS, PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECTS_LIST, PROJECT_DETAILS, PROJECT_MEMBERS } from "../../../../../constants/fetch-keys";
 
 const defaultValues: Partial<IProject> = {
   project_lead: null,

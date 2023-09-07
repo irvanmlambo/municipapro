@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 // component
-import { CustomSelect, ToggleSwitch } from "components/ui";
-import { SelectMonthModal } from "components/automation";
+import { CustomSelect, ToggleSwitch } from "../ui";
+import { SelectMonthModal } from "../automation";
 // icons
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 // constants
-import { PROJECT_AUTOMATION_MONTHS } from "constants/project";
+import { PROJECT_AUTOMATION_MONTHS } from "../../constants/project";
 // types
-import { IProject } from "types";
+import { IProject } from "../../types";
 
 type Props = {
   projectDetails: IProject | undefined;

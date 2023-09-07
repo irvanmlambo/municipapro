@@ -7,18 +7,18 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import issueServices from "services/issues.service";
+import issueServices from "../../services/issues.service";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
-import useCalendarIssuesView from "hooks/use-calendar-issues-view";
-import useToast from "hooks/use-toast";
-import useSpreadsheetIssuesView from "hooks/use-spreadsheet-issues-view";
+import useIssuesView from "../../hooks/use-issues-view";
+import useCalendarIssuesView from "../../hooks/use-calendar-issues-view";
+import useToast from "../../hooks/use-toast";
+import useSpreadsheetIssuesView from "../../hooks/use-spreadsheet-issues-view";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // ui
-import { SecondaryButton, DangerButton } from "components/ui";
+import { SecondaryButton, DangerButton } from "../../components/ui";
 // types
-import type { IIssue, ICurrentUserResponse, ISubIssueResponse } from "types";
+import type { IIssue, ICurrentUserResponse, ISubIssueResponse } from "../../types";
 // fetch-keys
 import {
   CYCLE_ISSUES_WITH_PARAMS,
@@ -27,7 +27,7 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   SUB_ISSUES,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

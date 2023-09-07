@@ -3,9 +3,9 @@ import React, { useState } from "react";
 // headless ui
 import { Transition, Dialog } from "@headlessui/react";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../components/ui";
 // types
-import type { IProject } from "types";
+import type { IProject } from "../../types";
 
 // type
 type TJoinProjectModalProps = {

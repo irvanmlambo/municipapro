@@ -6,28 +6,28 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../hooks/use-toast";
+import useUserAuth from "../../hooks/use-user-auth";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // components
 import {
   ViewDueDateSelect,
   ViewPrioritySelect,
   ViewStateSelect,
-} from "components/issues/view-select";
+} from "../../components/issues/view-select";
 // icon
 import { LinkIcon, PaperClipIcon } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../components/icons";
 // ui
-import { AssigneesList } from "components/ui/avatar";
-import { CustomMenu, Tooltip } from "components/ui";
+import { AssigneesList } from "../../components/ui/avatar";
+import { CustomMenu, Tooltip } from "../../components/ui";
 // types
-import { IIssue, Properties } from "types";
+import { IIssue, Properties } from "../../types";
 // helper
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
 // fetch-keys
-import { USER_ISSUE } from "constants/fetch-keys";
+import { USER_ISSUE } from "../../constants/fetch-keys";
 
 type Props = {
   issue: IIssue;

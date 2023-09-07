@@ -1,9 +1,9 @@
 // react-hook-form
 import { Control, Controller, UseFormSetValue } from "react-hook-form";
 // components
-import { SelectProject, SelectSegment, SelectXAxis, SelectYAxis } from "components/analytics";
+import { SelectProject, SelectSegment, SelectXAxis, SelectYAxis } from "../../analytics";
 // types
-import { IAnalyticsParams, IProject } from "types";
+import { IAnalyticsParams, IProject } from "../../../types";
 
 type Props = {
   control: Control<IAnalyticsParams, any>;

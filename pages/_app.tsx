@@ -17,13 +17,13 @@ import "styles/react-datepicker.css";
 import NProgress from "nprogress";
 
 // contexts
-import { UserProvider } from "contexts/user.context";
-import { ToastContextProvider } from "contexts/toast.context";
-import { ThemeContextProvider } from "contexts/theme.context";
+import { UserProvider } from "../contexts/user.context";
+import { ToastContextProvider } from "../contexts/toast.context";
+import { ThemeContextProvider } from "../contexts/theme.context";
 // types
 import type { AppProps } from "next/app";
 // constants
-import { THEMES } from "constants/themes";
+import { THEMES } from "../constants/themes";
 // constants
 import {
   SITE_NAME,
@@ -32,9 +32,9 @@ import {
   TWITTER_USER_NAME,
   SITE_KEYWORDS,
   SITE_TITLE,
-} from "constants/seo-variables";
+} from "../constants/seo-variables";
 
-const CrispWithNoSSR = dynamic(() => import("constants/crisp"), { ssr: false });
+const CrispWithNoSSR = dynamic(() => import("../constants/crisp"), { ssr: false });
 
 // nprogress
 NProgress.configure({ showSpinner: false });

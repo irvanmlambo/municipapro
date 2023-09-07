@@ -4,13 +4,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // icons
 import User from "public/user.png";
 // types
-import { IUser, IUserLite } from "types";
+import { IUser, IUserLite } from "../../types";
 // fetch-keys
-import { WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS } from "../../constants/fetch-keys";
 
 type AvatarProps = {
   user?: Partial<IUser> | Partial<IUserLite> | null;

@@ -9,11 +9,11 @@ import { Combobox, Dialog, Transition } from "@headlessui/react";
 // icons
 import { RectangleStackIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // types
-import { ICurrentUserResponse, IIssueLabels } from "types";
+import { ICurrentUserResponse, IIssueLabels } from "../../types";
 // constants
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

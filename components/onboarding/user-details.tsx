@@ -5,17 +5,17 @@ import { mutate } from "swr";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // services
-import userService from "services/user.service";
+import userService from "../../services/user.service";
 // ui
-import { CustomSelect, Input, PrimaryButton } from "components/ui";
+import { CustomSelect, Input, PrimaryButton } from "../../components/ui";
 // types
-import { ICurrentUserResponse, IUser } from "types";
+import { ICurrentUserResponse, IUser } from "../../types";
 // fetch-keys
-import { CURRENT_USER } from "constants/fetch-keys";
+import { CURRENT_USER } from "../../constants/fetch-keys";
 // constants
-import { USER_ROLES } from "constants/workspace";
+import { USER_ROLES } from "../../constants/workspace";
 
 const defaultValues: Partial<IUser> = {
   first_name: "",

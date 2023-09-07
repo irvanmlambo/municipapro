@@ -11,19 +11,19 @@ import { TwitterPicker } from "react-color";
 // headless ui
 import { Dialog, Popover, Transition } from "@headlessui/react";
 // services
-import stateService from "services/state.service";
+import stateService from "../../services/state.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { CustomSelect, Input, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // icons
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 // types
-import type { ICurrentUserResponse, IState, IStateResponse } from "types";
+import type { ICurrentUserResponse, IState, IStateResponse } from "../../types";
 // fetch keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../constants/fetch-keys";
 // constants
-import { GROUP_CHOICES } from "constants/project";
+import { GROUP_CHOICES } from "../../constants/project";
 
 // types
 type Props = {

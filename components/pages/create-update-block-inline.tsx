@@ -10,19 +10,19 @@ import { SparklesIcon } from "@heroicons/react/24/outline";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // services
-import pagesService from "services/pages.service";
-import issuesService from "services/issues.service";
-import aiService from "services/ai.service";
+import pagesService from "../../services/pages.service";
+import issuesService from "../../services/issues.service";
+import aiService from "../../services/ai.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { GptAssistantModal } from "components/core";
+import { GptAssistantModal } from "../../components/core";
 // ui
-import { Loader, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { Loader, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // types
-import { ICurrentUserResponse, IPageBlock } from "types";
+import { ICurrentUserResponse, IPageBlock } from "../../types";
 // fetch-keys
-import { PAGE_BLOCKS_LIST } from "constants/fetch-keys";
+import { PAGE_BLOCKS_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   handleClose: () => void;
@@ -39,7 +39,7 @@ const defaultValues = {
   description_html: null,
 };
 
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+const RemirrorRichTextEditor = dynamic(() => import("../../components/rich-text-editor"), {
   ssr: false,
   loading: () => (
     <Loader className="mx-4 mt-6">
@@ -47,7 +47,7 @@ const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor
     </Loader>
   ),
 });
-import { IRemirrorRichTextEditor } from "components/rich-text-editor";
+import { IRemirrorRichTextEditor } from "../../components/rich-text-editor";
 
 const WrappedRemirrorRichTextEditor = React.forwardRef<
   IRemirrorRichTextEditor,

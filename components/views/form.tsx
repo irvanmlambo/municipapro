@@ -2,13 +2,13 @@ import { useEffect } from "react";
 
 import { useForm } from "react-hook-form";
 // ui
-import { Input, PrimaryButton, SecondaryButton, TextArea } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton, TextArea } from "../../components/ui";
 // components
-import { FilterList } from "components/core";
+import { FilterList } from "../../components/core";
 // types
-import { IView } from "types";
+import { IView } from "../../types";
 // components
-import { SelectFilters } from "components/views";
+import { SelectFilters } from "../../components/views";
 
 type Props = {
   handleFormSubmit: (values: IView) => Promise<void>;

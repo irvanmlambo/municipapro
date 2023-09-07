@@ -7,17 +7,17 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // ui
-import { DangerButton, Input, SecondaryButton } from "components/ui";
+import { DangerButton, Input, SecondaryButton } from "../../components/ui";
 // types
-import type { ICurrentUserResponse, IWorkspace } from "types";
+import type { ICurrentUserResponse, IWorkspace } from "../../types";
 // fetch-keys
-import { USER_WORKSPACES } from "constants/fetch-keys";
+import { USER_WORKSPACES } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

@@ -1,7 +1,7 @@
 // ui
-import { BarGraph } from "components/ui";
+import { BarGraph } from "../../ui";
 // types
-import { IDefaultAnalyticsResponse } from "types";
+import { IDefaultAnalyticsResponse } from "../../../types";
 
 type Props = {
   defaultAnalytics: IDefaultAnalyticsResponse;

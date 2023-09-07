@@ -4,23 +4,23 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 
 // icons
-import { CustomMenu, Icon, Tooltip } from "components/ui";
+import { CustomMenu, Icon, Tooltip } from "../../components/ui";
 
 // helper
-import { stripHTML, replaceUnderscoreIfSnakeCase, truncateText } from "helpers/string.helper";
+import { stripHTML, replaceUnderscoreIfSnakeCase, truncateText } from "../../helpers/string.helper";
 import {
   formatDateDistance,
   render12HourFormatTime,
   renderLongDateFormat,
   renderShortDate,
   renderShortDateWithYearFormat,
-} from "helpers/date-time.helper";
+} from "../../helpers/date-time.helper";
 
 // type
-import type { IUserNotification } from "types";
+import type { IUserNotification } from "../../types";
 
 type NotificationCardProps = {
   notification: IUserNotification;

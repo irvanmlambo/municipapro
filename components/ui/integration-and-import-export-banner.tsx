@@ -1,4 +1,4 @@
-import { ExclamationIcon } from "components/icons";
+import { ExclamationIcon } from "../../components/icons";
 
 type Props = {
   bannerName: string;

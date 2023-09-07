@@ -7,21 +7,21 @@ import useSWR, { mutate } from "swr";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../../../../services/issues.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
-import { IssueDetailsSidebar, IssueMainContent } from "components/issues";
+import { IssueDetailsSidebar, IssueMainContent } from "../../../../../components/issues";
 // ui
-import { Loader } from "components/ui";
-import { Breadcrumbs } from "components/breadcrumbs";
+import { Loader } from "../../../../../components/ui";
+import { Breadcrumbs } from "../../../../../components/breadcrumbs";
 // types
-import { IIssue } from "types";
+import { IIssue } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_ISSUES_ACTIVITY, ISSUE_DETAILS } from "constants/fetch-keys";
+import { PROJECT_ISSUES_ACTIVITY, ISSUE_DETAILS } from "../../../../../constants/fetch-keys";
 
 const defaultValues = {
   name: "",

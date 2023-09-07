@@ -9,18 +9,18 @@ import { SubmitHandler, useForm } from "react-hook-form";
 // headless ui
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 // services
-import issuesServices from "services/issues.service";
+import issuesServices from "../../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useIssuesView from "hooks/use-issues-view";
-import useCalendarIssuesView from "hooks/use-calendar-issues-view";
+import useToast from "../../../hooks/use-toast";
+import useIssuesView from "../../../hooks/use-issues-view";
+import useCalendarIssuesView from "../../../hooks/use-calendar-issues-view";
 // ui
-import { DangerButton, SecondaryButton } from "components/ui";
+import { DangerButton, SecondaryButton } from "../../../components/ui";
 // icons
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { LayerDiagonalIcon } from "components/icons";
+import { LayerDiagonalIcon } from "../../../components/icons";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 // fetch keys
 import {
   CYCLE_DETAILS,
@@ -30,7 +30,7 @@ import {
   PROJECT_ISSUES_LIST,
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../../../constants/fetch-keys";
 
 type FormInput = {
   delete_issue_ids: string[];

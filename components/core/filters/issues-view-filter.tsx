@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 // headless ui
 import { Popover, Transition } from "@headlessui/react";
 // hooks
-import useIssuesProperties from "hooks/use-issue-properties";
-import useIssuesView from "hooks/use-issues-view";
-import useEstimateOption from "hooks/use-estimate-option";
+import useIssuesProperties from "../../../hooks/use-issue-properties";
+import useIssuesView from "../../../hooks/use-issues-view";
+import useEstimateOption from "../../../hooks/use-estimate-option";
 // components
-import { SelectFilters } from "components/views";
+import { SelectFilters } from "../../../components/views";
 // ui
-import { CustomMenu, ToggleSwitch, Tooltip } from "components/ui";
+import { CustomMenu, ToggleSwitch, Tooltip } from "../../../components/ui";
 // icons
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import {
@@ -22,12 +22,12 @@ import {
   WaterfallChartOutlined,
 } from "@mui/icons-material";
 // helpers
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
-import { checkIfArraysHaveSameElements } from "helpers/array.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../../helpers/string.helper";
+import { checkIfArraysHaveSameElements } from "../../../helpers/array.helper";
 // types
-import { Properties, TIssueViewOptions } from "types";
+import { Properties, TIssueViewOptions } from "../../../types";
 // constants
-import { GROUP_BY_OPTIONS, ORDER_BY_OPTIONS, FILTER_ISSUE_OPTIONS } from "constants/issue";
+import { GROUP_BY_OPTIONS, ORDER_BY_OPTIONS, FILTER_ISSUE_OPTIONS } from "../../../constants/issue";
 
 const issueViewOptions: { type: TIssueViewOptions; Icon: any }[] = [
   {

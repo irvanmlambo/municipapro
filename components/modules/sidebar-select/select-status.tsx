@@ -4,13 +4,13 @@ import React from "react";
 import { Control, Controller, UseFormWatch } from "react-hook-form";
 // ui
 import { Squares2X2Icon } from "@heroicons/react/24/outline";
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
 // types
-import { IModule } from "types";
+import { IModule } from "../../../types";
 // common
 // constants
-import { MODULE_STATUS } from "constants/module";
+import { MODULE_STATUS } from "../../../constants/module";
 
 type Props = {
   control: Control<Partial<IModule>, any>;

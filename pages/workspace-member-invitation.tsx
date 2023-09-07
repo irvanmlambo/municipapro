@@ -13,19 +13,19 @@ import {
 } from "@heroicons/react/24/outline";
 // swr
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../hooks/use-user";
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../layouts/default-layout";
 // ui
-import { Spinner } from "components/ui";
+import { Spinner } from "../components/ui";
 // icons
-import { EmptySpace, EmptySpaceItem } from "components/ui/empty-space";
+import { EmptySpace, EmptySpaceItem } from "../components/ui/empty-space";
 // types
 import type { NextPage } from "next";
 // constants
-import { WORKSPACE_INVITATION } from "constants/fetch-keys";
+import { WORKSPACE_INVITATION } from "../constants/fetch-keys";
 
 const WorkspaceInvitation: NextPage = () => {
   const router = useRouter();

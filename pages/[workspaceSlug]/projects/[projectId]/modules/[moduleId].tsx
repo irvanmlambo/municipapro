@@ -7,27 +7,27 @@ import useSWR from "swr";
 // icons
 import { ArrowLeftIcon, RectangleGroupIcon } from "@heroicons/react/24/outline";
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../../../../services/modules.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // contexts
-import { IssueViewContextProvider } from "contexts/issue-view.context";
+import { IssueViewContextProvider } from "../../../../../contexts/issue-view.context";
 // components
-import { ExistingIssuesListModal, IssuesFilterView, IssuesView } from "components/core";
-import { ModuleDetailsSidebar } from "components/modules";
-import { AnalyticsProjectModal } from "components/analytics";
+import { ExistingIssuesListModal, IssuesFilterView, IssuesView } from "../../../../../components/core";
+import { ModuleDetailsSidebar } from "../../../../../components/modules";
+import { AnalyticsProjectModal } from "../../../../../components/analytics";
 // ui
-import { CustomMenu, SecondaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomMenu, SecondaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../../../helpers/string.helper";
 // types
-import { ISearchIssueResponse } from "types";
+import { ISearchIssueResponse } from "../../../../../types";
 // fetch-keys
-import { MODULE_DETAILS, MODULE_ISSUES, MODULE_LIST } from "constants/fetch-keys";
+import { MODULE_DETAILS, MODULE_ISSUES, MODULE_LIST } from "../../../../../constants/fetch-keys";
 
 const SingleModule: React.FC = () => {
   const [moduleIssuesListModal, setModuleIssuesListModal] = useState(false);

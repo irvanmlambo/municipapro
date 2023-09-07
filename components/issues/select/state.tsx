@@ -5,16 +5,16 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import stateService from "services/state.service";
+import stateService from "../../../services/state.service";
 // ui
-import { CustomSearchSelect } from "components/ui";
+import { CustomSearchSelect } from "../../../components/ui";
 // icons
 import { PlusIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
-import { getStateGroupIcon } from "components/icons";
+import { getStateGroupIcon } from "../../../components/icons";
 // helpers
-import { getStatesList } from "helpers/state.helper";
+import { getStatesList } from "../../../helpers/state.helper";
 // fetch keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../../constants/fetch-keys";
 
 type Props = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;

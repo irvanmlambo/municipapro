@@ -5,12 +5,12 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // services
-import projectService from "services/project.service";
-import issuesService from "services/issues.service";
+import projectService from "../../../../../services/project.service";
+import issuesService from "../../../../../services/issues.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
 import {
   CreateUpdateLabelInline,
@@ -18,20 +18,20 @@ import {
   LabelsListModal,
   SingleLabel,
   SingleLabelGroup,
-} from "components/labels";
-import { SettingsHeader } from "components/project";
+} from "../../../../../components/labels";
+import { SettingsHeader } from "../../../../../components/project";
 // ui
-import { EmptyState, Loader, PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { EmptyState, Loader, PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyLabel from "public/empty-state/label.svg";
 // types
-import { IIssueLabels } from "types";
+import { IIssueLabels } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_DETAILS, PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_DETAILS, PROJECT_ISSUE_LABELS } from "../../../../../constants/fetch-keys";
 
 const LabelsSettings: NextPage = () => {
   // create/edit label form

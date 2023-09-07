@@ -10,12 +10,12 @@ import { useFormContext, Controller } from "react-hook-form";
 import { PlusIcon } from "@heroicons/react/20/solid";
 
 // hooks
-import useProjects from "hooks/use-projects";
+import useProjects from "../../../hooks/use-projects";
 
 // components
-import { Input, CustomSelect } from "components/ui";
+import { Input, CustomSelect } from "../../../components/ui";
 
-import { IJiraImporterForm } from "types";
+import { IJiraImporterForm } from "../../../types";
 
 export const JiraGetImportDetail: React.FC = () => {
   const {

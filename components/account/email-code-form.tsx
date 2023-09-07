@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 // ui
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../ui";
 // services
-import authenticationService from "services/authentication.service";
-import useToast from 'hooks/use-toast';
-import useTimer from "hooks/use-timer";
+import authenticationService from "../../services/authentication.service";
+import useToast from '../../hooks/use-toast';
+import useTimer from "../../hooks/use-timer";
 // icons
 
 // types

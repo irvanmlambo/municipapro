@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import stateService from "services/state.service";
+import stateService from "../../services/state.service";
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // icons
 import {
   ArrowDownIcon,
@@ -15,15 +15,15 @@ import {
   PencilSquareIcon,
   TrashIcon,
 } from "@heroicons/react/24/outline";
-import { getStateGroupIcon } from "components/icons";
+import { getStateGroupIcon } from "../../components/icons";
 // helpers
-import { addSpaceIfCamelCase } from "helpers/string.helper";
-import { groupBy, orderArrayBy } from "helpers/array.helper";
-import { orderStateGroups } from "helpers/state.helper";
+import { addSpaceIfCamelCase } from "../../helpers/string.helper";
+import { groupBy, orderArrayBy } from "../../helpers/array.helper";
+import { orderStateGroups } from "../../helpers/state.helper";
 // types
-import { ICurrentUserResponse, IState } from "types";
+import { ICurrentUserResponse, IState } from "../../types";
 // fetch-keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   index: number;

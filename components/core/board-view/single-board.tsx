@@ -3,21 +3,21 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 // react-beautiful-dnd
-import StrictModeDroppable from "components/dnd/StrictModeDroppable";
+import StrictModeDroppable from "../../../components/dnd/StrictModeDroppable";
 import { Draggable } from "react-beautiful-dnd";
 // hooks
-import useIssuesView from "hooks/use-issues-view";
-import useIssuesProperties from "hooks/use-issue-properties";
+import useIssuesView from "../../../hooks/use-issues-view";
+import useIssuesProperties from "../../../hooks/use-issue-properties";
 // components
-import { BoardHeader, SingleBoardIssue } from "components/core";
+import { BoardHeader, SingleBoardIssue } from "../../../components/core";
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../../components/ui";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // helpers
-import { replaceUnderscoreIfSnakeCase } from "helpers/string.helper";
+import { replaceUnderscoreIfSnakeCase } from "../../../helpers/string.helper";
 // types
-import { ICurrentUserResponse, IIssue, IState, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, IState, UserAuth } from "../../../types";
 
 type Props = {
   type?: "issue" | "cycle" | "module";

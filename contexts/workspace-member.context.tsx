@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 
 import useSWR from "swr";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // types
-import { IWorkspaceMember } from "types";
+import { IWorkspaceMember } from "../types";
 // fetch-keys
-import { WORKSPACE_MEMBERS_ME } from "constants/fetch-keys";
+import { WORKSPACE_MEMBERS_ME } from "../constants/fetch-keys";
 
 type ContextType = {
   loading: boolean;

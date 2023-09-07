@@ -5,16 +5,16 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // contexts
-import { issueViewContext } from "contexts/issue-view.context";
+import { issueViewContext } from "../contexts/issue-view.context";
 // services
-import issuesService from "services/issues.service";
-import cyclesService from "services/cycles.service";
-import modulesService from "services/modules.service";
-import stateService from "services/state.service";
+import issuesService from "../services/issues.service";
+import cyclesService from "../services/cycles.service";
+import modulesService from "../services/modules.service";
+import stateService from "../services/state.service";
 // helpers
-import { getStatesList } from "helpers/state.helper";
+import { getStatesList } from "../helpers/state.helper";
 // types
-import type { IIssue } from "types";
+import type { IIssue } from "../types";
 // fetch-keys
 import {
   CYCLE_ISSUES_WITH_PARAMS,
@@ -23,7 +23,7 @@ import {
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   STATES_LIST,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../constants/fetch-keys";
 
 const useIssuesView = () => {
   const {

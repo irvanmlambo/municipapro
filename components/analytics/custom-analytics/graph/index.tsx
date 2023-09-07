@@ -3,12 +3,12 @@ import { BarDatum } from "@nivo/bar";
 // components
 import { CustomTooltip } from "./custom-tooltip";
 // ui
-import { BarGraph } from "components/ui";
+import { BarGraph } from "../../../ui";
 // helpers
-import { findStringWithMostCharacters } from "helpers/array.helper";
-import { generateBarColor } from "helpers/analytics.helper";
+import { findStringWithMostCharacters } from "../../../../helpers/array.helper";
+import { generateBarColor } from "../../../../helpers/analytics.helper";
 // types
-import { IAnalyticsParams, IAnalyticsResponse } from "types";
+import { IAnalyticsParams, IAnalyticsResponse } from "../../../../types";
 // constants
 
 type Props = {

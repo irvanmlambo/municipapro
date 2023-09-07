@@ -4,9 +4,9 @@ import { Dialog, Transition } from "@headlessui/react";
 // icons
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { CommandIcon } from "components/icons";
+import { CommandIcon } from "../../components/icons";
 // ui
-import { Input } from "components/ui";
+import { Input } from "../../components/ui";
 
 type Props = {
   isOpen: boolean;

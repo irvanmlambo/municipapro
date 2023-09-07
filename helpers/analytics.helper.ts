@@ -1,13 +1,13 @@
 // nivo
 import { BarDatum } from "@nivo/bar";
 // helpers
-import { capitalizeFirstLetter, generateRandomColor } from "helpers/string.helper";
+import { capitalizeFirstLetter, generateRandomColor } from "../helpers/string.helper";
 // types
-import { IAnalyticsData, IAnalyticsParams, IAnalyticsResponse } from "types";
+import { IAnalyticsData, IAnalyticsParams, IAnalyticsResponse } from "../types";
 // constants
-import { STATE_GROUP_COLORS } from "constants/state";
-import { MONTHS_LIST } from "constants/calendar";
-import { DATE_KEYS } from "constants/analytics";
+import { STATE_GROUP_COLORS } from "../constants/state";
+import { MONTHS_LIST } from "../constants/calendar";
+import { DATE_KEYS } from "../constants/analytics";
 
 export const convertResponseToBarGraphData = (
   response: IAnalyticsData | undefined,

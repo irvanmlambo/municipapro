@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 // hooks
-import useUser from "hooks/use-user";
-import useToast from "hooks/use-toast";
+import useUser from "../../hooks/use-user";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomMenu, Tooltip } from "components/ui";
+import { CustomMenu, Tooltip } from "../../components/ui";
 // icons
 import {
   DocumentTextIcon,
@@ -18,16 +18,16 @@ import {
   StarIcon,
   TrashIcon,
 } from "@heroicons/react/24/outline";
-import { ExclamationIcon } from "components/icons";
+import { ExclamationIcon } from "../../components/icons";
 // helpers
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
 import {
   renderLongDateFormat,
   renderShortDate,
   render24HourFormatTime,
-} from "helpers/date-time.helper";
+} from "../../helpers/date-time.helper";
 // types
-import { IPage, IProjectMember } from "types";
+import { IPage, IProjectMember } from "../../types";
 
 type TSingleStatProps = {
   page: IPage;

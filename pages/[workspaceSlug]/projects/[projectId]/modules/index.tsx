@@ -5,30 +5,30 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // services
-import projectService from "services/project.service";
-import modulesService from "services/modules.service";
+import projectService from "../../../../../services/project.service";
+import modulesService from "../../../../../services/modules.service";
 // components
 import {
   CreateUpdateModuleModal,
   ModulesListGanttChartView,
   SingleModuleCard,
-} from "components/modules";
+} from "../../../../../components/modules";
 // ui
-import { EmptyState, Loader, PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { EmptyState, Loader, PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 // images
 import emptyModule from "public/empty-state/module.svg";
 // types
-import { IModule, SelectModuleType } from "types/modules";
+import { IModule, SelectModuleType } from "../../../../../types/modules";
 import type { NextPage } from "next";
 // fetch-keys
-import { MODULE_LIST, PROJECT_DETAILS } from "constants/fetch-keys";
+import { MODULE_LIST, PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 
 const ProjectModules: NextPage = () => {
   const [selectedModule, setSelectedModule] = useState<SelectModuleType>();

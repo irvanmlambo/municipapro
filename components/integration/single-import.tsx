@@ -1,13 +1,13 @@
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../components/ui";
 // icons
 import { TrashIcon } from "@heroicons/react/24/outline";
 // helpers
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
 // types
-import { IImporterService } from "types";
+import { IImporterService } from "../../types";
 // constants
-import { IMPORTERS_EXPORTERS_LIST } from "constants/workspace";
+import { IMPORTERS_EXPORTERS_LIST } from "../../constants/workspace";
 
 type Props = {
   service: IImporterService;

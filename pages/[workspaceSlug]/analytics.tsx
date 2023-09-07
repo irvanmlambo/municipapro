@@ -7,28 +7,28 @@ import useSWR from "swr";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useProjects from "hooks/use-projects";
+import useUserAuth from "../../hooks/use-user-auth";
+import useProjects from "../../hooks/use-projects";
 // headless ui
 import { Tab } from "@headlessui/react";
 // services
-import analyticsService from "services/analytics.service";
-import trackEventServices from "services/track-event.service";
+import analyticsService from "../../services/analytics.service";
+import trackEventServices from "../../services/track-event.service";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
+import { WorkspaceAuthorizationLayout } from "../../layouts/auth-layout";
 // components
-import { CustomAnalytics, ScopeAndDemand } from "components/analytics";
+import { CustomAnalytics, ScopeAndDemand } from "../../components/analytics";
 // ui
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
-import { EmptyState } from "components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../components/breadcrumbs";
+import { EmptyState } from "../../components/ui";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyAnalytics from "public/empty-state/analytics.svg";
 // types
-import { IAnalyticsParams } from "types";
+import { IAnalyticsParams } from "../../types";
 // fetch-keys
-import { ANALYTICS } from "constants/fetch-keys";
+import { ANALYTICS } from "../../constants/fetch-keys";
 
 const defaultValues: IAnalyticsParams = {
   x_axis: "priority",

@@ -1,18 +1,18 @@
 import { useRouter } from "next/router";
 
 // hooks
-import useProjectDetails from "hooks/use-project-details";
+import useProjectDetails from "../../../../../hooks/use-project-details";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // contexts
-import { InboxViewContextProvider } from "contexts/inbox-view-context";
+import { InboxViewContextProvider } from "../../../../../contexts/inbox-view-context";
 // components
-import { InboxActionHeader, InboxMainContent, IssuesListSidebar } from "components/inbox";
+import { InboxActionHeader, InboxMainContent, IssuesListSidebar } from "../../../../../components/inbox";
 // helper
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../../../helpers/string.helper";
 // ui
-import { PrimaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { PrimaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // types

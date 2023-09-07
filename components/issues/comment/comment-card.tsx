@@ -7,17 +7,17 @@ import { useForm } from "react-hook-form";
 // icons
 import { ChatBubbleLeftEllipsisIcon, CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../../../hooks/use-user";
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../../components/ui";
 // helpers
-import { timeAgo } from "helpers/date-time.helper";
+import { timeAgo } from "../../../helpers/date-time.helper";
 // types
-import type { IIssueComment } from "types";
+import type { IIssueComment } from "../../../types";
 
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), { ssr: false });
+const RemirrorRichTextEditor = dynamic(() => import("../../../components/rich-text-editor"), { ssr: false });
 
-import { IRemirrorRichTextEditor } from "components/rich-text-editor";
+import { IRemirrorRichTextEditor } from "../../../components/rich-text-editor";
 
 const WrappedRemirrorRichTextEditor = React.forwardRef<
   IRemirrorRichTextEditor,

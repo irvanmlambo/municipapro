@@ -6,13 +6,13 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import userNotificationServices from "services/notifications.service";
+import userNotificationServices from "../services/notifications.service";
 
 // fetch-keys
-import { UNREAD_NOTIFICATIONS_COUNT, USER_WORKSPACE_NOTIFICATIONS } from "constants/fetch-keys";
+import { UNREAD_NOTIFICATIONS_COUNT, USER_WORKSPACE_NOTIFICATIONS } from "../constants/fetch-keys";
 
 // type
-import type { NotificationType } from "types";
+import type { NotificationType } from "../types";
 
 const useUserNotification = () => {
   const router = useRouter();

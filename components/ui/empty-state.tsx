@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 // ui
-import { PrimaryButton } from "components/ui";
+import { PrimaryButton } from "../../components/ui";
 
 type Props = {
   title: string;

@@ -1,9 +1,9 @@
 import React from "react";
 
 // ui
-import { CustomMenu } from "components/ui";
+import { CustomMenu } from "../../components/ui";
 // types
-import { IIssueLabels } from "types";
+import { IIssueLabels } from "../../types";
 //icons
 import { RectangleGroupIcon, PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
 

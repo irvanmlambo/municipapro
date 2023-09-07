@@ -6,15 +6,15 @@ import dynamic from "next/dynamic";
 // react-hook-form
 import { useForm } from "react-hook-form";
 // services
-import aiService from "services/ai.service";
-import trackEventServices from "services/track-event.service";
+import aiService from "../../../services/ai.service";
+import trackEventServices from "../../../services/track-event.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../hooks/use-toast";
+import useUserAuth from "../../../hooks/use-user-auth";
 // ui
-import { Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { Input, PrimaryButton, SecondaryButton } from "../../../components/ui";
 
-import { IIssue, IPageBlock } from "types";
+import { IIssue, IPageBlock } from "../../../types";
 type Props = {
   isOpen: boolean;
   handleClose: () => void;
@@ -32,11 +32,11 @@ type FormData = {
   task: string;
 };
 
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+const RemirrorRichTextEditor = dynamic(() => import("../../../components/rich-text-editor"), {
   ssr: false,
 });
 
-import { IRemirrorRichTextEditor } from "components/rich-text-editor";
+import { IRemirrorRichTextEditor } from "../../../components/rich-text-editor";
 
 const WrappedRemirrorRichTextEditor = forwardRef<IRemirrorRichTextEditor, IRemirrorRichTextEditor>(
   (props, ref) => <RemirrorRichTextEditor {...props} forwardedRef={ref} />

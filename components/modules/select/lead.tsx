@@ -6,13 +6,13 @@ import Image from "next/image";
 import useSWR from "swr";
 
 // services
-import projectServices from "services/project.service";
+import projectServices from "../../../services/project.service";
 // ui
-import { Avatar, CustomSearchSelect } from "components/ui";
+import { Avatar, CustomSearchSelect } from "../../../components/ui";
 // icons
 import { UserCircleIcon } from "@heroicons/react/24/outline";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 type Props = {
   value: string | null;

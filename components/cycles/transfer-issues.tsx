@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // component
-import { PrimaryButton, Tooltip } from "components/ui";
+import { PrimaryButton, Tooltip } from "../../components/ui";
 // icon
-import { ExclamationIcon, TransferIcon } from "components/icons";
+import { ExclamationIcon, TransferIcon } from "../../components/icons";
 // services
-import cycleServices from "services/cycles.service";
+import cycleServices from "../../services/cycles.service";
 // fetch-key
 import { CYCLE_DETAILS } from "constants/fetch-keys";
 

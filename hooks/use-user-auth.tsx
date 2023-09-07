@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 // swr
 import useSWR from "swr";
 // keys
-import { CURRENT_USER } from "constants/fetch-keys";
+import { CURRENT_USER } from "../constants/fetch-keys";
 // services
-import userService from "services/user.service";
-import workspaceService from "services/workspace.service";
+import userService from "../services/user.service";
+import workspaceService from "../services/workspace.service";
 // types
-import type { IWorkspace, ICurrentUserResponse } from "types";
+import type { IWorkspace, ICurrentUserResponse } from "../types";
 
 const useUserAuth = (routeAuth: "sign-in" | "onboarding" | "admin" | null = "admin") => {
   const router = useRouter();

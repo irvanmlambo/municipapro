@@ -5,30 +5,30 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import estimatesService from "services/estimates.service";
-import projectService from "services/project.service";
+import estimatesService from "../../../../../services/estimates.service";
+import projectService from "../../../../../services/project.service";
 // hooks
-import useProjectDetails from "hooks/use-project-details";
+import useProjectDetails from "../../../../../hooks/use-project-details";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
-import { CreateUpdateEstimateModal, SingleEstimate } from "components/estimates";
-import { SettingsHeader } from "components/project";
+import { CreateUpdateEstimateModal, SingleEstimate } from "../../../../../components/estimates";
+import { SettingsHeader } from "../../../../../components/project";
 //hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // ui
-import { EmptyState, Loader, SecondaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { EmptyState, Loader, SecondaryButton } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyEstimate from "public/empty-state/estimate.svg";
 // types
-import { IEstimate, IProject } from "types";
+import { IEstimate, IProject } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { ESTIMATES_LIST, PROJECT_DETAILS } from "constants/fetch-keys";
+import { ESTIMATES_LIST, PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 
 const EstimatesSettings: NextPage = () => {
   const [estimateFormOpen, setEstimateFormOpen] = useState(false);

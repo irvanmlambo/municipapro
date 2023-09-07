@@ -7,12 +7,12 @@ import { useRouter } from "next/router";
 import { useFormContext, useFieldArray, Controller } from "react-hook-form";
 
 // hooks
-import useWorkspaceMembers from "hooks/use-workspace-members";
+import useWorkspaceMembers from "../../../hooks/use-workspace-members";
 
 // components
-import { ToggleSwitch, Input, CustomSelect, CustomSearchSelect, Avatar } from "components/ui";
+import { ToggleSwitch, Input, CustomSelect, CustomSearchSelect, Avatar } from "../../../components/ui";
 
-import { IJiraImporterForm } from "types";
+import { IJiraImporterForm } from "../../../types";
 
 export const JiraImportUsers: FC = () => {
   const {

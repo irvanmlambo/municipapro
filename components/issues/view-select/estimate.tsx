@@ -3,15 +3,15 @@ import React from "react";
 import { useRouter } from "next/router";
 
 // services
-import trackEventServices from "services/track-event.service";
+import trackEventServices from "../../../services/track-event.service";
 // hooks
-import useEstimateOption from "hooks/use-estimate-option";
+import useEstimateOption from "../../../hooks/use-estimate-option";
 // ui
-import { CustomSelect, Tooltip } from "components/ui";
+import { CustomSelect, Tooltip } from "../../../components/ui";
 // icons
 import { PlayIcon } from "@heroicons/react/24/outline";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 
 type Props = {
   issue: IIssue;

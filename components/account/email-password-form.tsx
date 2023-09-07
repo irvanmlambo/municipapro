@@ -6,9 +6,9 @@ import Link from "next/link";
 // react hook form
 import { useForm } from "react-hook-form";
 // components
-import { EmailResetPasswordForm } from "components/account";
+import { EmailResetPasswordForm } from "../account";
 // ui
-import { Input, PrimaryButton } from "components/ui";
+import { Input, PrimaryButton } from "../ui";
 // types
 type EmailPasswordFormValues = {
   email: string;

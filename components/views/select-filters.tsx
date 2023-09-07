@@ -5,25 +5,25 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import stateService from "services/state.service";
-import projectService from "services/project.service";
-import issuesService from "services/issues.service";
+import stateService from "../../services/state.service";
+import projectService from "../../services/project.service";
+import issuesService from "../../services/issues.service";
 // components
-import { DueDateFilterModal } from "components/core";
+import { DueDateFilterModal } from "../../components/core";
 // ui
-import { Avatar, MultiLevelDropdown } from "components/ui";
+import { Avatar, MultiLevelDropdown } from "../../components/ui";
 // icons
-import { getPriorityIcon, getStateGroupIcon } from "components/icons";
+import { getPriorityIcon, getStateGroupIcon } from "../../components/icons";
 // helpers
-import { getStatesList } from "helpers/state.helper";
-import { checkIfArraysHaveSameElements } from "helpers/array.helper";
+import { getStatesList } from "../../helpers/state.helper";
+import { checkIfArraysHaveSameElements } from "../../helpers/array.helper";
 // types
-import { IIssueFilterOptions, IQuery } from "types";
+import { IIssueFilterOptions, IQuery } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS, STATES_LIST } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS, PROJECT_MEMBERS, STATES_LIST } from "../../constants/fetch-keys";
 // constants
-import { PRIORITIES } from "constants/project";
-import { DUE_DATES } from "constants/due-dates";
+import { PRIORITIES } from "../../constants/project";
+import { DUE_DATES } from "../../constants/due-dates";
 
 type Props = {
   filters: Partial<IIssueFilterOptions> | IQuery;

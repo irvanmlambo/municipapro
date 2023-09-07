@@ -1,4 +1,4 @@
-import { IProject, IProjectLite, IWorkspaceLite } from "types";
+import { IProject, IProjectLite, IWorkspaceLite } from "../types";
 
 export interface IState {
   readonly id: string;

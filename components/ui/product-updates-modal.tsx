@@ -4,13 +4,13 @@ import useSWR from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // component
-import { MarkdownRenderer, Spinner } from "components/ui";
+import { MarkdownRenderer, Spinner } from "../../components/ui";
 // icons
 import { XMarkIcon } from "@heroicons/react/20/solid";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../services/workspace.service";
 // helper
-import { renderLongDateFormat } from "helpers/date-time.helper";
+import { renderLongDateFormat } from "../../helpers/date-time.helper";
 
 type Props = {
   isOpen: boolean;

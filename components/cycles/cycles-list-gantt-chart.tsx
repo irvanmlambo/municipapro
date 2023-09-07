@@ -3,11 +3,11 @@ import { FC } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // components
-import { GanttChartRoot } from "components/gantt-chart";
+import { GanttChartRoot } from "../../components/gantt-chart";
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 
 type Props = {
   cycles: ICycle[];

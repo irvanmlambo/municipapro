@@ -7,11 +7,11 @@ import { TwitterPicker } from "react-color";
 // headless ui
 import { Popover, Transition } from "@headlessui/react";
 // ui
-import { CustomMenu, Input, PrimaryButton, SecondaryButton } from "components/ui";
+import { CustomMenu, Input, PrimaryButton, SecondaryButton } from "../../../components/ui";
 // icons
 import { PencilIcon, RectangleGroupIcon } from "@heroicons/react/24/outline";
 // types
-import { IIssueLabels } from "types";
+import { IIssueLabels } from "../../../types";
 
 type Props = {
   label: IIssueLabels;

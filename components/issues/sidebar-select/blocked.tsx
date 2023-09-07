@@ -6,15 +6,15 @@ import { useRouter } from "next/router";
 // react-hook-form
 import { UseFormWatch } from "react-hook-form";
 // hooks
-import useToast from "hooks/use-toast";
-import useProjectDetails from "hooks/use-project-details";
+import useToast from "../../../hooks/use-toast";
+import useProjectDetails from "../../../hooks/use-project-details";
 // components
-import { ExistingIssuesListModal } from "components/core";
+import { ExistingIssuesListModal } from "../../../components/core";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { BlockedIcon } from "components/icons";
+import { BlockedIcon } from "../../../components/icons";
 // types
-import { BlockeIssue, IIssue, ISearchIssueResponse, UserAuth } from "types";
+import { BlockeIssue, IIssue, ISearchIssueResponse, UserAuth } from "../../../types";
 
 type Props = {
   issueId?: string;

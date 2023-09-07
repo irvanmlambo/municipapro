@@ -3,26 +3,26 @@ import React, { useEffect, useState } from "react";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
 // services
-import fileService from "services/file.service";
-import userService from "services/user.service";
+import fileService from "../../../../services/file.service";
+import userService from "../../../../services/user.service";
 // hooks
-import useUserAuth from "hooks/use-user-auth";
-import useToast from "hooks/use-toast";
+import useUserAuth from "../../../../hooks/use-user-auth";
+import useToast from "../../../../hooks/use-toast";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import SettingsNavbar from "layouts/settings-navbar";
+import { WorkspaceAuthorizationLayout } from "../../../../layouts/auth-layout";
+import SettingsNavbar from "../../../../layouts/settings-navbar";
 // components
-import { ImageUploadModal } from "components/core";
+import { ImageUploadModal } from "../../../../components/core";
 // ui
-import { CustomSelect, DangerButton, Input, SecondaryButton, Spinner } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomSelect, DangerButton, Input, SecondaryButton, Spinner } from "../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../components/breadcrumbs";
 // icons
 import { UserIcon } from "@heroicons/react/24/outline";
 // types
 import type { NextPage } from "next";
-import type { IUser } from "types";
+import type { IUser } from "../../../../types";
 // constants
-import { USER_ROLES } from "constants/workspace";
+import { USER_ROLES } from "../../../../constants/workspace";
 
 const defaultValues: Partial<IUser> = {
   avatar: "",

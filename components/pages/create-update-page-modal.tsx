@@ -7,20 +7,20 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import pagesService from "services/pages.service";
+import pagesService from "../../services/pages.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
 import { PageForm } from "./page-form";
 // types
-import { ICurrentUserResponse, IPage } from "types";
+import { ICurrentUserResponse, IPage } from "../../types";
 // fetch-keys
 import {
   ALL_PAGES_LIST,
   FAVORITE_PAGES_LIST,
   MY_PAGES_LIST,
   RECENT_PAGES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

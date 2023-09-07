@@ -6,13 +6,13 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../services/modules.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { DeleteModuleModal } from "components/modules";
+import { DeleteModuleModal } from "../../components/modules";
 // ui
-import { AssigneesList, Avatar, CustomMenu, Tooltip } from "components/ui";
+import { AssigneesList, Avatar, CustomMenu, Tooltip } from "../../components/ui";
 // icons
 import {
   CalendarDaysIcon,
@@ -21,15 +21,15 @@ import {
   StarIcon,
   TrashIcon,
 } from "@heroicons/react/24/outline";
-import { CalendarMonthIcon, TargetIcon } from "components/icons";
+import { CalendarMonthIcon, TargetIcon } from "../../components/icons";
 
 // helpers
-import { copyTextToClipboard, truncateText } from "helpers/string.helper";
-import { renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { copyTextToClipboard, truncateText } from "../../helpers/string.helper";
+import { renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
 // types
-import { ICurrentUserResponse, IModule } from "types";
+import { ICurrentUserResponse, IModule } from "../../types";
 // fetch-key
-import { MODULE_LIST } from "constants/fetch-keys";
+import { MODULE_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   module: IModule;

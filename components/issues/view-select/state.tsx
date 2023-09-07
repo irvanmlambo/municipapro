@@ -3,18 +3,18 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import stateService from "services/state.service";
-import trackEventServices from "services/track-event.service";
+import stateService from "../../../services/state.service";
+import trackEventServices from "../../../services/track-event.service";
 // ui
-import { CustomSearchSelect, Tooltip } from "components/ui";
+import { CustomSearchSelect, Tooltip } from "../../../components/ui";
 // icons
-import { getStateGroupIcon } from "components/icons";
+import { getStateGroupIcon } from "../../../components/icons";
 // helpers
-import { getStatesList } from "helpers/state.helper";
+import { getStatesList } from "../../../helpers/state.helper";
 // types
-import { ICurrentUserResponse, IIssue } from "types";
+import { ICurrentUserResponse, IIssue } from "../../../types";
 // fetch-keys
-import { STATES_LIST } from "constants/fetch-keys";
+import { STATES_LIST } from "../../../constants/fetch-keys";
 
 type Props = {
   issue: IIssue;

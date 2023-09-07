@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // helpers
-import { renderDateFormat, renderShortDateWithYearFormat } from "helpers/date-time.helper";
+import { renderDateFormat, renderShortDateWithYearFormat } from "../../helpers/date-time.helper";
 // types
-import { IUserActivity } from "types";
+import { IUserActivity } from "../../types";
 // constants
-import { DAYS, MONTHS } from "constants/project";
+import { DAYS, MONTHS } from "../../constants/project";
 
 type Props = {
   activities: IUserActivity[] | undefined;

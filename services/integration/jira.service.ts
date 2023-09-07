@@ -1,8 +1,8 @@
-import APIService from "services/api.service";
-import trackEventServices from "services/track-event.service";
+import APIService from "../../services/api.service";
+import trackEventServices from "../../services/track-event.service";
 
 // types
-import { IJiraMetadata, IJiraResponse, IJiraImporterForm, ICurrentUserResponse } from "types";
+import { IJiraMetadata, IJiraResponse, IJiraImporterForm, ICurrentUserResponse } from "../../types";
 
 const { NEXT_PUBLIC_API_BASE_URL } = process.env;
 

@@ -3,25 +3,25 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../../../services/project.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // contexts
-import { IssueViewContextProvider } from "contexts/issue-view.context";
+import { IssueViewContextProvider } from "../../../../../contexts/issue-view.context";
 // helper
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../../../helpers/string.helper";
 // components
-import { IssuesFilterView, IssuesView } from "components/core";
+import { IssuesFilterView, IssuesView } from "../../../../../components/core";
 // ui
-import { Icon } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { Icon } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_DETAILS } from "constants/fetch-keys";
-import useIssuesView from "hooks/use-issues-view";
+import { PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
+import useIssuesView from "../../../../../hooks/use-issues-view";
 import { useEffect } from "react";
 
 const ProjectArchivedIssues: NextPage = () => {

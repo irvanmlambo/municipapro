@@ -1,5 +1,5 @@
 // types
-import { IState, IStateResponse } from "types";
+import { IState, IStateResponse } from "../types";
 
 export const orderStateGroups = (unorderedStateGroups: IStateResponse) =>
   Object.assign(

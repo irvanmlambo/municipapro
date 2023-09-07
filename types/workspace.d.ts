@@ -1,4 +1,4 @@
-import type { IProjectMember, IUser, IUserLite } from "types";
+import type { IProjectMember, IUser, IUserLite } from "../types";
 
 export interface IWorkspace {
   readonly id: string;

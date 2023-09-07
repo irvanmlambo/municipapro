@@ -5,20 +5,20 @@ import useSWR from "swr";
 import { useRouter } from "next/router";
 
 // component
-import { CustomSearchSelect, CustomSelect, ToggleSwitch } from "components/ui";
-import { SelectMonthModal } from "components/automation";
+import { CustomSearchSelect, CustomSelect, ToggleSwitch } from "../ui";
+import { SelectMonthModal } from "../automation";
 // icons
 import { ChevronDownIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
-import { getStateGroupIcon } from "components/icons";
+import { getStateGroupIcon } from "../icons";
 // services
-import stateService from "services/state.service";
+import stateService from "../../services/state.service";
 // constants
-import { PROJECT_AUTOMATION_MONTHS } from "constants/project";
-import { STATES_LIST } from "constants/fetch-keys";
+import { PROJECT_AUTOMATION_MONTHS } from "../../constants/project";
+import { STATES_LIST } from "../../constants/fetch-keys";
 // types
-import { IProject } from "types";
+import { IProject } from "../../types";
 // helper
-import { getStatesList } from "helpers/state.helper";
+import { getStatesList } from "../../helpers/state.helper";
 
 type Props = {
   projectDetails: IProject | undefined;

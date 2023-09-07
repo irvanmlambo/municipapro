@@ -1,11 +1,11 @@
 // ui
-import { PieGraph } from "components/ui";
+import { PieGraph } from "../../components/ui";
 // helpers
-import { capitalizeFirstLetter } from "helpers/string.helper";
+import { capitalizeFirstLetter } from "../../helpers/string.helper";
 // types
-import { IUserStateDistribution } from "types";
+import { IUserStateDistribution } from "../../types";
 // constants
-import { STATE_GROUP_COLORS } from "constants/state";
+import { STATE_GROUP_COLORS } from "../../constants/state";
 
 type Props = {
   groupedIssues: IUserStateDistribution[] | undefined;

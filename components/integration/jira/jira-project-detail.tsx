@@ -10,15 +10,15 @@ import useSWR from "swr";
 import { useFormContext, Controller } from "react-hook-form";
 
 // services
-import jiraImporterService from "services/integration/jira.service";
+import jiraImporterService from "../../../services/integration/jira.service";
 
 // fetch keys
-import { JIRA_IMPORTER_DETAIL } from "constants/fetch-keys";
+import { JIRA_IMPORTER_DETAIL } from "../../../constants/fetch-keys";
 
-import { IJiraImporterForm, IJiraMetadata } from "types";
+import { IJiraImporterForm, IJiraMetadata } from "../../../types";
 
 // components
-import { Spinner, ToggleSwitch } from "components/ui";
+import { Spinner, ToggleSwitch } from "../../../components/ui";
 
 import type { IJiraIntegrationData, TJiraIntegrationSteps } from "./";
 

@@ -7,22 +7,22 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import pagesService from "services/pages.service";
+import pagesService from "../../services/pages.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { DangerButton, SecondaryButton } from "components/ui";
+import { DangerButton, SecondaryButton } from "../../components/ui";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // types
-import type { ICurrentUserResponse, IPage } from "types";
+import type { ICurrentUserResponse, IPage } from "../../types";
 // fetch-keys
 import {
   ALL_PAGES_LIST,
   FAVORITE_PAGES_LIST,
   MY_PAGES_LIST,
   RECENT_PAGES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type TConfirmPageDeletionProps = {
   isOpen: boolean;

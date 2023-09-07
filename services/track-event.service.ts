@@ -1,5 +1,5 @@
 // services
-import APIService from "services/api.service";
+import APIService from "../services/api.service";
 
 const trackEvent =
   process.env.NEXT_PUBLIC_TRACK_EVENTS === "true" || process.env.NEXT_PUBLIC_TRACK_EVENTS === "1";
@@ -19,7 +19,7 @@ import type {
   IState,
   IView,
   IWorkspace,
-} from "types";
+} from "../types";
 
 type WorkspaceEventType =
   | "CREATE_WORKSPACE"

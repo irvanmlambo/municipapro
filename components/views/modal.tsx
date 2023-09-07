@@ -7,15 +7,15 @@ import { mutate } from "swr";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import viewsService from "services/views.service";
+import viewsService from "../../services/views.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { ViewForm } from "components/views";
+import { ViewForm } from "../../components/views";
 // types
-import { ICurrentUserResponse, IView } from "types";
+import { ICurrentUserResponse, IView } from "../../types";
 // fetch-keys
-import { VIEWS_LIST } from "constants/fetch-keys";
+import { VIEWS_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

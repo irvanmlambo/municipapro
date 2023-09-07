@@ -5,24 +5,24 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // services
-import IntegrationService from "services/integration";
-import projectService from "services/project.service";
+import IntegrationService from "../../../../../services/integration";
+import projectService from "../../../../../services/project.service";
 // components
-import { SettingsHeader, SingleIntegration } from "components/project";
+import { SettingsHeader, SingleIntegration } from "../../../../../components/project";
 // ui
-import { EmptyState, IntegrationAndImportExportBanner, Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { EmptyState, IntegrationAndImportExportBanner, Loader } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon, PuzzlePieceIcon } from "@heroicons/react/24/outline";
 // images
 import emptyIntegration from "public/empty-state/integration.svg";
 // types
-import { IProject } from "types";
+import { IProject } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_DETAILS, WORKSPACE_INTEGRATIONS } from "constants/fetch-keys";
+import { PROJECT_DETAILS, WORKSPACE_INTEGRATIONS } from "../../../../../constants/fetch-keys";
 
 const ProjectIntegrations: NextPage = () => {
   const router = useRouter();

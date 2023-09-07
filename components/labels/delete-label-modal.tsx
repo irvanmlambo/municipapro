@@ -9,15 +9,15 @@ import { Dialog, Transition } from "@headlessui/react";
 // icons
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 // services
-import issuesService from "services/issues.service";
+import issuesService from "../../services/issues.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { DangerButton, SecondaryButton } from "components/ui";
+import { DangerButton, SecondaryButton } from "../../components/ui";
 // types
-import type { ICurrentUserResponse, IIssueLabels } from "types";
+import type { ICurrentUserResponse, IIssueLabels } from "../../types";
 // fetch-keys
-import { PROJECT_ISSUE_LABELS } from "constants/fetch-keys";
+import { PROJECT_ISSUE_LABELS } from "../../constants/fetch-keys";
 
 type Props = {
   isOpen: boolean;

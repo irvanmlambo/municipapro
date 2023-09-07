@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../services/workspace.service";
 // fetch-keys
-import { WORKSPACE_DETAILS } from "constants/fetch-keys";
+import { WORKSPACE_DETAILS } from "../constants/fetch-keys";
 
 const useWorkspaceDetails = () => {
   const router = useRouter();

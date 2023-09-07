@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 // layouts
-import DefaultLayout from "layouts/default-layout";
+import DefaultLayout from "../../../layouts/default-layout";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../ui";
 
 export const NotAWorkspaceMember = () => (
   <DefaultLayout>

@@ -1,9 +1,9 @@
 // hooks
-import useIssuesView from "hooks/use-issues-view";
+import useIssuesView from "../../../hooks/use-issues-view";
 // components
-import { SingleList } from "components/core/list-view/single-list";
+import { SingleList } from "../../../components/core/list-view/single-list";
 // types
-import { ICurrentUserResponse, IIssue, IState, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, IState, UserAuth } from "../../../types";
 
 // types
 type Props = {

@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import cyclesService from "services/cycles.service";
+import cyclesService from "../../services/cycles.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../hooks/use-toast";
+import useUserAuth from "../../hooks/use-user-auth";
 // components
 import {
   CreateUpdateCycleModal,
@@ -16,17 +16,17 @@ import {
   DeleteCycleModal,
   SingleCycleCard,
   SingleCycleList,
-} from "components/cycles";
+} from "../../components/cycles";
 // ui
-import { EmptyState, Loader } from "components/ui";
+import { EmptyState, Loader } from "../../components/ui";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
 import emptyCycle from "public/empty-state/cycle.svg";
 // helpers
-import { getDateRangeStatus } from "helpers/date-time.helper";
+import { getDateRangeStatus } from "../../helpers/date-time.helper";
 // types
-import { ICycle } from "types";
+import { ICycle } from "../../types";
 // fetch-keys
 import {
   COMPLETED_CYCLES_LIST,
@@ -34,7 +34,7 @@ import {
   CYCLES_LIST,
   DRAFT_CYCLES_LIST,
   UPCOMING_CYCLES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type Props = {
   cycles: ICycle[] | undefined;

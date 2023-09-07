@@ -5,26 +5,26 @@ import { useRouter } from "next/router";
 import useSWR, { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
-import trackEventServices, { MiscellaneousEventType } from "services/track-event.service";
+import projectService from "../../../../../services/project.service";
+import trackEventServices, { MiscellaneousEventType } from "../../../../../services/track-event.service";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // hooks
-import useToast from "hooks/use-toast";
-import useUserAuth from "hooks/use-user-auth";
+import useToast from "../../../../../hooks/use-toast";
+import useUserAuth from "../../../../../hooks/use-user-auth";
 // components
-import { SettingsHeader } from "components/project";
+import { SettingsHeader } from "../../../../../components/project";
 // ui
-import { SecondaryButton, ToggleSwitch } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { SecondaryButton, ToggleSwitch } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
-import { ContrastIcon, PeopleGroupIcon, ViewListIcon, InboxIcon } from "components/icons";
+import { ContrastIcon, PeopleGroupIcon, ViewListIcon, InboxIcon } from "../../../../../components/icons";
 import { DocumentTextIcon } from "@heroicons/react/24/outline";
 // types
-import { IProject } from "types";
+import { IProject } from "../../../../../types";
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECTS_LIST, PROJECT_DETAILS } from "constants/fetch-keys";
+import { PROJECTS_LIST, PROJECT_DETAILS } from "../../../../../constants/fetch-keys";
 
 const featuresList = [
   {

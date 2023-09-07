@@ -4,15 +4,15 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 // components
-import { SpreadsheetColumns, SpreadsheetIssues } from "components/core";
-import { CustomMenu, Icon, Spinner } from "components/ui";
+import { SpreadsheetColumns, SpreadsheetIssues } from "../../../components/core";
+import { CustomMenu, Icon, Spinner } from "../../../components/ui";
 // hooks
-import useIssuesProperties from "hooks/use-issue-properties";
-import useSpreadsheetIssuesView from "hooks/use-spreadsheet-issues-view";
+import useIssuesProperties from "../../../hooks/use-issue-properties";
+import useSpreadsheetIssuesView from "../../../hooks/use-spreadsheet-issues-view";
 // types
-import { ICurrentUserResponse, IIssue, Properties, UserAuth } from "types";
+import { ICurrentUserResponse, IIssue, Properties, UserAuth } from "../../../types";
 // constants
-import { SPREADSHEET_COLUMN } from "constants/spreadsheet";
+import { SPREADSHEET_COLUMN } from "../../../constants/spreadsheet";
 // icon
 import { PlusIcon } from "@heroicons/react/24/outline";
 

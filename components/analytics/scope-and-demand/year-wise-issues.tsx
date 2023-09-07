@@ -1,9 +1,9 @@
 // ui
-import { LineGraph } from "components/ui";
+import { LineGraph } from "../../ui";
 // types
-import { IDefaultAnalyticsResponse } from "types";
+import { IDefaultAnalyticsResponse } from "../../../types";
 // constants
-import { MONTHS_LIST } from "constants/calendar";
+import { MONTHS_LIST } from "../../../constants/calendar";
 
 type Props = {
   defaultAnalytics: IDefaultAnalyticsResponse;

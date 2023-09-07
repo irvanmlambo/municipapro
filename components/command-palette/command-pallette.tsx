@@ -29,17 +29,17 @@ import {
   PeopleGroupIcon,
   SettingIcon,
   ViewListIcon,
-} from "components/icons";
+} from "../../components/icons";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // cmdk
 import { Command } from "cmdk";
 // hooks
-import useProjectDetails from "hooks/use-project-details";
-import useTheme from "hooks/use-theme";
-import useToast from "hooks/use-toast";
-import useUser from "hooks/use-user";
-import useDebounce from "hooks/use-debounce";
+import useProjectDetails from "../../hooks/use-project-details";
+import useTheme from "../../hooks/use-theme";
+import useToast from "../../hooks/use-toast";
+import useUser from "../../hooks/use-user";
+import useDebounce from "../../hooks/use-debounce";
 // components
 import {
   ShortcutsModal,
@@ -47,30 +47,30 @@ import {
   ChangeIssuePriority,
   ChangeIssueAssignee,
   ChangeInterfaceTheme,
-} from "components/command-palette";
-import { BulkDeleteIssuesModal } from "components/core";
-import { CreateUpdateCycleModal } from "components/cycles";
-import { CreateUpdateIssueModal, DeleteIssueModal } from "components/issues";
-import { CreateUpdateModuleModal } from "components/modules";
-import { CreateProjectModal } from "components/project";
-import { CreateUpdateViewModal } from "components/views";
-import { CreateUpdatePageModal } from "components/pages";
+} from "../../components/command-palette";
+import { BulkDeleteIssuesModal } from "../../components/core";
+import { CreateUpdateCycleModal } from "../../components/cycles";
+import { CreateUpdateIssueModal, DeleteIssueModal } from "../../components/issues";
+import { CreateUpdateModuleModal } from "../../components/modules";
+import { CreateProjectModal } from "../../components/project";
+import { CreateUpdateViewModal } from "../../components/views";
+import { CreateUpdatePageModal } from "../../components/pages";
 
-import { Spinner } from "components/ui";
+import { Spinner } from "../../components/ui";
 // helpers
 import {
   capitalizeFirstLetter,
   copyTextToClipboard,
   replaceUnderscoreIfSnakeCase,
-} from "helpers/string.helper";
+} from "../../helpers/string.helper";
 // services
-import issuesService from "services/issues.service";
-import workspaceService from "services/workspace.service";
-import inboxService from "services/inbox.service";
+import issuesService from "../../services/issues.service";
+import workspaceService from "../../services/workspace.service";
+import inboxService from "../../services/inbox.service";
 // types
-import { IIssue, IWorkspaceSearchResults } from "types";
+import { IIssue, IWorkspaceSearchResults } from "../../types";
 // fetch keys
-import { INBOX_LIST, ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "constants/fetch-keys";
+import { INBOX_LIST, ISSUE_DETAILS, PROJECT_ISSUES_ACTIVITY } from "../../constants/fetch-keys";
 
 export const CommandPalette: React.FC = () => {
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);

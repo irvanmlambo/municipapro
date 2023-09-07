@@ -1,9 +1,9 @@
 // hooks
-import useIntegrationPopup from "hooks/use-integration-popup";
+import useIntegrationPopup from "../../../hooks/use-integration-popup";
 // ui
-import { PrimaryButton } from "components/ui";
+import { PrimaryButton } from "../../../components/ui";
 // types
-import { IWorkspaceIntegration } from "types";
+import { IWorkspaceIntegration } from "../../../types";
 
 type Props = {
   workspaceIntegration: false | IWorkspaceIntegration | undefined;

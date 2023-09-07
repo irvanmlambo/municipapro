@@ -6,11 +6,11 @@ import { mutate } from "swr";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
 // services
-import projectService from "services/project.service";
+import projectService from "../../services/project.service";
 // hooks
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // ui
-import { CustomMenu, Tooltip } from "components/ui";
+import { CustomMenu, Tooltip } from "../../components/ui";
 // icons
 import { LinkIcon, StarIcon, TrashIcon } from "@heroicons/react/24/outline";
 import {
@@ -24,12 +24,12 @@ import {
   SettingsOutlined,
 } from "@mui/icons-material";
 // helpers
-import { truncateText } from "helpers/string.helper";
-import { renderEmoji } from "helpers/emoji.helper";
+import { truncateText } from "../../helpers/string.helper";
+import { renderEmoji } from "../../helpers/emoji.helper";
 // types
-import { IProject } from "types";
+import { IProject } from "../../types";
 // fetch-keys
-import { PROJECTS_LIST } from "constants/fetch-keys";
+import { PROJECTS_LIST } from "../../constants/fetch-keys";
 
 type Props = {
   project: IProject;

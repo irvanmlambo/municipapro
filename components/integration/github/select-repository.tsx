@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 import useSWRInfinite from "swr/infinite";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // ui
-import { CustomSearchSelect } from "components/ui";
+import { CustomSearchSelect } from "../../../components/ui";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../../helpers/string.helper";
 // types
-import { IWorkspaceIntegration, IGithubRepository } from "types";
+import { IWorkspaceIntegration, IGithubRepository } from "../../../types";
 
 type Props = {
   integration: IWorkspaceIntegration;

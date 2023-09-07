@@ -8,13 +8,13 @@ import {
   ChatBubbleLeftEllipsisIcon,
   Squares2X2Icon,
 } from "@heroicons/react/24/outline";
-import { BlockedIcon, BlockerIcon } from "components/icons";
-import { Icon } from "components/ui";
+import { BlockedIcon, BlockerIcon } from "../../components/icons";
+import { Icon } from "../../components/ui";
 // helpers
-import { renderShortDateWithYearFormat, timeAgo } from "helpers/date-time.helper";
-import { addSpaceIfCamelCase } from "helpers/string.helper";
+import { renderShortDateWithYearFormat, timeAgo } from "../../helpers/date-time.helper";
+import { addSpaceIfCamelCase } from "../../helpers/string.helper";
 // types
-import RemirrorRichTextEditor from "components/rich-text-editor";
+import RemirrorRichTextEditor from "../../components/rich-text-editor";
 
 const activityDetails: {
   [key: string]: {

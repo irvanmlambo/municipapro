@@ -1,14 +1,14 @@
 import React from "react";
 
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
 import { ChartBarIcon } from "@heroicons/react/24/outline";
-import { getPriorityIcon } from "components/icons/priority-icon";
+import { getPriorityIcon } from "../../../components/icons/priority-icon";
 // types
-import { UserAuth } from "types";
+import { UserAuth } from "../../../types";
 // constants
-import { PRIORITIES } from "constants/project";
+import { PRIORITIES } from "../../../constants/project";
 
 type Props = {
   value: string | null;

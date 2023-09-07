@@ -5,17 +5,17 @@ import Image from "next/image";
 import useSWR, { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../services/project.service";
 // hooks
 import { useRouter } from "next/router";
-import useToast from "hooks/use-toast";
+import useToast from "../../hooks/use-toast";
 // components
-import { SelectRepository, SelectChannel } from "components/integration";
+import { SelectRepository, SelectChannel } from "../../components/integration";
 // icons
 import GithubLogo from "public/logos/github-square.png";
 import SlackLogo from "public/services/slack.png";
 // types
-import { IWorkspaceIntegration } from "types";
+import { IWorkspaceIntegration } from "../../types";
 // fetch-keys
 import { PROJECT_GITHUB_REPOSITORY } from "constants/fetch-keys";
 

@@ -8,21 +8,21 @@ import { useTheme } from "next-themes";
 // headless ui
 import { Menu, Transition } from "@headlessui/react";
 // hooks
-import useUser from "hooks/use-user";
-import useThemeHook from "hooks/use-theme";
-import useWorkspaces from "hooks/use-workspaces";
-import useToast from "hooks/use-toast";
+import useUser from "../../hooks/use-user";
+import useThemeHook from "../../hooks/use-theme";
+import useWorkspaces from "../../hooks/use-workspaces";
+import useToast from "../../hooks/use-toast";
 // services
-import userService from "services/user.service";
-import authenticationService from "services/authentication.service";
+import userService from "../../services/user.service";
+import authenticationService from "../../services/authentication.service";
 // components
-import { Avatar, Loader } from "components/ui";
+import { Avatar, Loader } from "../../components/ui";
 // icons
 import { CheckIcon, PlusIcon } from "@heroicons/react/24/outline";
 // helpers
-import { truncateText } from "helpers/string.helper";
+import { truncateText } from "../../helpers/string.helper";
 // types
-import { IWorkspace } from "types";
+import { IWorkspace } from "../../types";
 
 // Static Data
 const userLinks = (workspaceSlug: string) => [

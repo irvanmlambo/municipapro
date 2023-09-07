@@ -2,7 +2,7 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 // helpers
-import { renderDateFormat } from "helpers/date-time.helper";
+import { renderDateFormat } from "../../helpers/date-time.helper";
 
 type Props = {
   renderAs?: "input" | "button";

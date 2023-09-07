@@ -5,20 +5,20 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // contexts
-import { issueViewContext } from "contexts/issue-view.context";
+import { issueViewContext } from "../contexts/issue-view.context";
 // services
-import issuesService from "services/issues.service";
-import cyclesService from "services/cycles.service";
-import modulesService from "services/modules.service";
+import issuesService from "../services/issues.service";
+import cyclesService from "../services/cycles.service";
+import modulesService from "../services/modules.service";
 // types
-import { IIssue } from "types";
+import { IIssue } from "../types";
 // fetch-keys
 import {
   CYCLE_ISSUES_WITH_PARAMS,
   MODULE_ISSUES_WITH_PARAMS,
   PROJECT_ISSUES_LIST_WITH_PARAMS,
   VIEW_ISSUES,
-} from "constants/fetch-keys";
+} from "../constants/fetch-keys";
 
 const useSpreadsheetIssuesView = () => {
   const {

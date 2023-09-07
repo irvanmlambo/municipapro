@@ -1,9 +1,9 @@
 import useSWR from "swr";
 
 // services
-import modulesService from "services/modules.service";
+import modulesService from "../../services/modules.service";
 // fetch-keys
-import { MODULE_ISSUES_WITH_PARAMS } from "constants/fetch-keys";
+import { MODULE_ISSUES_WITH_PARAMS } from "../../constants/fetch-keys";
 
 const useGanttChartModuleIssues = (
   workspaceSlug: string | undefined,
