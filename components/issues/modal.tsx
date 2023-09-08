@@ -265,7 +265,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = ({
       .patchIssue(workspaceSlug as string, activeProject ?? "", data?.id ?? "", payload, user)
       .then((res) => {
         if (isUpdatingSingleIssue) {
-          mutate<IIssue>(PROJECT_ISSUES_DETAILS, (prevData) => ({ ...prevData, ...res }), false);
+          mutate<IIssue>(PROJECT_ISSUES_DETAILS, (prevData: any) => ({ ...prevData, ...res }), false);
         } else {
           if (issueView === "calendar") mutate(calendarFetchKey);
           if (issueView === "spreadsheet") mutate(spreadsheetFetchKey);

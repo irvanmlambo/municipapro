@@ -89,7 +89,7 @@ const WorkspacePage: NextPage = () => {
             onComplete={() => {
               mutate<ICurrentUserResponse>(
                 CURRENT_USER,
-                (prevData) => {
+                (prevData: any) => {
                   if (!prevData) return prevData;
 
                   return {

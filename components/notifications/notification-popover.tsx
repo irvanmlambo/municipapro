@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { useRouter } from "next/router";
 
 // hooks
-import useTheme from "hooks/use-theme";
+import useTheme from "../../hooks/use-theme";
 
 import { Popover, Transition } from "@headlessui/react";
 
@@ -151,7 +151,7 @@ export const NotificationPopover = () => {
                         onClick={() => {
                           setSnoozed(false);
                           setArchived(false);
-                          setReadNotification((prev) => !prev);
+                          setReadNotification((prev: any) => !prev);
                         }}
                       >
                         <Icon iconName="filter_list" />
@@ -163,7 +163,7 @@ export const NotificationPopover = () => {
                         onClick={() => {
                           setArchived(false);
                           setReadNotification(false);
-                          setSnoozed((prev) => !prev);
+                          setSnoozed((prev: any) => !prev);
                         }}
                       >
                         <Icon iconName="schedule" />
@@ -175,7 +175,7 @@ export const NotificationPopover = () => {
                         onClick={() => {
                           setSnoozed(false);
                           setReadNotification(false);
-                          setArchived((prev) => !prev);
+                          setArchived((prev: any) => !prev);
                         }}
                       >
                         <Icon iconName="archive" />

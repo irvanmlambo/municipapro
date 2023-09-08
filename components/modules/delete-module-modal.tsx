@@ -46,7 +46,7 @@ export const DeleteModuleModal: React.FC<Props> = ({ isOpen, setIsOpen, data, us
 
     mutate<IModule[]>(
       MODULE_LIST(projectId as string),
-      (prevData) => prevData?.filter((m) => m.id !== data.id),
+      (prevData: any) => prevData?.filter((m: any) => m.id !== data.id),
       false
     );
 

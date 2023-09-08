@@ -103,13 +103,13 @@ const FeaturesSettings: NextPage = () => {
       PROJECTS_LIST(workspaceSlug.toString(), {
         is_favorite: "all",
       }),
-      (prevData) => prevData?.map((p) => (p.id === projectId ? { ...p, ...formData } : p)),
+      (prevData: any) => prevData?.map((p: any) => (p.id === projectId ? { ...p, ...formData } : p)),
       false
     );
 
     mutate<IProject>(
       PROJECT_DETAILS(projectId as string),
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return { ...prevData, ...formData };

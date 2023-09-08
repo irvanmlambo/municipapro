@@ -85,7 +85,7 @@ export const SidebarLabelSelect: React.FC<Props> = ({
       .then((res) => {
         reset(defaultValues);
 
-        issueLabelMutate((prevData) => [...(prevData ?? []), res], false);
+        issueLabelMutate((prevData: any) => [...(prevData ?? []), res], false);
 
         submitChanges({ labels_list: [...(issueDetails?.labels ?? []), res.id] });
 
@@ -258,7 +258,7 @@ export const SidebarLabelSelect: React.FC<Props> = ({
                     ? "cursor-not-allowed"
                     : "cursor-pointer hover:bg-custom-background-90"
                 } items-center gap-1 rounded-2xl border border-custom-border-100 px-2 py-0.5 text-xs text-custom-text-200`}
-                onClick={() => setCreateLabelForm((prevData) => !prevData)}
+                onClick={() => setCreateLabelForm((prevData: any) => !prevData)}
                 disabled={uneditable}
               >
                 {createLabelForm ? (

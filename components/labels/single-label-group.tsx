@@ -49,8 +49,8 @@ export const SingleLabelGroup: React.FC<Props> = ({
 
     mutate<IIssueLabels[]>(
       PROJECT_ISSUE_LABELS(projectId as string),
-      (prevData) =>
-        prevData?.map((l) => {
+      (prevData: any) =>
+        prevData?.map((l: any) => {
           if (l.id === label.id) return { ...l, parent: null };
 
           return l;

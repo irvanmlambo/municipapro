@@ -130,12 +130,12 @@ export const SingleBoardIssue: React.FC<Props> = ({
       if (issue.parent) {
         mutate<ISubIssueResponse>(
           SUB_ISSUES(issue.parent.toString()),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
             return {
               ...prevData,
-              sub_issues: (prevData.sub_issues ?? []).map((i) => {
+              sub_issues: (prevData.sub_issues ?? []).map((i: any) => {
                 if (i.id === issue.id) {
                   return {
                     ...i,
@@ -156,7 +156,7 @@ export const SingleBoardIssue: React.FC<Props> = ({
           | IIssue[]
         >(
           fetchKey,
-          (prevData) =>
+          (prevData: any) =>
             handleIssuesMutation(
               formData,
               groupTitle ?? "",

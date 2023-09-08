@@ -72,7 +72,7 @@ export const SingleIntegrationCard: React.FC<Props> = ({ integration }) => {
       .then(() => {
         mutate<IWorkspaceIntegration[]>(
           WORKSPACE_INTEGRATIONS(workspaceSlug as string),
-          (prevData) => prevData?.filter((i) => i.id !== workspaceIntegrationId),
+          (prevData: any) => prevData?.filter((i: any) => i.id !== workspaceIntegrationId),
           false
         );
         setDeletingIntegration(false);

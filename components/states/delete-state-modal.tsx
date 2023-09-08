@@ -49,10 +49,10 @@ export const DeleteStateModal: React.FC<Props> = ({ isOpen, onClose, data, user 
       .then(() => {
         mutate<IStateResponse>(
           STATES_LIST(data.project),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
-            const stateGroup = [...prevData[data.group]].filter((s) => s.id !== data.id);
+            const stateGroup = [...prevData[data.group]].filter((s: any) => s.id !== data.id);
 
             return {
               ...prevData,

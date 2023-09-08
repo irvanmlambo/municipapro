@@ -4,7 +4,7 @@ import {
   CompletedStateIcon,
   StartedStateIcon,
   UnstartedStateIcon,
-} from "components/icons";
+} from "../../components/icons";
 
 export const getStateGroupIcon = (
   stateGroup: "backlog" | "unstarted" | "started" | "completed" | "cancelled",

@@ -50,7 +50,7 @@ const EmojiIconPicker: React.FC<Props> = ({ label, value, onChange, onIconColorC
     <Popover className="relative z-[1]" ref={ref}>
       <Popover.Button
         className="rounded-full bg-custom-background-90 p-2 outline-none sm:text-sm"
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={() => setIsOpen((prev: any) => !prev)}
       >
         {label}
       </Popover.Button>
@@ -149,7 +149,7 @@ const EmojiIconPicker: React.FC<Props> = ({ label, value, onChange, onIconColorC
                         ))}
                         <button
                           type="button"
-                          onClick={() => setOpenColorPicker((prev) => !prev)}
+                          onClick={() => setOpenColorPicker((prev: any) => !prev)}
                           className="flex items-center gap-1"
                         >
                           <span

@@ -55,8 +55,8 @@ const useUserNotification = () => {
 
     if (isRead) {
       notificationsMutate(
-        (prev) =>
-          prev?.map((prevNotification) => {
+        (prev: any) =>
+          prev?.map((prevNotification: any) => {
             if (prevNotification.id === notificationId) {
               return {
                 ...prevNotification,
@@ -78,8 +78,8 @@ const useUserNotification = () => {
         });
     } else {
       notificationsMutate(
-        (prev) =>
-          prev?.map((prevNotification) => {
+        (prev: any) =>
+          prev?.map((prevNotification: any) => {
             if (prevNotification.id === notificationId) {
               return {
                 ...prevNotification,
@@ -120,7 +120,7 @@ const useUserNotification = () => {
         });
     } else {
       notificationsMutate(
-        (prev) => prev?.filter((prevNotification) => prevNotification.id !== notificationId),
+        (prev: any) => prev?.filter((prevNotification: any) => prevNotification.id !== notificationId),
         false
       );
       await userNotificationServices
@@ -153,7 +153,7 @@ const useUserNotification = () => {
         });
     } else {
       notificationsMutate(
-        (prevData) => prevData?.filter((prev) => prev.id !== notificationId) || [],
+        (prevData: any) => prevData?.filter((prev: any) => prev.id !== notificationId) || [],
         false
       );
       await userNotificationServices

@@ -90,7 +90,7 @@ export const CreateWorkspaceForm: React.FC<Props> = ({
 
               mutate<IWorkspace[]>(
                 USER_WORKSPACES,
-                (prevData) => [res, ...(prevData ?? [])],
+                (prevData: any) => [res, ...(prevData ?? [])],
                 false
               );
               if (onSubmit) await onSubmit(res);

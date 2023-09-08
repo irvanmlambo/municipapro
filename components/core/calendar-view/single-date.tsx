@@ -84,7 +84,7 @@ export const SingleCalendarDate: React.FC<Props> = ({
             <button
               type="button"
               className="w-min whitespace-nowrap rounded-md border border-custom-border-200 bg-custom-background-80 px-1.5 py-1 text-xs"
-              onClick={() => setShowAllIssues((prevData) => !prevData)}
+              onClick={() => setShowAllIssues((prevData: any) => !prevData)}
             >
               {showAllIssues ? "Hide" : totalIssues - 4 + " more"}
             </button>

@@ -37,14 +37,14 @@ const AutomationsSettings: NextPage = () => {
 
     mutate<IProject>(
       PROJECT_DETAILS(projectId as string),
-      (prevData) => ({ ...(prevData as IProject), ...formData }),
+      (prevData: any) => ({ ...(prevData as IProject), ...formData }),
       false
     );
 
     mutate<IProject[]>(
       PROJECTS_LIST(workspaceSlug as string, { is_favorite: "all" }),
-      (prevData) =>
-        (prevData ?? []).map((p) => (p.id === projectDetails.id ? { ...p, ...formData } : p)),
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => (p.id === projectDetails.id ? { ...p, ...formData } : p)),
       false
     );
 

@@ -5,20 +5,20 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
-import IntegrationService from "services/integration";
+import workspaceService from "../../../services/workspace.service";
+import IntegrationService from "../../../services/integration";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import { SettingsHeader } from "components/workspace";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
+import { SettingsHeader } from "../../../components/workspace";
 // components
-import { SingleIntegrationCard } from "components/integration";
+import { SingleIntegrationCard } from "../../../components/integration";
 // ui
-import { IntegrationAndImportExportBanner, Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { IntegrationAndImportExportBanner, Loader } from "../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../components/breadcrumbs";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { WORKSPACE_DETAILS, APP_INTEGRATIONS } from "constants/fetch-keys";
+import { WORKSPACE_DETAILS, APP_INTEGRATIONS } from "../../../constants/fetch-keys";
 
 const WorkspaceIntegrations: NextPage = () => {
   const router = useRouter();

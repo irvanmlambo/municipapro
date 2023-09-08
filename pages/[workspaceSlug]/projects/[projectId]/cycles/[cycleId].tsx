@@ -150,7 +150,7 @@ const SingleCycle: React.FC = () => {
               className={`grid h-7 w-7 place-items-center rounded p-1 outline-none duration-300 hover:bg-custom-background-90 ${
                 cycleSidebar ? "rotate-180" : ""
               }`}
-              onClick={() => setCycleSidebar((prevData) => !prevData)}
+              onClick={() => setCycleSidebar((prevData: any) => !prevData)}
             >
               <ArrowLeftIcon className="h-4 w-4" />
             </button>

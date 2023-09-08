@@ -133,8 +133,8 @@ export const ActiveCycleDetails: React.FC = () => {
 
     mutate<ICycle[]>(
       CURRENT_CYCLE_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((c) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((c: any) => ({
           ...c,
           is_favorite: c.id === cycle.id ? true : c.is_favorite,
         })),
@@ -169,8 +169,8 @@ export const ActiveCycleDetails: React.FC = () => {
 
     mutate<ICycle[]>(
       CURRENT_CYCLE_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((c) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((c: any) => ({
           ...c,
           is_favorite: c.id === cycle.id ? false : c.is_favorite,
         })),

@@ -3,11 +3,11 @@ import { FC } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // components
-import { GanttChartRoot } from "components/gantt-chart";
+import { GanttChartRoot } from "../../components/gantt-chart";
 // ui
-import { Tooltip } from "components/ui";
+import { Tooltip } from "../../components/ui";
 // hooks
-import useGanttChartIssues from "hooks/gantt-chart/issue-view";
+import useGanttChartIssues from "../../hooks/gantt-chart/issue-view";
 
 type Props = {};
 

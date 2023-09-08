@@ -48,7 +48,7 @@ const Onboarding: NextPage = () => {
 
     mutate<ICurrentUserResponse>(
       CURRENT_USER,
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -81,7 +81,7 @@ const Onboarding: NextPage = () => {
 
     mutate<ICurrentUserResponse>(
       CURRENT_USER,
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return {

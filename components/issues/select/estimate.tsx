@@ -1,11 +1,11 @@
 import React from "react";
 
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
 import { PlayIcon } from "@heroicons/react/24/outline";
 // fetch-keys
-import useEstimateOption from "hooks/use-estimate-option";
+import useEstimateOption from "../../../hooks/use-estimate-option";
 
 type Props = {
   value: number | null;

@@ -77,8 +77,8 @@ export const CreateUpdateViewModal: React.FC<Props> = ({
       .then((res) => {
         mutate<IView[]>(
           VIEWS_LIST(projectId as string),
-          (prevData) =>
-            prevData?.map((p) => {
+          (prevData: any) =>
+            prevData?.map((p: any) => {
               if (p.id === res.id) return { ...p, ...payloadData };
 
               return p;

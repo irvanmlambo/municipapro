@@ -91,8 +91,8 @@ export const InboxMainContent: React.FC = () => {
       }, false);
       mutate<IInboxIssue[]>(
         INBOX_ISSUES(inboxId.toString(), params),
-        (prevData) =>
-          (prevData ?? []).map((i) => {
+        (prevData: any) =>
+          (prevData ?? []).map((i: any) => {
             if (i.bridge_id === inboxIssueId) {
               return {
                 ...i,

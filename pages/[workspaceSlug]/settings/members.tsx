@@ -6,27 +6,27 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../../services/workspace.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useUser from "hooks/use-user";
+import useToast from "../../../hooks/use-toast";
+import useUser from "../../../hooks/use-user";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import { SettingsHeader } from "components/workspace";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
+import { SettingsHeader } from "../../../components/workspace";
 // components
-import ConfirmWorkspaceMemberRemove from "components/workspace/confirm-workspace-member-remove";
-import SendWorkspaceInvitationModal from "components/workspace/send-workspace-invitation-modal";
+import ConfirmWorkspaceMemberRemove from "../../../components/workspace/confirm-workspace-member-remove";
+import SendWorkspaceInvitationModal from "../../../components/workspace/send-workspace-invitation-modal";
 // ui
-import { CustomMenu, CustomSelect, Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomMenu, CustomSelect, Loader } from "../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { WORKSPACE_DETAILS, WORKSPACE_INVITATIONS, WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { WORKSPACE_DETAILS, WORKSPACE_INVITATIONS, WORKSPACE_MEMBERS } from "../../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../../constants/workspace";
 
 const MembersSettings: NextPage = () => {
   const [selectedRemoveMember, setSelectedRemoveMember] = useState<string | null>(null);
@@ -117,7 +117,7 @@ const MembersSettings: NextPage = () => {
               selectedRemoveMember
             );
             mutateMembers(
-              (prevData) => prevData?.filter((item) => item.id !== selectedRemoveMember),
+              (prevData: any) => prevData?.filter((item: any) => item.id !== selectedRemoveMember),
               false
             );
           }
@@ -127,7 +127,7 @@ const MembersSettings: NextPage = () => {
               selectedInviteRemoveMember
             );
             mutateInvitations(
-              (prevData) => prevData?.filter((item) => item.id !== selectedInviteRemoveMember),
+              (prevData: any) => prevData?.filter((item: any) => item.id !== selectedInviteRemoveMember),
               false
             );
           }
@@ -212,8 +212,8 @@ const MembersSettings: NextPage = () => {
                             if (!workspaceSlug) return;
 
                             mutateMembers(
-                              (prevData) =>
-                                prevData?.map((m) =>
+                              (prevData: any) =>
+                                prevData?.map((m: any) =>
                                   m.id === member.id ? { ...m, role: value } : m
                                 ),
                               false

@@ -145,8 +145,8 @@ export const ExistingIssuesListModal: React.FC<Props> = ({
                   as="div"
                   onChange={(val: ISearchIssueResponse) => {
                     if (selectedIssues.some((i) => i.id === val.id))
-                      setSelectedIssues((prevData) => prevData.filter((i) => i.id !== val.id));
-                    else setSelectedIssues((prevData) => [...prevData, val]);
+                      setSelectedIssues((prevData: any) => prevData.filter((i: any) => i.id !== val.id));
+                    else setSelectedIssues((prevData: any) => [...prevData, val]);
                   }}
                 >
                   <div className="relative m-1">
@@ -175,8 +175,8 @@ export const ExistingIssuesListModal: React.FC<Props> = ({
                               type="button"
                               className="group p-1"
                               onClick={() =>
-                                setSelectedIssues((prevData) =>
-                                  prevData.filter((i) => i.id !== issue.id)
+                                setSelectedIssues((prevData: any) =>
+                                  prevData.filter((i: any) => i.id !== issue.id)
                                 )
                               }
                             >

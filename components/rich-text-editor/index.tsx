@@ -35,7 +35,7 @@ import { TableExtension } from "@remirror/extension-react-tables";
 // tlds
 import tlds from "tlds";
 // services
-import fileService from "services/file.service";
+import fileService from "../../services/file.service";
 // components
 import { CustomFloatingToolbar } from "./toolbar/float-tool-tip";
 import { MentionAutoComplete } from "./mention-autocomplete";

@@ -42,7 +42,7 @@ export const DeleteAttachmentModal: React.FC<Props> = ({ isOpen, setIsOpen, data
 
     mutate<IIssueAttachment[]>(
       ISSUE_ATTACHMENTS(issueId as string),
-      (prevData) => (prevData ?? [])?.filter((p) => p.id !== assetId),
+      (prevData: any) => (prevData ?? [])?.filter((p: any) => p.id !== assetId),
       false
     );
 

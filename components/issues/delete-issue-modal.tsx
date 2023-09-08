@@ -76,7 +76,7 @@ export const DeleteIssueModal: React.FC<Props> = ({ isOpen, handleClose, data, u
 
           mutate<IIssue[]>(
             calendarFetchKey,
-            (prevData) => (prevData ?? []).filter((p) => p.id !== data.id),
+            (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== data.id),
             false
           );
         } else if (issueView === "spreadsheet") {
@@ -90,9 +90,9 @@ export const DeleteIssueModal: React.FC<Props> = ({ isOpen, handleClose, data, u
           if (data.parent) {
             mutate<ISubIssueResponse>(
               SUB_ISSUES(data.parent.toString()),
-              (prevData) => {
+              (prevData: any) => {
                 if (!prevData) return prevData;
-                const updatedArray = (prevData.sub_issues ?? []).filter((i) => i.id !== data.id);
+                const updatedArray = (prevData.sub_issues ?? []).filter((i: any) => i.id !== data.id);
 
                 return {
                   ...prevData,
@@ -105,7 +105,7 @@ export const DeleteIssueModal: React.FC<Props> = ({ isOpen, handleClose, data, u
           } else {
             mutate<IIssue[]>(
               spreadsheetFetchKey,
-              (prevData) => (prevData ?? []).filter((p) => p.id !== data.id),
+              (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== data.id),
               false
             );
           }

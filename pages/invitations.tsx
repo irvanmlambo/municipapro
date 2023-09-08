@@ -56,9 +56,9 @@ const OnBoard: NextPage = () => {
     action: "accepted" | "withdraw"
   ) => {
     if (action === "accepted") {
-      setInvitationsRespond((prevData) => [...prevData, workspace_invitation.id]);
+      setInvitationsRespond((prevData: any) => [...prevData, workspace_invitation.id]);
     } else if (action === "withdraw") {
-      setInvitationsRespond((prevData) =>
+      setInvitationsRespond((prevData: any) =>
         prevData.filter((item: string) => item !== workspace_invitation.id)
       );
     }

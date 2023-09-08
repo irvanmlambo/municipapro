@@ -46,7 +46,7 @@ export const CreateUpdatePageModal: React.FC<Props> = ({ isOpen, handleClose, da
         mutate(RECENT_PAGES_LIST(projectId as string));
         mutate<IPage[]>(
           MY_PAGES_LIST(projectId as string),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return undefined;
 
             return [res, ...(prevData as IPage[])];
@@ -55,7 +55,7 @@ export const CreateUpdatePageModal: React.FC<Props> = ({ isOpen, handleClose, da
         );
         mutate<IPage[]>(
           ALL_PAGES_LIST(projectId as string),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return undefined;
 
             return [res, ...(prevData as IPage[])];
@@ -88,8 +88,8 @@ export const CreateUpdatePageModal: React.FC<Props> = ({ isOpen, handleClose, da
         mutate(RECENT_PAGES_LIST(projectId as string));
         mutate<IPage[]>(
           FAVORITE_PAGES_LIST(projectId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === res.id) return { ...p, ...res };
 
               return p;
@@ -98,8 +98,8 @@ export const CreateUpdatePageModal: React.FC<Props> = ({ isOpen, handleClose, da
         );
         mutate<IPage[]>(
           MY_PAGES_LIST(projectId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === res.id) return { ...p, ...res };
 
               return p;
@@ -108,8 +108,8 @@ export const CreateUpdatePageModal: React.FC<Props> = ({ isOpen, handleClose, da
         );
         mutate<IPage[]>(
           ALL_PAGES_LIST(projectId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === res.id) return { ...p, ...res };
 
               return p;

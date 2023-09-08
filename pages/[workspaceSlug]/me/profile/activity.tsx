@@ -1,17 +1,17 @@
 import useSWR from "swr";
 
 // services
-import userService from "services/user.service";
+import userService from "../../../../services/user.service";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import SettingsNavbar from "layouts/settings-navbar";
+import { WorkspaceAuthorizationLayout } from "../../../../layouts/auth-layout";
+import SettingsNavbar from "../../../../layouts/settings-navbar";
 // components
-import { Feeds } from "components/core";
+import { Feeds } from "../../../../components/core";
 // ui
-import { Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { Loader } from "../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../components/breadcrumbs";
 // fetch-keys
-import { USER_ACTIVITY } from "constants/fetch-keys";
+import { USER_ACTIVITY } from "../../../../constants/fetch-keys";
 
 const ProfileActivity = () => {
   const { data: userActivity } = useSWR(USER_ACTIVITY, () => userService.getUserActivity());

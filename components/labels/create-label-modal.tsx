@@ -69,7 +69,7 @@ export const CreateLabelModal: React.FC<Props> = ({
       .then((res) => {
         mutate<IIssueLabels[]>(
           PROJECT_ISSUE_LABELS(projectId),
-          (prevData) => [res, ...(prevData ?? [])],
+          (prevData: any) => [res, ...(prevData ?? [])],
           false
         );
         onClose();

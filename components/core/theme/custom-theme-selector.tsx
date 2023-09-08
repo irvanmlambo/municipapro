@@ -63,7 +63,7 @@ export const CustomThemeSelector: React.FC<Props> = ({ preLoadedData }) => {
         theme: payload,
       })
       .then((res) => {
-        mutateUser((prevData) => {
+        mutateUser((prevData: any) => {
           if (!prevData) return prevData;
 
           return { ...prevData, ...res };

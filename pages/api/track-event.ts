@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 // jitsu
 import { createClient } from "@jitsu/nextjs";
-import { convertCookieStringToObject } from "lib/cookie";
+import { convertCookieStringToObject } from "../../lib/cookie";
 
 const jitsu = createClient({
   key: process.env.TRACKER_ACCESS_KEY || "",

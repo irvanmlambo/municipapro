@@ -17,7 +17,7 @@ type Props = {
 };
 
 // rich-text-editor
-const RemirrorRichTextEditor = dynamic(() => import("components/rich-text-editor"), {
+const RemirrorRichTextEditor = dynamic(() => import("../../components/rich-text-editor"), {
   ssr: false,
   loading: () => (
     <Loader>

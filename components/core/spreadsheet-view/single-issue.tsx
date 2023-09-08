@@ -97,12 +97,12 @@ export const SingleSpreadsheetIssue: React.FC<Props> = ({
       if (issue.parent) {
         mutate<ISubIssueResponse>(
           SUB_ISSUES(issue.parent.toString()),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
             return {
               ...prevData,
-              sub_issues: (prevData.sub_issues ?? []).map((i) => {
+              sub_issues: (prevData.sub_issues ?? []).map((i: any) => {
                 if (i.id === issue.id) {
                   return {
                     ...i,
@@ -118,8 +118,8 @@ export const SingleSpreadsheetIssue: React.FC<Props> = ({
       } else {
         mutate<IIssue[]>(
           fetchKey,
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === issue.id) {
                 return {
                   ...p,

@@ -56,7 +56,7 @@ export const UserDetails: React.FC<Props> = ({ user }) => {
       .then(() => {
         mutate<ICurrentUserResponse>(
           CURRENT_USER,
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
             return {

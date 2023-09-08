@@ -204,7 +204,7 @@ export const IssuesView: React.FC<Props> = ({
             : moduleId
             ? MODULE_ISSUES_WITH_PARAMS(moduleId as string, params)
             : PROJECT_ISSUES_LIST_WITH_PARAMS(projectId as string, params),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
             const sourceGroupArray = prevData[sourceGroup];

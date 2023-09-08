@@ -17,7 +17,7 @@ import SlackLogo from "public/services/slack.png";
 // types
 import { IWorkspaceIntegration } from "../../types";
 // fetch-keys
-import { PROJECT_GITHUB_REPOSITORY } from "constants/fetch-keys";
+import { PROJECT_GITHUB_REPOSITORY } from "../../constants/fetch-keys";
 
 type Props = {
   integration: IWorkspaceIntegration;

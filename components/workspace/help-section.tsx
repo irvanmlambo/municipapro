@@ -88,7 +88,7 @@ export const WorkspaceHelpSection: React.FC<WorkspaceHelpSectionProps> = ({ setS
             className={`rounded-md p-1.5 text-custom-text-200 hover:text-custom-text-100 hover:bg-custom-background-90 outline-none ${
               sidebarCollapse ? "w-full" : ""
             }`}
-            onClick={() => setIsNeedHelpOpen((prev) => !prev)}
+            onClick={() => setIsNeedHelpOpen((prev: any) => !prev)}
           >
             <HelpOutlineOutlined fontSize="small" />
           </button>

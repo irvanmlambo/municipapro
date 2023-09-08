@@ -112,7 +112,7 @@ export const CreateUpdateBlockInline: React.FC<Props> = ({
         .then((res) => {
           mutate<IPageBlock[]>(
             PAGE_BLOCKS_LIST(pageId as string),
-            (prevData) => [...(prevData as IPageBlock[]), res],
+            (prevData: any) => [...(prevData as IPageBlock[]), res],
             false
           );
           editorRef.current?.clearEditor();
@@ -137,8 +137,8 @@ export const CreateUpdateBlockInline: React.FC<Props> = ({
 
       mutate<IPageBlock[]>(
         PAGE_BLOCKS_LIST(pageId as string),
-        (prevData) =>
-          prevData?.map((p) => {
+        (prevData: any) =>
+          prevData?.map((p: any) => {
             if (p.id === data.id) return { ...p, ...formData };
 
             return p;

@@ -52,12 +52,12 @@ const useMyIssuesProperties = (workspaceSlug?: string) => {
     (key: keyof Properties) => {
       if (!workspaceSlug || !user) return;
 
-      setProperties((prev) => ({ ...prev, [key]: !prev[key] }));
+      setProperties((prev: any) => ({ ...prev, [key]: !prev[key] }));
 
       if (myWorkspace) {
         mutate<IWorkspaceMember>(
           WORKSPACE_MEMBERS_ME(workspaceSlug.toString()),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return;
             return {
               ...prevData,

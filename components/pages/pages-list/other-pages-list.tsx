@@ -9,7 +9,7 @@ import { PagesView } from "../../../components/pages";
 // types
 import { TPagesListProps } from "./types";
 // fetch-keys
-import { OTHER_PAGES_LIST } from "constants/fetch-keys";
+import { OTHER_PAGES_LIST } from "../../../constants/fetch-keys";
 
 export const OtherPagesList: React.FC<TPagesListProps> = ({ viewType }) => {
   const router = useRouter();

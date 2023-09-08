@@ -24,7 +24,7 @@ import {
   DRAFT_CYCLES_LIST,
   INCOMPLETE_CYCLES_LIST,
   UPCOMING_CYCLES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type CycleModalProps = {
   isOpen: boolean;

@@ -30,7 +30,7 @@ export const ChangeIssuePriority: React.FC<Props> = ({ setIsPaletteOpen, issue, 
 
       mutate<IIssue>(
         ISSUE_DETAILS(issueId as string),
-        async (prevData) => {
+        async (prevData: any) => {
           if (!prevData) return prevData;
 
           return {

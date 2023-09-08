@@ -5,17 +5,17 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import workspaceService from "services/workspace.service";
+import workspaceService from "../../../services/workspace.service";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
-import { SettingsHeader } from "components/workspace";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
+import { SettingsHeader } from "../../../components/workspace";
 // ui
-import { SecondaryButton } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { SecondaryButton } from "../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../components/breadcrumbs";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { WORKSPACE_DETAILS } from "constants/fetch-keys";
+import { WORKSPACE_DETAILS } from "../../../constants/fetch-keys";
 
 const BillingSettings: NextPage = () => {
   const {

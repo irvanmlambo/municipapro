@@ -17,7 +17,7 @@ import { DangerButton, Input, SecondaryButton } from "../../components/ui";
 // types
 import type { ICurrentUserResponse, IProject } from "../../types";
 // fetch-keys
-import { PROJECTS_LIST } from "constants/fetch-keys";
+import { PROJECTS_LIST } from "../../constants/fetch-keys";
 
 type TConfirmProjectDeletionProps = {
   isOpen: boolean;
@@ -73,7 +73,7 @@ export const DeleteProjectModal: React.FC<TConfirmProjectDeletionProps> = ({
 
     mutate<IProject[]>(
       PROJECTS_LIST(workspaceSlug as string, { is_favorite: "all" }),
-      (prevData) => prevData?.filter((project: IProject) => project.id !== data.id),
+      (prevData: any) => prevData?.filter((project: IProject) => project.id !== data.id),
       false
     );
 

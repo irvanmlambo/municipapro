@@ -15,7 +15,7 @@ import cycleServices from "../../services/cycles.service";
 // components
 import { CreateUpdateCycleModal } from "../../components/cycles";
 // fetch-keys
-import { CYCLES_LIST } from "constants/fetch-keys";
+import { CYCLES_LIST } from "../../constants/fetch-keys";
 
 export type IssueCycleSelectProps = {
   projectId: string;

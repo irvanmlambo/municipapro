@@ -62,8 +62,8 @@ export const DeleteWorkspaceModal: React.FC<Props> = ({ isOpen, data, onClose, u
       .then(() => {
         handleClose();
         router.push("/");
-        mutate<IWorkspace[]>(USER_WORKSPACES, (prevData) =>
-          prevData?.filter((workspace) => workspace.id !== data.id)
+        mutate<IWorkspace[]>(USER_WORKSPACES, (prevData: any) =>
+          prevData?.filter((workspace: any) => workspace.id !== data.id)
         );
         setToastAlert({
           type: "success",

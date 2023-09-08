@@ -95,7 +95,7 @@ export const CreateUpdateStateInline: React.FC<Props> = ({
         .then((res) => {
           mutate<IStateResponse>(
             STATES_LIST(projectId.toString()),
-            (prevData) => {
+            (prevData: any) => {
               if (!prevData) return prevData;
 
               return {

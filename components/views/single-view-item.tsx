@@ -37,8 +37,8 @@ export const SingleViewItem: React.FC<Props> = ({ view, handleEditView, handleDe
 
     mutate<IView[]>(
       VIEWS_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((v) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((v: any) => ({
           ...v,
           is_favorite: v.id === view.id ? true : v.is_favorite,
         })),
@@ -63,8 +63,8 @@ export const SingleViewItem: React.FC<Props> = ({ view, handleEditView, handleDe
 
     mutate<IView[]>(
       VIEWS_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((v) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((v: any) => ({
           ...v,
           is_favorite: v.id === view.id ? false : v.is_favorite,
         })),

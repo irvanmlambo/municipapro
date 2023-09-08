@@ -1,12 +1,12 @@
 // hooks
-import useInboxView from "hooks/use-inbox-view";
+import useInboxView from "../../hooks/use-inbox-view";
 // ui
-import { MultiLevelDropdown } from "components/ui";
+import { MultiLevelDropdown } from "../../components/ui";
 // icons
-import { getPriorityIcon } from "components/icons";
+import { getPriorityIcon } from "../../components/icons";
 // constants
-import { PRIORITIES } from "constants/project";
-import { INBOX_STATUS } from "constants/inbox";
+import { PRIORITIES } from "../../constants/project";
+import { INBOX_STATUS } from "../../constants/inbox";
 
 export const FiltersDropdown: React.FC = () => {
   const { filters, setFilters, filtersLength } = useInboxView();

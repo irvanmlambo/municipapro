@@ -20,7 +20,7 @@ const Header: React.FC<Props> = ({ breadcrumbs, left, right, setToggleSidebar, n
         <button
           type="button"
           className="grid h-8 w-8 place-items-center rounded border border-custom-border-200"
-          onClick={() => setToggleSidebar((prevData) => !prevData)}
+          onClick={() => setToggleSidebar((prevData: any) => !prevData)}
         >
           <Bars3Icon className="h-5 w-5" />
         </button>

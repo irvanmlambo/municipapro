@@ -122,8 +122,8 @@ export const CalendarView: React.FC<Props> = ({
 
     mutate<IIssue[]>(
       fetchKey,
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === draggableId)
             return {
               ...p,

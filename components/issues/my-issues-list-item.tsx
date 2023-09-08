@@ -49,8 +49,8 @@ export const MyIssuesListItem: React.FC<Props> = ({ issue, properties, projectId
 
       mutate<IIssue[]>(
         USER_ISSUE(workspaceSlug as string),
-        (prevData) =>
-          prevData?.map((p) => {
+        (prevData: any) =>
+          prevData?.map((p: any) => {
             if (p.id === issue.id) return { ...p, ...formData };
 
             return p;

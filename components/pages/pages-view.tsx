@@ -30,7 +30,7 @@ import {
   MY_PAGES_LIST,
   PROJECT_MEMBERS,
   RECENT_PAGES_LIST,
-} from "constants/fetch-keys";
+} from "../../constants/fetch-keys";
 
 type Props = {
   pages: IPage[] | undefined;
@@ -73,8 +73,8 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
 
     mutate<IPage[]>(
       ALL_PAGES_LIST(projectId.toString()),
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === page.id) p.is_favorite = true;
 
           return p;
@@ -83,8 +83,8 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
     );
     mutate<IPage[]>(
       MY_PAGES_LIST(projectId.toString()),
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === page.id) p.is_favorite = true;
 
           return p;
@@ -93,7 +93,7 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
     );
     mutate<IPage[]>(
       FAVORITE_PAGES_LIST(projectId.toString()),
-      (prevData) => [page, ...(prevData ?? [])],
+      (prevData: any) => [page, ...(prevData ?? [])],
       false
     );
 
@@ -123,8 +123,8 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
 
     mutate<IPage[]>(
       ALL_PAGES_LIST(projectId.toString()),
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === page.id) p.is_favorite = false;
 
           return p;
@@ -133,8 +133,8 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
     );
     mutate<IPage[]>(
       MY_PAGES_LIST(projectId.toString()),
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === page.id) p.is_favorite = false;
 
           return p;
@@ -143,7 +143,7 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
     );
     mutate<IPage[]>(
       FAVORITE_PAGES_LIST(projectId.toString()),
-      (prevData) => (prevData ?? []).filter((p) => p.id !== page.id),
+      (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== page.id),
       false
     );
 
@@ -171,17 +171,17 @@ export const PagesView: React.FC<Props> = ({ pages, viewType }) => {
 
     mutate<IPage[]>(
       ALL_PAGES_LIST(projectId.toString()),
-      (prevData) => (prevData ?? []).map((p) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
+      (prevData: any) => (prevData ?? []).map((p: any) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
       false
     );
     mutate<IPage[]>(
       MY_PAGES_LIST(projectId.toString()),
-      (prevData) => (prevData ?? []).map((p) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
+      (prevData: any) => (prevData ?? []).map((p: any) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
       false
     );
     mutate<IPage[]>(
       FAVORITE_PAGES_LIST(projectId.toString()),
-      (prevData) => (prevData ?? []).map((p) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
+      (prevData: any) => (prevData ?? []).map((p: any) => ({ ...p, ...(p.id === page.id ? formData : {}) })),
       false
     );
 

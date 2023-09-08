@@ -11,7 +11,7 @@ import { ExclamationIcon, TransferIcon } from "../../components/icons";
 // services
 import cycleServices from "../../services/cycles.service";
 // fetch-key
-import { CYCLE_DETAILS } from "constants/fetch-keys";
+import { CYCLE_DETAILS } from "../../constants/fetch-keys";
 
 type Props = {
   handleClick: () => void;

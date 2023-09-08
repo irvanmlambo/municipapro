@@ -3,11 +3,11 @@ import { useState } from "react";
 import Image from "next/image";
 
 // hooks
-import useUser from "hooks/use-user";
+import useUser from "../../../hooks/use-user";
 // components
-import { TourSidebar } from "components/onboarding";
+import { TourSidebar } from "../../../components/onboarding";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 // icons
 import { XMarkIcon } from "@heroicons/react/24/outline";
 // images

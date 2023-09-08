@@ -63,7 +63,7 @@ export const ImagePickerPopover: React.FC<Props> = ({ label, value, onChange }) 
     <Popover className="relative z-[2]" ref={ref}>
       <Popover.Button
         className="rounded-md border border-custom-border-200 bg-custom-background-80 px-2 py-1 text-xs text-custom-text-200"
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={() => setIsOpen((prev: any) => !prev)}
       >
         {label}
       </Popover.Button>

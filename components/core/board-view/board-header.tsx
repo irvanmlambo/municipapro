@@ -146,7 +146,7 @@ export const BoardHeader: React.FC<Props> = ({
           type="button"
           className="grid h-7 w-7 place-items-center rounded p-1 text-custom-text-200 outline-none duration-300 hover:bg-custom-background-80"
           onClick={() => {
-            setIsCollapsed((prevData) => !prevData);
+            setIsCollapsed((prevData: any) => !prevData);
           }}
         >
           {isCollapsed ? (

@@ -1,7 +1,7 @@
 // hooks
-import useProjects from "hooks/use-projects";
+import useProjects from "../../../hooks/use-projects";
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
 import { ClipboardDocumentListIcon } from "@heroicons/react/24/outline";
 

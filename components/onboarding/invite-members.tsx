@@ -66,7 +66,7 @@ export const InviteMembers: React.FC<Props> = ({ workspace, user, stepChange }) 
 
       mutate<ICurrentUserResponse>(
         CURRENT_USER,
-        (prevData) => {
+        (prevData: any) => {
           if (!prevData) return prevData;
 
           return {

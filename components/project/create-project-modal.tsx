@@ -124,7 +124,7 @@ export const CreateProjectModal: React.FC<Props> = (props) => {
       .then((res) => {
         mutate<IProject[]>(
           PROJECTS_LIST(workspaceSlug as string, { is_favorite: "all" }),
-          (prevData) => [res, ...(prevData ?? [])],
+          (prevData: any) => [res, ...(prevData ?? [])],
           false
         );
         setToastAlert({

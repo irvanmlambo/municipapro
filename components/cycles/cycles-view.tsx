@@ -80,8 +80,8 @@ export const CyclesView: React.FC<Props> = ({ cycles, viewType }) => {
 
     mutate<ICycle[]>(
       fetchKey,
-      (prevData) =>
-        (prevData ?? []).map((c) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((c: any) => ({
           ...c,
           is_favorite: c.id === cycle.id ? true : c.is_favorite,
         })),
@@ -127,8 +127,8 @@ export const CyclesView: React.FC<Props> = ({ cycles, viewType }) => {
 
     mutate<ICycle[]>(
       fetchKey,
-      (prevData) =>
-        (prevData ?? []).map((c) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((c: any) => ({
           ...c,
           is_favorite: c.id === cycle.id ? false : c.is_favorite,
         })),

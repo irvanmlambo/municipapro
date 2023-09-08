@@ -42,7 +42,7 @@ export const DeleteImportModal: React.FC<Props> = ({ isOpen, handleClose, data, 
 
     mutate<IImporterService[]>(
       IMPORTER_SERVICES_LIST(workspaceSlug as string),
-      (prevData) => (prevData ?? []).filter((i) => i.id !== data.id),
+      (prevData: any) => (prevData ?? []).filter((i: any) => i.id !== data.id),
       false
     );
 

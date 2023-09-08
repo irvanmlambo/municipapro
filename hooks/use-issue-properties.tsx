@@ -57,11 +57,11 @@ const useIssuesProperties = (workspaceSlug?: string, projectId?: string) => {
     (key: keyof Properties) => {
       if (!workspaceSlug || !user) return;
 
-      setProperties((prev) => ({ ...prev, [key]: !prev[key] }));
+      setProperties((prev: any) => ({ ...prev, [key]: !prev[key] }));
 
       if (issueProperties && projectId) {
         mutateIssueProperties(
-          (prev) =>
+          (prev: any) =>
             ({
               ...prev,
               properties: { ...prev?.properties, [key]: !prev?.properties?.[key] },

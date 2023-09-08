@@ -74,7 +74,7 @@ export const CreateStateModal: React.FC<Props> = ({ isOpen, projectId, handleClo
       .then((res) => {
         mutate<IStateResponse>(
           STATES_LIST(projectId.toString()),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
 
             return {

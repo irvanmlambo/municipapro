@@ -168,7 +168,7 @@ export const AnalyticsProjectModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <button
               type="button"
               className="grid place-items-center p-1 text-custom-text-200 hover:text-custom-text-100"
-              onClick={() => setFullScreen((prevData) => !prevData)}
+              onClick={() => setFullScreen((prevData: any) => !prevData)}
             >
               {fullScreen ? (
                 <ArrowsPointingInIcon className="h-4 w-4" />

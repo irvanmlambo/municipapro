@@ -344,7 +344,7 @@ export const IssueForm: FC<IssueFormProps> = ({
                     <button
                       type="button"
                       className="flex items-center gap-1 rounded px-1.5 py-1 text-xs hover:bg-custom-background-90"
-                      onClick={() => setGptAssistantModal((prevData) => !prevData)}
+                      onClick={() => setGptAssistantModal((prevData: any) => !prevData)}
                     >
                       <SparklesIcon className="h-4 w-4" />
                       AI
@@ -508,7 +508,7 @@ export const IssueForm: FC<IssueFormProps> = ({
         <div className="-mx-5 mt-5 flex items-center justify-between gap-2 border-t border-custom-border-200 px-5 pt-5">
           <div
             className="flex cursor-pointer items-center gap-1"
-            onClick={() => setCreateMore((prevData) => !prevData)}
+            onClick={() => setCreateMore((prevData: any) => !prevData)}
           >
             <span className="text-xs">Create more</span>
             <ToggleSwitch value={createMore} onChange={() => {}} size="md" />

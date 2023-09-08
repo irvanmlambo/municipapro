@@ -61,7 +61,7 @@ const EstimatesSettings: NextPage = () => {
 
     mutate<IEstimate[]>(
       ESTIMATES_LIST(projectId as string),
-      (prevData) => (prevData ?? []).filter((p) => p.id !== estimateId),
+      (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== estimateId),
       false
     );
 
@@ -81,7 +81,7 @@ const EstimatesSettings: NextPage = () => {
 
     mutate<IProject>(
       PROJECT_DETAILS(projectId as string),
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return { ...prevData, estimate: null };

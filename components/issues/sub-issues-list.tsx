@@ -71,7 +71,7 @@ export const SubIssuesList: FC<Props> = ({ parentIssue, user, disabled = false }
       .then(() => {
         mutate<ISubIssueResponse>(
           SUB_ISSUES(parentIssue?.id ?? ""),
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return prevData;
             let newSubIssues = prevData.sub_issues as IIssue[];
 
@@ -99,8 +99,8 @@ export const SubIssuesList: FC<Props> = ({ parentIssue, user, disabled = false }
 
         mutate<IIssue[]>(
           PROJECT_ISSUES_LIST(workspaceSlug as string, projectId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (payload.sub_issue_ids.includes(p.id))
                 return {
                   ...p,
@@ -124,9 +124,9 @@ export const SubIssuesList: FC<Props> = ({ parentIssue, user, disabled = false }
 
     mutate<ISubIssueResponse>(
       SUB_ISSUES(parentIssue.id ?? ""),
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
-        const updatedArray = (prevData.sub_issues ?? []).filter((i) => i.id !== issueId);
+        const updatedArray = (prevData.sub_issues ?? []).filter((i: any) => i.id !== issueId);
 
         const stateDistribution = { ...prevData.state_distribution };
         const issueGroup = issues?.find((i) => i.id === issueId)?.state_detail.group ?? "backlog";
@@ -146,8 +146,8 @@ export const SubIssuesList: FC<Props> = ({ parentIssue, user, disabled = false }
 
         mutate<IIssue[]>(
           PROJECT_ISSUES_LIST(workspaceSlug as string, projectId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === res.id)
                 return {
                   ...p,

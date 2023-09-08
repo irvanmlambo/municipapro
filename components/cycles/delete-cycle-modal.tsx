@@ -69,10 +69,10 @@ export const DeleteCycleModal: React.FC<TConfirmCycleDeletionProps> = ({
 
         mutate<ICycle[]>(
           fetchKey,
-          (prevData) => {
+          (prevData: any) => {
             if (!prevData) return;
 
-            return prevData.filter((cycle) => cycle.id !== data?.id);
+            return prevData.filter((cycle: any) => cycle.id !== data?.id);
           },
           false
         );

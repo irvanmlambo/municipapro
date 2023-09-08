@@ -89,8 +89,8 @@ export const SingleSidebarProject: React.FC<Props> = ({
 
     mutate<IProject[]>(
       PROJECTS_LIST(workspaceSlug as string, { is_favorite: "all" }),
-      (prevData) =>
-        (prevData ?? []).map((p) => (p.id === project.id ? { ...p, is_favorite: true } : p)),
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => (p.id === project.id ? { ...p, is_favorite: true } : p)),
       false
     );
 
@@ -112,8 +112,8 @@ export const SingleSidebarProject: React.FC<Props> = ({
 
     mutate<IProject[]>(
       PROJECTS_LIST(workspaceSlug as string, { is_favorite: "all" }),
-      (prevData) =>
-        (prevData ?? []).map((p) => (p.id === project.id ? { ...p, is_favorite: false } : p)),
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => (p.id === project.id ? { ...p, is_favorite: false } : p)),
       false
     );
 

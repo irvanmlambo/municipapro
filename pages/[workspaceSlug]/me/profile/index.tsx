@@ -65,7 +65,7 @@ const Profile: NextPage = () => {
     await userService
       .updateUser(payload)
       .then((res) => {
-        mutateUser((prevData) => {
+        mutateUser((prevData: any) => {
           if (!prevData) return prevData;
           return { ...prevData, ...res };
         }, false);
@@ -100,7 +100,7 @@ const Profile: NextPage = () => {
               title: "Success!",
               message: "Profile picture removed successfully.",
             });
-            mutateUser((prevData) => {
+            mutateUser((prevData: any) => {
               if (!prevData) return prevData;
               return { ...prevData, avatar: "" };
             }, false);

@@ -5,19 +5,19 @@ import { useRouter } from "next/router";
 import { mutate } from "swr";
 
 // services
-import projectService from "services/project.service";
+import projectService from "../../../services/project.service";
 // hooks
-import useProjects from "hooks/use-projects";
-import useWorkspaces from "hooks/use-workspaces";
-import useUserAuth from "hooks/use-user-auth";
+import useProjects from "../../../hooks/use-projects";
+import useWorkspaces from "../../../hooks/use-workspaces";
+import useUserAuth from "../../../hooks/use-user-auth";
 // layouts
-import { WorkspaceAuthorizationLayout } from "layouts/auth-layout";
+import { WorkspaceAuthorizationLayout } from "../../../layouts/auth-layout";
 // components
-import { JoinProjectModal } from "components/project/join-project-modal";
-import { DeleteProjectModal, SingleProjectCard } from "components/project";
+import { JoinProjectModal } from "../../../components/project/join-project-modal";
+import { DeleteProjectModal, SingleProjectCard } from "../../../components/project";
 // ui
-import { EmptyState, Loader, PrimaryButton } from "components/ui";
-import { Breadcrumbs, BreadcrumbItem } from "components/breadcrumbs";
+import { EmptyState, Loader, PrimaryButton } from "../../../components/ui";
+import { Breadcrumbs, BreadcrumbItem } from "../../../components/breadcrumbs";
 // icons
 import { PlusIcon } from "@heroicons/react/24/outline";
 // images
@@ -25,7 +25,7 @@ import emptyProject from "public/empty-state/project.svg";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS } from "../../../constants/fetch-keys";
 
 const ProjectsPage: NextPage = () => {
   // router

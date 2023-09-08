@@ -39,9 +39,9 @@ export const JoinWorkspaces: React.FC<Props> = ({ stepChange }) => {
     action: "accepted" | "withdraw"
   ) => {
     if (action === "accepted") {
-      setInvitationsRespond((prevData) => [...prevData, workspace_invitation.id]);
+      setInvitationsRespond((prevData: any) => [...prevData, workspace_invitation.id]);
     } else if (action === "withdraw") {
-      setInvitationsRespond((prevData) =>
+      setInvitationsRespond((prevData: any) =>
         prevData.filter((item: string) => item !== workspace_invitation.id)
       );
     }
@@ -53,7 +53,7 @@ export const JoinWorkspaces: React.FC<Props> = ({ stepChange }) => {
 
     mutate<ICurrentUserResponse>(
       CURRENT_USER,
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return {

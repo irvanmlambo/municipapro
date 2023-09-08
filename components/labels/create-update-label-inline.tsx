@@ -66,7 +66,7 @@ export const CreateUpdateLabelInline = forwardRef<Ref, Props>(function CreateUpd
       .then((res) => {
         mutate<IIssueLabels[]>(
           PROJECT_ISSUE_LABELS(projectId as string),
-          (prevData) => [res, ...(prevData ?? [])],
+          (prevData: any) => [res, ...(prevData ?? [])],
           false
         );
         reset(defaultValues);
@@ -89,8 +89,8 @@ export const CreateUpdateLabelInline = forwardRef<Ref, Props>(function CreateUpd
         reset(defaultValues);
         mutate<IIssueLabels[]>(
           PROJECT_ISSUE_LABELS(projectId as string),
-          (prevData) =>
-            prevData?.map((p) => (p.id === labelToUpdate?.id ? { ...p, ...formData } : p)),
+          (prevData: any) =>
+            prevData?.map((p: any) => (p.id === labelToUpdate?.id ? { ...p, ...formData } : p)),
           false
         );
         setLabelForm(false);

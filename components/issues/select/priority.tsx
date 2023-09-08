@@ -1,11 +1,11 @@
 import React from "react";
 
 // ui
-import { CustomSelect } from "components/ui";
+import { CustomSelect } from "../../../components/ui";
 // icons
-import { getPriorityIcon } from "components/icons/priority-icon";
+import { getPriorityIcon } from "../../../components/icons/priority-icon";
 // constants
-import { PRIORITIES } from "constants/project";
+import { PRIORITIES } from "../../../constants/project";
 
 type Props = {
   value: string | null;

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
 // services
-import appinstallationsService from "services/app-installations.service";
+import appinstallationsService from "../../../services/app-installations.service";
 
-import useToast from "hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 
 // components
-import { Spinner } from "components/ui";
+import { Spinner } from "../../../components/ui";
 
 import { useRouter } from "next/router";
 

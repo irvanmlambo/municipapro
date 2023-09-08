@@ -78,7 +78,7 @@ export const ModuleDetailsSidebar: React.FC<Props> = ({ module, isOpen, moduleIs
 
     mutate<IModule>(
       MODULE_DETAILS(moduleId as string),
-      (prevData) => ({
+      (prevData: any) => ({
         ...(prevData as IModule),
         ...data,
       }),
@@ -122,7 +122,7 @@ export const ModuleDetailsSidebar: React.FC<Props> = ({ module, isOpen, moduleIs
 
     mutate<IModule>(
       MODULE_DETAILS(module.id),
-      (prevData) => ({ ...(prevData as IModule), link_module: updatedLinks }),
+      (prevData: any) => ({ ...(prevData as IModule), link_module: updatedLinks }),
       false
     );
 

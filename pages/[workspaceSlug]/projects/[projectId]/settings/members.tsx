@@ -5,29 +5,29 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 
 // services
-import projectService from "services/project.service";
-import workspaceService from "services/workspace.service";
+import projectService from "../../../../../services/project.service";
+import workspaceService from "../../../../../services/workspace.service";
 // hooks
-import useToast from "hooks/use-toast";
-import useProjectDetails from "hooks/use-project-details";
-import useUser from "hooks/use-user";
+import useToast from "../../../../../hooks/use-toast";
+import useProjectDetails from "../../../../../hooks/use-project-details";
+import useUser from "../../../../../hooks/use-user";
 // layouts
-import { ProjectAuthorizationWrapper } from "layouts/auth-layout";
+import { ProjectAuthorizationWrapper } from "../../../../../layouts/auth-layout";
 // components
-import ConfirmProjectMemberRemove from "components/project/confirm-project-member-remove";
-import SendProjectInvitationModal from "components/project/send-project-invitation-modal";
-import { SettingsHeader } from "components/project";
+import ConfirmProjectMemberRemove from "../../../../../components/project/confirm-project-member-remove";
+import SendProjectInvitationModal from "../../../../../components/project/send-project-invitation-modal";
+import { SettingsHeader } from "../../../../../components/project";
 // ui
-import { CustomMenu, CustomSelect, Loader } from "components/ui";
-import { BreadcrumbItem, Breadcrumbs } from "components/breadcrumbs";
+import { CustomMenu, CustomSelect, Loader } from "../../../../../components/ui";
+import { BreadcrumbItem, Breadcrumbs } from "../../../../../components/breadcrumbs";
 // icons
 import { PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 // types
 import type { NextPage } from "next";
 // fetch-keys
-import { PROJECT_INVITATIONS, PROJECT_MEMBERS, WORKSPACE_DETAILS } from "constants/fetch-keys";
+import { PROJECT_INVITATIONS, PROJECT_MEMBERS, WORKSPACE_DETAILS } from "../../../../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../../../../constants/workspace";
 
 const MembersSettings: NextPage = () => {
   const [inviteModal, setInviteModal] = useState(false);
@@ -118,7 +118,7 @@ const MembersSettings: NextPage = () => {
               selectedRemoveMember
             );
             mutateMembers(
-              (prevData) => prevData?.filter((item: any) => item.id !== selectedRemoveMember),
+              (prevData: any) => prevData?.filter((item: any) => item.id !== selectedRemoveMember),
               false
             );
           }
@@ -129,7 +129,7 @@ const MembersSettings: NextPage = () => {
               selectedInviteRemoveMember
             );
             mutateInvitations(
-              (prevData) => prevData?.filter((item: any) => item.id !== selectedInviteRemoveMember),
+              (prevData: any) => prevData?.filter((item: any) => item.id !== selectedInviteRemoveMember),
               false
             );
           }

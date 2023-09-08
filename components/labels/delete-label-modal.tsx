@@ -46,7 +46,7 @@ export const DeleteLabelModal: React.FC<Props> = ({ isOpen, onClose, data, user 
 
     mutate<IIssueLabels[]>(
       PROJECT_ISSUE_LABELS(projectId.toString()),
-      (prevData) => (prevData ?? []).filter((p) => p.id !== data.id),
+      (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== data.id),
       false
     );
 

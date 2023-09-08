@@ -162,7 +162,7 @@ export const IssueDetailsSidebar: React.FC<Props> = ({
 
     mutate<IIssue>(
       ISSUE_DETAILS(issueDetail.id),
-      (prevData) => ({ ...(prevData as IIssue), issue_link: updatedLinks }),
+      (prevData: any) => ({ ...(prevData as IIssue), issue_link: updatedLinks }),
       false
     );
 

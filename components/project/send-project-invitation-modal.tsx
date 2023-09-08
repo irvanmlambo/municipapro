@@ -22,15 +22,15 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import projectService from "../../services/project.service";
 import workspaceService from "../../services/workspace.service";
 // contexts
-import { useProjectMyMembership } from "contexts/project-member.context";
+import { useProjectMyMembership } from "../../contexts/project-member.context";
 // hooks
 import useToast from "../../hooks/use-toast";
 // types
 import { ICurrentUserResponse } from "../../types";
 // fetch-keys
-import { PROJECT_MEMBERS, WORKSPACE_MEMBERS } from "constants/fetch-keys";
+import { PROJECT_MEMBERS, WORKSPACE_MEMBERS } from "../../constants/fetch-keys";
 // constants
-import { ROLE } from "constants/workspace";
+import { ROLE } from "../../constants/workspace";
 
 type Props = {
   isOpen: boolean;

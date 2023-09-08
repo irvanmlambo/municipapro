@@ -195,7 +195,7 @@ export const reducer: ReducerFunctionType = (state, action) => {
 const saveDataToServer = async (workspaceSlug: string, projectID: string, state: any) => {
   mutate<IProjectMember>(
     workspaceSlug && projectID ? USER_PROJECT_VIEW(projectID as string) : null,
-    (prevData) => {
+    (prevData: any) => {
       if (!prevData) return prevData;
 
       return {
@@ -268,7 +268,7 @@ const saveViewFilters = async (
 const setNewDefault = async (workspaceSlug: string, projectId: string, state: any) => {
   mutate<IProjectMember>(
     workspaceSlug && projectId ? USER_PROJECT_VIEW(projectId as string) : null,
-    (prevData) => {
+    (prevData: any) => {
       if (!prevData) return prevData;
 
       return {
@@ -384,7 +384,7 @@ export const IssueViewContextProvider: React.FC<{ children: React.ReactNode }> =
 
       if (!workspaceSlug || !projectId) return;
 
-      mutateMyViewProps((prevData) => {
+      mutateMyViewProps((prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -415,7 +415,7 @@ export const IssueViewContextProvider: React.FC<{ children: React.ReactNode }> =
 
       if (!workspaceSlug || !projectId) return;
 
-      mutateMyViewProps((prevData) => {
+      mutateMyViewProps((prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -446,7 +446,7 @@ export const IssueViewContextProvider: React.FC<{ children: React.ReactNode }> =
 
       if (!workspaceSlug || !projectId) return;
 
-      mutateMyViewProps((prevData) => {
+      mutateMyViewProps((prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -477,7 +477,7 @@ export const IssueViewContextProvider: React.FC<{ children: React.ReactNode }> =
 
       if (!workspaceSlug || !projectId) return;
 
-      mutateMyViewProps((prevData) => {
+      mutateMyViewProps((prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -599,7 +599,7 @@ export const IssueViewContextProvider: React.FC<{ children: React.ReactNode }> =
             user
           );
       } else {
-        mutateMyViewProps((prevData) => {
+        mutateMyViewProps((prevData: any) => {
           if (!prevData) return prevData;
 
           return {

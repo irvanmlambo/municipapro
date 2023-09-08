@@ -91,7 +91,7 @@ const GeneralSettings: NextPage = () => {
       .then((res) => {
         mutate<IProject>(
           PROJECT_DETAILS(projectDetails.id),
-          (prevData) => ({ ...prevData, ...res }),
+          (prevData: any) => ({ ...prevData, ...res }),
           false
         );
 

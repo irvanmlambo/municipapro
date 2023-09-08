@@ -13,7 +13,7 @@ import { FormProvider, useForm } from "react-hook-form";
 
 // icons
 import { ArrowLeftIcon, ListBulletIcon } from "@heroicons/react/24/outline";
-import { CogIcon, UsersIcon, CheckIcon } from "components/icons";
+import { CogIcon, UsersIcon, CheckIcon } from "../../../components/icons";
 
 // services
 import jiraImporterService from "../../../services/integration/jira.service";
@@ -169,7 +169,7 @@ export const JiraImporterRoot: React.FC<Props> = ({ user }) => {
         </div>
 
         <div className="relative h-full w-full pt-6">
-          <FormProvider {...methods}>
+          {/* <FormProvider {...methods}>
             <form className="flex h-full w-full flex-col">
               <div className="h-full w-full overflow-y-auto">
                 {currentStep.state === "import-configure" && <JiraGetImportDetail />}
@@ -222,7 +222,7 @@ export const JiraImporterRoot: React.FC<Props> = ({ user }) => {
                 </PrimaryButton>
               </div>
             </form>
-          </FormProvider>
+          </FormProvider> */}
         </div>
       </div>
     </div>

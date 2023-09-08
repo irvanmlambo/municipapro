@@ -3,14 +3,14 @@ import { FC } from "react";
 // react-hook-form
 import { UseFormWatch } from "react-hook-form";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 // types
 import {
   IUserDetails,
   SingleUserSelect,
   TFormValues,
   TIntegrationSteps,
-} from "components/integration";
+} from "../../../components/integration";
 
 type Props = {
   handleStepChange: (value: TIntegrationSteps) => void;

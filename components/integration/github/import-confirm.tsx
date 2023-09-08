@@ -3,9 +3,9 @@ import { FC } from "react";
 // react-hook-form
 import { UseFormWatch } from "react-hook-form";
 // ui
-import { PrimaryButton, SecondaryButton } from "components/ui";
+import { PrimaryButton, SecondaryButton } from "../../../components/ui";
 // types
-import { TFormValues, TIntegrationSteps } from "components/integration";
+import { TFormValues, TIntegrationSteps } from "../../../components/integration";
 
 type Props = {
   handleStepChange: (value: TIntegrationSteps) => void;

@@ -78,7 +78,7 @@ export const CycleDetailsSidebar: React.FC<Props> = ({
 
     mutate<ICycle>(
       CYCLE_DETAILS(cycleId as string),
-      (prevData) => ({ ...(prevData as ICycle), ...data }),
+      (prevData: any) => ({ ...(prevData as ICycle), ...data }),
       false
     );
 

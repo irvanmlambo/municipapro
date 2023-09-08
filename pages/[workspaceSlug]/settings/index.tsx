@@ -86,10 +86,10 @@ const WorkspaceSettings: NextPage = () => {
     await workspaceService
       .updateWorkspace(activeWorkspace.slug, payload, user)
       .then((res) => {
-        mutate<IWorkspace[]>(USER_WORKSPACES, (prevData) =>
-          prevData?.map((workspace) => (workspace.id === res.id ? res : workspace))
+        mutate<IWorkspace[]>(USER_WORKSPACES, (prevData: any) =>
+          prevData?.map((workspace: any) => (workspace.id === res.id ? res : workspace))
         );
-        mutate<IWorkspace>(WORKSPACE_DETAILS(workspaceSlug as string), (prevData) => {
+        mutate<IWorkspace>(WORKSPACE_DETAILS(workspaceSlug as string), (prevData: any) => {
           if (!prevData) return prevData;
 
           return {
@@ -120,10 +120,10 @@ const WorkspaceSettings: NextPage = () => {
             title: "Success!",
             message: "Workspace picture removed successfully.",
           });
-          mutate<IWorkspace[]>(USER_WORKSPACES, (prevData) =>
-            prevData?.map((workspace) => (workspace.id === res.id ? res : workspace))
+          mutate<IWorkspace[]>(USER_WORKSPACES, (prevData: any) =>
+            prevData?.map((workspace: any) => (workspace.id === res.id ? res : workspace))
           );
-          mutate<IWorkspace>(WORKSPACE_DETAILS(workspaceSlug as string), (prevData) => {
+          mutate<IWorkspace>(WORKSPACE_DETAILS(workspaceSlug as string), (prevData: any) => {
             if (!prevData) return prevData;
 
             return {

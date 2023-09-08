@@ -78,8 +78,8 @@ export const SinglePageBlock: React.FC<Props> = ({ block, projectDetails, index,
 
     mutate<IPageBlock[]>(
       PAGE_BLOCKS_LIST(pageId as string),
-      (prevData) =>
-        prevData?.map((p) => {
+      (prevData: any) =>
+        prevData?.map((p: any) => {
           if (p.id === block.id) return { ...p, ...formData };
 
           return p;
@@ -133,8 +133,8 @@ export const SinglePageBlock: React.FC<Props> = ({ block, projectDetails, index,
       .then((res: IIssue) => {
         mutate<IPageBlock[]>(
           PAGE_BLOCKS_LIST(pageId as string),
-          (prevData) =>
-            (prevData ?? []).map((p) => {
+          (prevData: any) =>
+            (prevData ?? []).map((p: any) => {
               if (p.id === block.id) return { ...p, issue: res.id, issue_detail: res };
 
               return p;
@@ -162,7 +162,7 @@ export const SinglePageBlock: React.FC<Props> = ({ block, projectDetails, index,
 
     mutate<IPageBlock[]>(
       PAGE_BLOCKS_LIST(pageId as string),
-      (prevData) => (prevData ?? []).filter((p) => p.id !== block.id),
+      (prevData: any) => (prevData ?? []).filter((p: any) => p.id !== block.id),
       false
     );
 
@@ -253,8 +253,8 @@ export const SinglePageBlock: React.FC<Props> = ({ block, projectDetails, index,
 
     mutate<IPageBlock[]>(
       PAGE_BLOCKS_LIST(pageId as string),
-      (prevData) =>
-        (prevData ?? []).map((p) => {
+      (prevData: any) =>
+        (prevData ?? []).map((p: any) => {
           if (p.id === block.id) return { ...p, sync: !block.sync };
 
           return p;
@@ -362,7 +362,7 @@ export const SinglePageBlock: React.FC<Props> = ({ block, projectDetails, index,
                 <button
                   type="button"
                   className="-mr-2 flex items-center gap-1 rounded px-1.5 py-1 text-xs hover:bg-custom-background-90"
-                  onClick={() => setGptAssistantModal((prevData) => !prevData)}
+                  onClick={() => setGptAssistantModal((prevData: any) => !prevData)}
                 >
                   <SparklesIcon className="h-4 w-4" />
                   AI

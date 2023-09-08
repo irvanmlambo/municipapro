@@ -128,7 +128,7 @@ export const GithubImporterRoot: React.FC<Props> = ({ user }) => {
   };
 
   const handleStepChange = (value: TIntegrationSteps) => {
-    setCurrentStep((prevData) => ({ ...prevData, state: value }));
+    setCurrentStep((prevData: any) => ({ ...prevData, state: value }));
   };
 
   // current integration from all the integrations available

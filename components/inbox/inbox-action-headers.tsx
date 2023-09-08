@@ -61,7 +61,7 @@ export const InboxActionHeader = () => {
 
     mutate<IInboxIssueDetail>(
       INBOX_ISSUE_DETAILS(inboxId as string, inboxIssueId as string),
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return {
@@ -72,8 +72,8 @@ export const InboxActionHeader = () => {
       false
     );
     mutateInboxIssues(
-      (prevData) =>
-        (prevData ?? []).map((i) =>
+      (prevData: any) =>
+        (prevData ?? []).map((i: any) =>
           i.bridge_id === inboxIssueId
             ? { ...i, issue_inbox: [{ ...i.issue_inbox[0], ...data }] }
             : i

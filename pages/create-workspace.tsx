@@ -42,7 +42,7 @@ const CreateWorkspace: NextPage = () => {
   const onSubmit = async (workspace: IWorkspace) => {
     mutate<ICurrentUserResponse>(
       CURRENT_USER,
-      (prevData) => {
+      (prevData: any) => {
         if (!prevData) return prevData;
 
         return {

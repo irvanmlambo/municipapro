@@ -53,7 +53,7 @@ export const IssueAttachmentUpload: React.FC<Props> = ({ disabled = false }) => 
       .then((res) => {
         mutate<IIssueAttachment[]>(
           ISSUE_ATTACHMENTS(issueId as string),
-          (prevData) => [res, ...(prevData ?? [])],
+          (prevData: any) => [res, ...(prevData ?? [])],
           false
         );
         setToastAlert({

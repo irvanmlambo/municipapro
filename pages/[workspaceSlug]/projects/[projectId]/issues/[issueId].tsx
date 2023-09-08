@@ -61,7 +61,7 @@ const IssueDetailsPage: NextPage = () => {
 
       mutate<IIssue>(
         ISSUE_DETAILS(issueId as string),
-        (prevData) => {
+        (prevData: any) => {
           if (!prevData) return prevData;
 
           return {

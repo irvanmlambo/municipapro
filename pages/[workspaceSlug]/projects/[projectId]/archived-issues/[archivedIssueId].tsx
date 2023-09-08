@@ -69,7 +69,7 @@ const ArchivedIssueDetailsPage: NextPage = () => {
 
       mutate<IIssue>(
         ISSUE_DETAILS(archivedIssueId as string),
-        (prevData) => {
+        (prevData: any) => {
           if (!prevData) return prevData;
 
           return {

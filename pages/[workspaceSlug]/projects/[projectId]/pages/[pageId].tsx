@@ -120,7 +120,7 @@ const SinglePage: NextPage = () => {
       .then(() => {
         mutate<IPage>(
           PAGE_DETAILS(pageId as string),
-          (prevData) => ({
+          (prevData: any) => ({
             ...prevData,
             ...formData,
           }),
@@ -134,7 +134,7 @@ const SinglePage: NextPage = () => {
 
     mutate<IPage>(
       PAGE_DETAILS(pageId as string),
-      (prevData) => ({
+      (prevData: any) => ({
         ...(prevData as IPage),
         ...formData,
         labels: formData.labels_list ? formData.labels_list : (prevData as IPage).labels,
@@ -154,7 +154,7 @@ const SinglePage: NextPage = () => {
 
     mutate<IPage>(
       PAGE_DETAILS(pageId as string),
-      (prevData) => ({
+      (prevData: any) => ({
         ...(prevData as IPage),
         is_favorite: true,
       }),
@@ -177,7 +177,7 @@ const SinglePage: NextPage = () => {
 
     mutate<IPage>(
       PAGE_DETAILS(pageId as string),
-      (prevData) => ({
+      (prevData: any) => ({
         ...(prevData as IPage),
         is_favorite: false,
       }),

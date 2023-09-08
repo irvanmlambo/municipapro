@@ -65,7 +65,7 @@ export const CreateBlock: React.FC<Props> = ({ user }) => {
       .then((res) => {
         mutate<IPageBlock[]>(
           PAGE_BLOCKS_LIST(pageId as string),
-          (prevData) => [...(prevData as IPageBlock[]), res],
+          (prevData: any) => [...(prevData as IPageBlock[]), res],
           false
         );
       })

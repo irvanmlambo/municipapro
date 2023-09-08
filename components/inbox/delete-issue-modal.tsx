@@ -58,7 +58,7 @@ export const DeleteIssueModal: React.FC<Props> = ({ isOpen, handleClose, data })
       .then(() => {
         mutate<IInboxIssue[]>(
           INBOX_ISSUES(inboxId.toString(), params),
-          (prevData) => (prevData ?? []).filter((i) => i.id !== data.id),
+          (prevData: any) => (prevData ?? []).filter((i: any) => i.id !== data.id),
           false
         );
 

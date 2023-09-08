@@ -59,17 +59,17 @@ export const DeletePageModal: React.FC<TConfirmPageDeletionProps> = ({
         mutate(RECENT_PAGES_LIST(projectId as string));
         mutate<IPage[]>(
           MY_PAGES_LIST(projectId as string),
-          (prevData) => (prevData ?? []).filter((page) => page.id !== data?.id),
+          (prevData: any) => (prevData ?? []).filter((page: any) => page.id !== data?.id),
           false
         );
         mutate<IPage[]>(
           ALL_PAGES_LIST(projectId as string),
-          (prevData) => (prevData ?? []).filter((page) => page.id !== data?.id),
+          (prevData: any) => (prevData ?? []).filter((page: any) => page.id !== data?.id),
           false
         );
         mutate<IPage[]>(
           FAVORITE_PAGES_LIST(projectId as string),
-          (prevData) => (prevData ?? []).filter((page) => page.id !== data?.id),
+          (prevData: any) => (prevData ?? []).filter((page: any) => page.id !== data?.id),
           false
         );
         handleClose();

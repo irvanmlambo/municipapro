@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 
 // hooks
-import useInboxView from "hooks/use-inbox-view";
+import useInboxView from "../../hooks/use-inbox-view";
 // components
-import { InboxIssueCard, InboxFiltersList } from "components/inbox";
+import { InboxIssueCard, InboxFiltersList } from "../../components/inbox";
 // ui
-import { Loader } from "components/ui";
+import { Loader } from "../../components/ui";
 
 export const IssuesListSidebar = () => {
   const router = useRouter();

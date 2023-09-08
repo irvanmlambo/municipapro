@@ -100,14 +100,14 @@ export const CreateUpdateEstimateModal: React.FC<Props> = ({ handleClose, data, 
 
     mutate<IEstimate[]>(
       ESTIMATES_LIST(projectId.toString()),
-      (prevData) =>
-        prevData?.map((p) => {
+      (prevData: any) =>
+        prevData?.map((p: any) => {
           if (p.id === data.id)
             return {
               ...p,
               name: payload.estimate.name,
               description: payload.estimate.description,
-              points: p.points.map((point, index) => ({
+              points: p.points.map((point: any, index: any) => ({
                 ...point,
                 value: payload.estimate_points[index].value,
               })),

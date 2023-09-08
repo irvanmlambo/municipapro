@@ -59,8 +59,8 @@ export const SingleModuleCard: React.FC<Props> = ({ module, handleEditModule, us
 
     mutate<IModule[]>(
       MODULE_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((m) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((m: any) => ({
           ...m,
           is_favorite: m.id === module.id ? true : m.is_favorite,
         })),
@@ -85,8 +85,8 @@ export const SingleModuleCard: React.FC<Props> = ({ module, handleEditModule, us
 
     mutate<IModule[]>(
       MODULE_LIST(projectId as string),
-      (prevData) =>
-        (prevData ?? []).map((m) => ({
+      (prevData: any) =>
+        (prevData ?? []).map((m: any) => ({
           ...m,
           is_favorite: m.id === module.id ? false : m.is_favorite,
         })),
